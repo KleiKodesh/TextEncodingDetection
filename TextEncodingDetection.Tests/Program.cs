@@ -37,6 +37,7 @@ Step("uchardet test folder vs upstream expected names (report)", () => { Upstrea
 Step("fused single-byte passes vs reference loops", FusedCheck.Run);
 Step("IsTextUnicode managed vs Win32", IsTextUnicodeVsWin32);
 Step("every returned code page decodes", DecodeAll);
+Step("ICU ucsdet port vs Windows icu.dll", () => IcuCheck.Run(matrix, upstreamCases));
 if (realList != null) Step("real files", () => RealFiles.Run(realList, oracle));
 string? dump = Arg("--dump");
 List<Case>? realCases = realList != null && (dump != null || args.Contains("--bench")) ? Bench.LoadReal(realList) : null;
