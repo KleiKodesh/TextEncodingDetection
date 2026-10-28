@@ -1,7 +1,7 @@
 # TextEncodingDetection
 
 Detects a .txt file's encoding exactly as Notepad++ does on open (the user's reference). Created
-2026-10-28; consumed by WordDocumentRandomAccess as a sibling-folder `ProjectReference`. No NuGet.
+2026-10-28; consumed by FastDocView as a sibling-folder `ProjectReference`. No NuGet.
 
 Rules:
 - Fully managed: no P/Invoke, no reflection, `IsAotCompatible` on; net48 + net10.0 must both build.

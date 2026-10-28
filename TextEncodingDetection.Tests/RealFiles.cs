@@ -68,7 +68,7 @@ static class RealFiles
         return disagreements;
     }
 
-    /// <summary>The detection WordDocumentRandomAccess used before this library (its
+    /// <summary>The detection FastDocView used before this library (its
     /// MarkupTextEncoding.DetectPlainText at master 31a4696): BOM, UTF-16 LE by zero-byte share,
     /// UTF-8 structure that tolerates a sequence cut by the sample end, else windows-1255.</summary>
     static int PlainRule(byte[] s, long fileLength)
