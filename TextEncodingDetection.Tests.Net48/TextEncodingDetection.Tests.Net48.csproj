@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- net48 leg check: the library's net48 build decodes every code page Detect can return and
+       gives the same answers as net10 on a few fixed inputs. Prints ALL PASSED. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TextEncodingDetection\TextEncodingDetection.csproj" />
+  </ItemGroup>
+
+</Project>

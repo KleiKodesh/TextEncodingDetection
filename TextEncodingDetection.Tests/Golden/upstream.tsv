@@ -1,0 +1,158 @@
+upstream/ar/iso-8859-6.txt		0	1255
+upstream/ar/utf-8.txt	UTF-8	0	65001
+upstream/ar/windows-1256.txt		0	1255
+upstream/be/iso-8859-5.txt	ISO-8859-5	0	28595
+upstream/be/utf-8.txt	UTF-8	0	65001
+upstream/be/windows-1251.txt	windows-1251	0	1251
+upstream/bg/iso-8859-5.txt	ISO-8859-5	0	28595
+upstream/bg/utf-8.txt	UTF-8	0	65001
+upstream/bg/windows-1251.txt	windows-1251	0	1251
+upstream/ca/iso-8859-1.txt		0	1255
+upstream/ca/utf-8.txt	UTF-8	0	65001
+upstream/ca/windows-1252.txt		0	1255
+upstream/cs/ibm852.txt		0	1255
+upstream/cs/iso-8859-2.txt		0	1255
+upstream/cs/mac-centraleurope.txt		0	1255
+upstream/cs/utf-8.txt	UTF-8	0	65001
+upstream/cs/windows-1250.txt		0	1255
+upstream/da/ibm865.txt		0	1255
+upstream/da/iso-8859-1.txt		0	1255
+upstream/da/iso-8859-15.txt		0	1255
+upstream/da/utf-8.txt	UTF-8	0	65001
+upstream/da/windows-1252.txt		0	1255
+upstream/de/iso-8859-1.txt		0	1255
+upstream/de/utf-8.txt	UTF-8	0	65001
+upstream/de/windows-1252.txt		0	1255
+upstream/el/cp737.txt		0	1255
+upstream/el/iso-8859-7.txt	ISO-8859-7	0	28597
+upstream/el/utf-8.txt	UTF-8	0	65001
+upstream/el/windows-1253.txt	ISO-8859-7	0	28597
+upstream/en/ascii.txt		0	65001
+upstream/en/utf-8.txt		0	65001
+upstream/eo/iso-8859-3.txt		0	1255
+upstream/eo/utf-8.txt	UTF-8	0	65001
+upstream/es/iso-8859-1.txt		0	1255
+upstream/es/iso-8859-15.txt		0	1255
+upstream/es/utf-8.txt	UTF-8	0	65001
+upstream/es/windows-1252.txt		0	1255
+upstream/et/iso-8859-13.txt		0	1255
+upstream/et/iso-8859-15.txt		0	1255
+upstream/et/iso-8859-4.txt		0	1255
+upstream/et/utf-8.txt	UTF-8	0	65001
+upstream/et/windows-1252.txt		0	1255
+upstream/et/windows-1257.txt		0	1255
+upstream/fi/iso-8859-1.txt		0	1255
+upstream/fi/utf-8.txt	UTF-8	0	65001
+upstream/fr/iso-8859-1.txt		0	1255
+upstream/fr/iso-8859-15.txt		0	1255
+upstream/fr/utf-16.be	UTF-16	0	1201
+upstream/fr/utf-32.le	UTF-16	1	1200
+upstream/fr/utf-8.txt	UTF-8	0	65001
+upstream/fr/windows-1252.txt		0	1255
+upstream/ga/iso-8859-1.txt		0	1255
+upstream/ga/utf-8.txt	UTF-8	0	65001
+upstream/ga/windows-1252.txt		0	1255
+upstream/he/ibm862.logical.txt		0	1255
+upstream/he/ibm862.visual.txt		0	1255
+upstream/he/iso-8859-8.txt	windows-1255	0	1255
+upstream/he/utf-8.txt	UTF-8	0	65001
+upstream/he/windows-1255.txt	windows-1255	0	1255
+upstream/hi/utf-8.txt	UTF-8	0	65001
+upstream/hr/ibm852.txt		0	1255
+upstream/hr/iso-8859-13.txt		0	1255
+upstream/hr/iso-8859-16.txt		0	1255
+upstream/hr/iso-8859-2.txt		0	1255
+upstream/hr/mac-centraleurope.txt		0	1255
+upstream/hr/utf-8.txt	UTF-8	0	65001
+upstream/hr/windows-1250.txt		0	1255
+upstream/hu/iso-8859-2.txt		0	1255
+upstream/hu/utf-8.txt	UTF-8	0	65001
+upstream/hu/windows-1250.txt		0	1255
+upstream/it/iso-8859-1.txt		0	1255
+upstream/it/utf-8.txt	UTF-8	0	65001
+upstream/ja/euc-jp.txt	EUC-JP	0	1255
+upstream/ja/iso-2022-jp.txt	ISO-2022-JP	0	65001
+upstream/ja/shift_jis.txt	Shift_JIS	0	932
+upstream/ja/utf-16be.txt		0	1255
+upstream/ja/utf-16le.txt		1	1200
+upstream/ja/utf-8.txt	UTF-8	0	65001
+upstream/ka/georgian-academy.txt		0	1255
+upstream/ka/georgian-ps.txt		0	1255
+upstream/ka/utf-8.txt	UTF-8	0	65001
+upstream/ko/iso-2022-kr.txt	ISO-2022-KR	0	65001
+upstream/ko/johab.txt		0	1255
+upstream/ko/uhc.smi	EUC-KR	0	51949
+upstream/ko/utf-16.le	UTF-16	0	1200
+upstream/ko/utf-32.be		0	1255
+upstream/ko/utf-8.txt	UTF-8	0	65001
+upstream/lt/iso-8859-10.txt		0	1255
+upstream/lt/iso-8859-13.txt		0	1255
+upstream/lt/iso-8859-4.txt		0	1255
+upstream/lt/utf-8.txt	UTF-8	0	65001
+upstream/lv/iso-8859-10.txt		0	1255
+upstream/lv/iso-8859-13.txt		0	1255
+upstream/lv/iso-8859-4.txt		0	1255
+upstream/lv/utf-8.txt	UTF-8	0	65001
+upstream/mk/ibm855.txt	IBM855	0	855
+upstream/mk/iso-8859-5.txt	ISO-8859-5	0	28595
+upstream/mk/utf-8.txt	UTF-8	0	65001
+upstream/mk/windows-1251.txt	windows-1251	0	1251
+upstream/mt/iso-8859-3.txt		0	1255
+upstream/mt/utf-8.txt	UTF-8	0	65001
+upstream/no/ibm865.txt		0	1255
+upstream/no/iso-8859-1.txt		0	1255
+upstream/no/iso-8859-15.txt		0	1255
+upstream/no/utf-8.txt	UTF-8	0	65001
+upstream/no/windows-1252.txt		0	1255
+upstream/pl/ibm852.txt		0	1255
+upstream/pl/iso-8859-13.txt		0	1255
+upstream/pl/iso-8859-16.txt		0	1255
+upstream/pl/iso-8859-2.txt		0	1255
+upstream/pl/mac-centraleurope.txt		0	1255
+upstream/pl/utf-8.txt	UTF-8	0	65001
+upstream/pl/windows-1250.txt		0	1255
+upstream/pt/iso-8859-1.txt		0	1255
+upstream/pt/utf-8.txt	UTF-8	0	65001
+upstream/ro/ibm852.txt		0	1255
+upstream/ro/iso-8859-16.txt		0	1255
+upstream/ro/utf-8.txt	UTF-8	0	65001
+upstream/ro/windows-1250.txt		0	1255
+upstream/ru/ibm855.txt	IBM855	0	855
+upstream/ru/ibm866.txt	IBM866	0	866
+upstream/ru/iso-8859-5.txt	ISO-8859-5	0	28595
+upstream/ru/koi8-r.txt	KOI8-R	0	1255
+upstream/ru/mac-cyrillic.txt	x-mac-cyrillic	0	10007
+upstream/ru/utf-8.txt	UTF-8	0	65001
+upstream/ru/windows-1251.txt	x-mac-cyrillic	0	10007
+upstream/sk/ibm852.txt		0	1255
+upstream/sk/iso-8859-2.txt		0	1255
+upstream/sk/mac-centraleurope.txt		0	1255
+upstream/sk/utf-8.txt	UTF-8	0	65001
+upstream/sk/windows-1250.txt		0	1255
+upstream/sl/ibm852.txt		0	1255
+upstream/sl/iso-8859-16.txt		0	1255
+upstream/sl/iso-8859-2.txt		0	1255
+upstream/sl/mac-centraleurope.txt		0	1255
+upstream/sl/utf-8.txt	UTF-8	0	65001
+upstream/sl/windows-1250.txt		0	1255
+upstream/sr/iso-8859-5.txt	ISO-8859-5	0	28595
+upstream/sr/utf-8.txt	UTF-8	0	65001
+upstream/sr/windows-1251.txt	windows-1251	0	1251
+upstream/sv/iso-8859-1.txt		0	1255
+upstream/sv/utf-8.txt	UTF-8	0	65001
+upstream/sv/windows-1252.txt		0	1255
+upstream/th/iso-8859-11.txt	TIS-620	0	1255
+upstream/th/tis-620.txt	TIS-620	0	1255
+upstream/th/utf-8.txt	UTF-8	0	65001
+upstream/tr/iso-8859-3.txt		0	1255
+upstream/tr/iso-8859-9.txt		0	1255
+upstream/tr/utf-8.txt	UTF-8	0	65001
+upstream/uk/utf-8.txt	UTF-8	0	65001
+upstream/uk/windows-1251.txt	x-mac-cyrillic	0	10007
+upstream/vi/utf-8.txt	UTF-8	0	65001
+upstream/vi/viscii.txt		0	1255
+upstream/vi/windows-1258.txt		0	1255
+upstream/zh/big5.txt	Big5	0	950
+upstream/zh/euc-tw.txt	x-euc-tw	0	1255
+upstream/zh/gb18030.txt	gb18030	0	936
+upstream/zh/utf-8.txt	UTF-8	0	65001

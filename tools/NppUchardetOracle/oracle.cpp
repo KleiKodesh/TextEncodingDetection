@@ -1,0 +1,262 @@
+// NppUchardetOracle: test oracle + table dumper for TextEncodingDetection.
+//
+// Compiled with MSVC against the uchardet copy bundled in Notepad++
+// (PowerEditor/src/uchardet, MPL 1.1 / GPL 2 / LGPL 2.1 tri-license, see ../../NOTICE),
+// downloaded by build.cmd at a pinned Notepad++ commit. This file is our own code.
+//
+//   oracle.exe dump            -> prints the C# tables (TextEncodingDetection/Uchardet/*.g.cs input)
+//   oracle.exe detect <list>   -> for each path in <list> (one per line, UTF-8):
+//                                 <uchardet charset>\t<IsTextUnicode(STATISTICS) of first block>
+//
+// The uchardet call mirrors Notepad++ FileManager::detectCodepage (Buffer.cpp): one
+// uchardet_handle_data call with the first block (128 KB + 4 bytes), then uchardet_data_end.
+// IsTextUnicode is the real Win32 API with IS_TEXT_UNICODE_STATISTICS as in
+// Utf8_16_Read::determineEncoding (Utf8_16.cpp), so the managed reimplementation can be checked.
+
+#include <windows.h>
+#include <cstdio>
+#include <cstring>
+#include <string>
+#include <vector>
+#include <set>
+#include "uchardet.h"
+#include "nsSBCharSetProber.h"
+#include "nsCodingStateMachine.h"
+#include "CharDistribution.h"
+#include "JpCntx.h"
+
+// Latin1 tables are file-static in nsLatin1Prober.cpp: this TU includes it, and build.cmd
+// leaves nsLatin1Prober.cpp out of the separately compiled sources.
+#include "nsLatin1Prober.cpp"
+
+static const size_t BlockSize = 128 * 1024 + 4; // Buffer.cpp: blockSize
+
+static void PrintBytes(const char* name, const unsigned char* p, size_t n)
+{
+    printf("    internal static readonly byte[] %s =\n    {\n", name);
+    for (size_t i = 0; i < n; i++)
+    {
+        if (i % 32 == 0) printf("        ");
+        printf("%u,", p[i]);
+        if (i % 32 == 31 || i + 1 == n) printf("\n");
+    }
+    printf("    };\n\n");
+}
+
+static void PrintShorts(const char* name, const PRInt16* p, size_t n)
+{
+    printf("    internal static readonly short[] %s =\n    {\n", name);
+    for (size_t i = 0; i < n; i++)
+    {
+        if (i % 24 == 0) printf("        ");
+        printf("%d,", p[i]);
+        if (i % 24 == 23 || i + 1 == n) printf("\n");
+    }
+    printf("    };\n\n");
+}
+
+static unsigned Unpack(const nsPkgInt& c, unsigned i) { return GETFROMPCK(i, c); }
+
+static void DumpSequenceModel(const char* id, const SequenceModel& m)
+{
+    std::string a = std::string(id) + "_CharToOrder";
+    std::string b = std::string(id) + "_Precedence";
+    PrintBytes(a.c_str(), m.charToOrderMap, 256);
+    PrintBytes(b.c_str(), m.precedenceMatrix, SAMPLE_SIZE * SAMPLE_SIZE);
+    printf("    internal static readonly SequenceModel %s = new SequenceModel(%s, %s, %.9gf, \"%s\");\n\n",
+        id, a.c_str(), b.c_str(), (double)m.mTypicalPositiveRatio, m.charsetName);
+}
+
+static void DumpSm(const char* id, const SMModel& m)
+{
+    unsigned char cls[256];
+    unsigned maxCls = 0;
+    for (unsigned i = 0; i < 256; i++) { cls[i] = (unsigned char)Unpack(m.classTable, i); if (cls[i] > maxCls) maxCls = cls[i]; }
+    // States reachable from eStart (0); eError (1) and eItsMe (2) rows are included as the
+    // packed table holds them (their rows are what NextState reads after reaching them).
+    std::set<unsigned> seen; std::vector<unsigned> work{ 0, 1, 2 };
+    unsigned maxState = 2;
+    while (!work.empty())
+    {
+        unsigned s = work.back(); work.pop_back();
+        if (!seen.insert(s).second) continue;
+        if (s > maxState) maxState = s;
+        for (unsigned c = 0; c < m.classFactor; c++) work.push_back(Unpack(m.stateTable, s * m.classFactor + c));
+    }
+    std::vector<unsigned char> st((maxState + 1) * m.classFactor);
+    for (unsigned i = 0; i < st.size(); i++) st[i] = (unsigned char)Unpack(m.stateTable, i);
+    std::string a = std::string(id) + "_Class", b = std::string(id) + "_State", c = std::string(id) + "_CharLen";
+    PrintBytes(a.c_str(), cls, 256);
+    PrintBytes(b.c_str(), st.data(), st.size());
+    std::vector<unsigned char> len(maxCls + 1);
+    for (unsigned i = 0; i <= maxCls; i++) len[i] = (unsigned char)m.charLenTable[i];
+    PrintBytes(c.c_str(), len.data(), len.size());
+    printf("    internal static readonly StateMachineModel %s = new StateMachineModel(%s, %u, %s, %s, \"%s\");\n\n",
+        id, a.c_str(), m.classFactor, b.c_str(), c.c_str(), m.name);
+}
+
+// Protected-member access to the distribution tables (they are file-static in CharDistribution.cpp).
+template <class T> struct Peek : T
+{
+    const PRInt16* Table() { return this->mCharToFreqOrder; }
+    PRUint32 Size() { return this->mTableSize; }
+    float Ratio() { return this->mTypicalDistributionRatio; }
+};
+
+template <class T> static void DumpDist(const char* id)
+{
+    Peek<T> p;
+    std::string a = std::string(id) + "_CharToFreqOrder";
+    PrintShorts(a.c_str(), p.Table(), p.Size());
+    printf("    internal const float %s_TypicalDistributionRatio = %.9gf;\n\n", id, (double)p.Ratio());
+}
+
+static int Dump()
+{
+    printf("// <auto-generated> by tools/NppUchardetOracle (oracle.exe dump) from the uchardet copy in\n");
+    printf("// Notepad++ PowerEditor/src/uchardet. Data originally from Mozilla universalchardet,\n");
+    printf("// MPL 1.1 / GPL 2.0 / LGPL 2.1 tri-license (see NOTICE). Packed 4-bit tables are stored unpacked. </auto-generated>\n");
+    printf("namespace TextEncodingDetection.Uchardet;\n\ninternal static class UchardetTables\n{\n");
+    DumpSequenceModel("Koi8r", Koi8rModel);
+    DumpSequenceModel("Win1251", Win1251Model);
+    DumpSequenceModel("Latin5", Latin5Model);
+    DumpSequenceModel("MacCyrillic", MacCyrillicModel);
+    DumpSequenceModel("Ibm866", Ibm866Model);
+    DumpSequenceModel("Ibm855", Ibm855Model);
+    DumpSequenceModel("Latin7", Latin7Model);
+    DumpSequenceModel("Win1253", Win1253Model);
+    DumpSequenceModel("Latin5Bulgarian", Latin5BulgarianModel);
+    DumpSequenceModel("Win1251Bulgarian", Win1251BulgarianModel);
+    DumpSequenceModel("TIS620Thai", TIS620ThaiModel);
+    DumpSequenceModel("Win1255", Win1255Model);
+    DumpSm("Utf8Sm", UTF8SMModel);
+    DumpSm("Big5Sm", Big5SMModel);
+    DumpSm("EucJpSm", EUCJPSMModel);
+    DumpSm("EucKrSm", EUCKRSMModel);
+    DumpSm("EucTwSm", EUCTWSMModel);
+    DumpSm("Gb18030Sm", GB18030SMModel);
+    DumpSm("SjisSm", SJISSMModel);
+    DumpSm("HzSm", HZSMModel);
+    DumpSm("Iso2022CnSm", ISO2022CNSMModel);
+    DumpSm("Iso2022JpSm", ISO2022JPSMModel);
+    DumpSm("Iso2022KrSm", ISO2022KRSMModel);
+    DumpDist<EUCTWDistributionAnalysis>("EucTw");
+    DumpDist<EUCKRDistributionAnalysis>("EucKr");
+    DumpDist<GB2312DistributionAnalysis>("Gb2312");
+    DumpDist<Big5DistributionAnalysis>("Big5");
+    DumpDist<SJISDistributionAnalysis>("Jis");
+    PrintBytes("Jp2CharContext", &jp2CharContext[0][0], 83 * 83);
+    PrintBytes("Latin1_CharToClass", Latin1_CharToClass, 256);
+    PrintBytes("Latin1ClassModel", Latin1ClassModel, CLASS_NUM * CLASS_NUM);
+    printf("}\n");
+    return 0;
+}
+
+// EncodingMapper::getEncodingFromString, restricted to the alias lists of encodings[] (data
+// copied from EncodingMapper.cpp at the pinned commit); case-insensitive whole-word match.
+static int MapName(const std::string& cs)
+{
+    static const struct { int cp; const char* aliases; } table[] = {
+        {1250,"windows-1250"},{1251,"windows-1251"},{1252,"windows-1252"},{1253,"windows-1253"},
+        {1254,"windows-1254"},{1255,"windows-1255"},{1256,"windows-1256"},{1257,"windows-1257"},
+        {1258,"windows-1258"},
+        {28591,"latin1 ISO_8859-1 ISO-8859-1 CP819 IBM819 csISOLatin1 iso-ir-100 l1"},
+        {28592,"latin2 ISO_8859-2 ISO-8859-2 csISOLatin2 iso-ir-101 l2"},
+        {28593,"latin3 ISO_8859-3 ISO-8859-3 csISOLatin3 iso-ir-109 l3"},
+        {28594,"latin4 ISO_8859-4 ISO-8859-4 csISOLatin4 iso-ir-110 l4"},
+        {28595,"cyrillic ISO_8859-5 ISO-8859-5 csISOLatinCyrillic iso-ir-144"},
+        {28596,"arabic ISO_8859-6 ISO-8859-6 csISOLatinArabic iso-ir-127 ASMO-708 ECMA-114"},
+        {28597,"greek ISO_8859-7 ISO-8859-7 csISOLatinGreek greek8 iso-ir-126 ELOT_928 ECMA-118"},
+        {28598,"hebrew ISO_8859-8 ISO-8859-8 csISOLatinHebrew iso-ir-138"},
+        {28599,"latin5 ISO_8859-9 ISO-8859-9 csISOLatin5 iso-ir-148 l5"},
+        {28603,"ISO_8859-13 ISO-8859-13"},{28604,"iso-celtic latin8 ISO_8859-14 ISO-8859-14 18 iso-ir-199"},
+        {28605,"Latin-9 ISO_8859-15 ISO-8859-15"},
+        {437,"IBM437 cp437 437 csPC8CodePage437"},{720,"IBM720 cp720 oem720 720"},{737,"IBM737 cp737 oem737 737"},
+        {775,"IBM775 cp775 oem775 775"},{850,"IBM850 cp850 oem850 850"},{852,"IBM852 cp852 oem852 852"},
+        {855,"IBM855 cp855 oem855 855 csIBM855"},{857,"IBM857 cp857 oem857 857"},{858,"IBM858 cp858 oem858 858"},
+        {860,"IBM860 cp860 oem860 860"},{861,"IBM861 cp861 oem861 861"},{862,"IBM862 cp862 oem862 862"},
+        {863,"IBM863 cp863 oem863 863"},{865,"IBM865 cp865 oem865 865"},{866,"IBM866 cp866 oem866 866"},
+        {869,"IBM869 cp869 oem869 869"},{950,"big5 csBig5"},{936,"gb2312 gbk csGB2312 gb18030"},
+        {932,"Shift_JIS MS_Kanji csShiftJIS csWindows31J"},{949,"windows-949 korean"},{51949,"euc-kr csEUCKR"},
+        {874,"tis-620"},{10007,"x-mac-cyrillic xmaccyrillic"},{21866,"koi8_u"},{20866,"koi8_r csKOI8R"},
+    };
+    if (!_stricmp(cs.c_str(), "utf-8") || !_stricmp(cs.c_str(), "utf8")) return 65001;
+    for (auto& e : table)
+    {
+        std::string list = e.aliases, word;
+        for (size_t i = 0; i <= list.size(); i++)
+        {
+            if (i == list.size() || list[i] == ' ') { if (!word.empty() && !_stricmp(cs.c_str(), word.c_str())) return e.cp; word.clear(); }
+            else word += list[i];
+        }
+    }
+    return -1;
+}
+
+static int Utf8Kind(const unsigned char* p, size_t n) // 0 = 7-bit, 1 = UTF-8, 2 = 8-bit
+{
+    bool ascii = true;
+    for (size_t i = 0; i < n;)
+    {
+        unsigned char c = p[i];
+        if (c == 0) return 2;
+        if (c < 0x80) { i++; continue; }
+        ascii = false;
+        size_t need = (c >> 5) == 6 ? 2 : (c >> 4) == 14 ? 3 : (c >> 3) == 30 ? 4 : 0;
+        if (need == 0 || n - i < need) return 2;
+        for (size_t k = 1; k < need; k++) if ((p[i + k] >> 6) != 2) return 2;
+        i += need;
+    }
+    return ascii ? 0 : 1;
+}
+
+static int NppDecision(const unsigned char* p, size_t n, const std::string& cs, bool itu)
+{
+    if (n == 0) return 65001;                                   // empty file, default settings
+    if (n > 1 && p[0] == 0xFE && p[1] == 0xFF) return 1201;     // determineEncodingFromBOM
+    if (n > 1 && p[0] == 0xFF && p[1] == 0xFE) return 1200;
+    if (n > 2 && p[0] == 0xEF && p[1] == 0xBB && p[2] == 0xBF) return 65001;
+    int cp = _stricmp(cs.c_str(), "TIS-620") ? MapName(cs) : -1; // detectCodepage
+    if (cp != -1) return cp;
+    if (n % 2 == 0 && p[0] != 0 && p[1] == 0 && itu) return 1200; // determineEncoding
+    int k = Utf8Kind(p, n);
+    return k == 2 ? 1255 : 65001;                                // 7-bit opens as UTF-8 by default
+}
+
+static int Detect(const char* listPath)
+{
+    FILE* list = fopen(listPath, "rb");
+    if (!list) { fprintf(stderr, "cannot open %s\n", listPath); return 2; }
+    std::vector<char> buf(BlockSize);
+    char line[4096];
+    while (fgets(line, sizeof line, list))
+    {
+        size_t n = strlen(line);
+        while (n && (line[n - 1] == '\n' || line[n - 1] == '\r')) line[--n] = 0;
+        if (!n) continue;
+        wchar_t wpath[4096];
+        MultiByteToWideChar(CP_UTF8, 0, line, -1, wpath, 4096);
+        FILE* f = _wfopen(wpath, L"rb");
+        if (!f) { printf("!open\t\n"); continue; }
+        size_t len = fread(buf.data(), 1, BlockSize, f);
+        fclose(f);
+        uchardet_t ud = uchardet_new();
+        uchardet_handle_data(ud, buf.data(), len);
+        uchardet_data_end(ud);
+        std::string cs = uchardet_get_charset(ud);
+        uchardet_delete(ud);
+        INT uniTest = IS_TEXT_UNICODE_STATISTICS;
+        BOOL itu = len > 0 ? IsTextUnicode(buf.data(), (int)len, &uniTest) : FALSE;
+        printf("%s\t%d\t%d\n", cs.c_str(), itu ? 1 : 0, NppDecision((const unsigned char*)buf.data(), len, cs, itu != FALSE));
+    }
+    fclose(list);
+    return 0;
+}
+
+int main(int argc, char** argv)
+{
+    if (argc >= 2 && !strcmp(argv[1], "dump")) return Dump();
+    if (argc >= 3 && !strcmp(argv[1], "detect")) return Detect(argv[2]);
+    fprintf(stderr, "usage: oracle dump | oracle detect <listfile>\n");
+    return 1;
+}

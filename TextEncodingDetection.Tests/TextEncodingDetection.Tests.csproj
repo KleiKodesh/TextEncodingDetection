@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Console harness (no test framework): Notepad++ parity: edge cases, generated matrix and uchardet test files against
+       the MSVC-built oracle (Golden/*.tsv), managed IsTextUnicode vs Win32. Prints ALL PASSED. -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TextEncodingDetection\TextEncodingDetection.csproj" />
+  </ItemGroup>
+
+</Project>

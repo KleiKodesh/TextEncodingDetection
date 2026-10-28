@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Text-file encoding detection that reproduces Notepad++'s choice: BOM, then the uchardet
+       copy Notepad++ bundles (ported to C#), then UTF-16 LE / UTF-8 structure checks, then the
+       ANSI code page. Fully managed, no P/Invoke, no reflection: net48, native AOT and WASM alike. -->
+  <PropertyGroup>
+    <TargetFrameworks>net48;net10.0</TargetFrameworks>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <IsAotCompatible Condition="'$(TargetFramework)'=='net10.0'">true</IsAotCompatible>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='net48'">
+    <PackageReference Include="System.Memory" Version="4.5.5" />
+  </ItemGroup>
+
+</Project>

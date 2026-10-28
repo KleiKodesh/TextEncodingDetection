@@ -1,0 +1,2628 @@
+he/utf8bom/medium/lf	UTF-8	0	65001
+he/utf8bom/medium/crlf	UTF-8	0	65001
+he/utf8bom/line	UTF-8	0	65001
+he/utf8bom/tiny1		0	1255
+he/utf8bom/tiny2		0	1255
+he/utf8bom/tiny3	UTF-8	0	65001
+he/utf8bom/tiny4	UTF-8	0	65001
+he/utf8bom/tiny5	UTF-8	0	65001
+he/utf8bom/tiny7	UTF-8	0	65001
+he/utf8bom/tiny10	UTF-8	0	65001
+he/utf8bom/boundary-2	UTF-8	0	65001
+he/utf8bom/boundary-1	UTF-8	0	65001
+he/utf8bom/boundary0	UTF-8	0	65001
+he/utf8bom/boundary+1	UTF-8	0	65001
+he/utf8bom/boundary+2	UTF-8	0	65001
+he/utf8bom/boundary+3	UTF-8	0	65001
+he/utf8bom/boundary+7	UTF-8	0	65001
+he/utf8bom/large	UTF-8	0	65001
+he/utf8/medium/lf	UTF-8	0	65001
+he/utf8/medium/crlf	UTF-8	0	65001
+he/utf8/line	UTF-8	0	65001
+he/utf8/tiny1		0	65001
+he/utf8/tiny2		0	1255
+he/utf8/tiny3		0	65001
+he/utf8/tiny4		0	1255
+he/utf8/tiny5	UTF-8	0	65001
+he/utf8/tiny7	UTF-8	0	65001
+he/utf8/tiny10	UTF-8	0	65001
+he/utf8/boundary-2	UTF-8	0	65001
+he/utf8/boundary-1	UTF-8	0	65001
+he/utf8/boundary0	UTF-8	0	65001
+he/utf8/boundary+1	UTF-8	0	65001
+he/utf8/boundary+2	UTF-8	0	65001
+he/utf8/boundary+3	UTF-8	0	65001
+he/utf8/boundary+7	UTF-8	0	65001
+he/utf8/large	UTF-8	0	65001
+he/utf16le-bom/medium/lf	UTF-16	1	1200
+he/utf16le-bom/medium/crlf	UTF-16	1	1200
+he/utf16le-bom/line	UTF-16	1	1200
+he/utf16le-bom/tiny1		0	1255
+he/utf16le-bom/tiny2		0	1200
+he/utf16le-bom/tiny3	UTF-16	0	1200
+he/utf16le-bom/tiny4	UTF-16	0	1200
+he/utf16le-bom/tiny5	UTF-16	0	1200
+he/utf16le-bom/tiny7	UTF-16	0	1200
+he/utf16le-bom/tiny10	UTF-16	0	1200
+he/utf16le-bom/boundary-2	UTF-16	1	1200
+he/utf16le-bom/boundary-1	UTF-16	1	1200
+he/utf16le-bom/boundary0	UTF-16	1	1200
+he/utf16le-bom/boundary+1	UTF-16	1	1200
+he/utf16le-bom/boundary+2	UTF-16	1	1200
+he/utf16le-bom/boundary+3	UTF-16	1	1200
+he/utf16le-bom/boundary+7	UTF-16	1	1200
+he/utf16le-bom/large	UTF-16	1	1200
+he/utf16le/medium/lf		1	1200
+he/utf16le/medium/crlf		1	1200
+he/utf16le/line		1	1200
+he/utf16le/tiny1		0	65001
+he/utf16le/tiny2		0	1255
+he/utf16le/tiny3		1	1255
+he/utf16le/tiny4		1	1200
+he/utf16le/tiny5		1	1255
+he/utf16le/tiny7		1	1255
+he/utf16le/tiny10		1	1200
+he/utf16le/boundary-2		1	1200
+he/utf16le/boundary-1		1	1255
+he/utf16le/boundary0		1	1200
+he/utf16le/boundary+1		1	1200
+he/utf16le/boundary+2		1	1200
+he/utf16le/boundary+3		1	1200
+he/utf16le/boundary+7		1	1200
+he/utf16le/large		1	1200
+he/utf16be-bom/medium/lf	UTF-16	0	1201
+he/utf16be-bom/medium/crlf	UTF-16	0	1201
+he/utf16be-bom/line	UTF-16	0	1201
+he/utf16be-bom/tiny1		0	1255
+he/utf16be-bom/tiny2		0	1201
+he/utf16be-bom/tiny3	UTF-16	0	1201
+he/utf16be-bom/tiny4	UTF-16	0	1201
+he/utf16be-bom/tiny5	UTF-16	0	1201
+he/utf16be-bom/tiny7	UTF-16	0	1201
+he/utf16be-bom/tiny10	UTF-16	0	1201
+he/utf16be-bom/boundary-2	UTF-16	0	1201
+he/utf16be-bom/boundary-1	UTF-16	0	1201
+he/utf16be-bom/boundary0	UTF-16	0	1201
+he/utf16be-bom/boundary+1	UTF-16	0	1201
+he/utf16be-bom/boundary+2	UTF-16	0	1201
+he/utf16be-bom/boundary+3	UTF-16	0	1201
+he/utf16be-bom/boundary+7	UTF-16	0	1201
+he/utf16be-bom/large	UTF-16	0	1201
+he/utf16be/medium/lf		0	1255
+he/utf16be/medium/crlf		0	1255
+he/utf16be/line		0	1255
+he/utf16be/tiny1		0	1255
+he/utf16be/tiny2		0	1255
+he/utf16be/tiny3		0	1255
+he/utf16be/tiny4		0	1255
+he/utf16be/tiny5		0	1255
+he/utf16be/tiny7		0	1255
+he/utf16be/tiny10		0	1255
+he/utf16be/boundary-2		0	1255
+he/utf16be/boundary-1		0	1255
+he/utf16be/boundary0		0	1255
+he/utf16be/boundary+1		0	1255
+he/utf16be/boundary+2		0	1255
+he/utf16be/boundary+3		0	1255
+he/utf16be/boundary+7		0	1255
+he/utf16be/large		0	1255
+he/utf32le-bom/medium/lf	UTF-16	1	1200
+he/utf32le-bom/medium/crlf	UTF-16	1	1200
+he/utf32le-bom/line	UTF-16	1	1200
+he/utf32le-bom/tiny1		0	1255
+he/utf32le-bom/tiny2		0	1200
+he/utf32le-bom/tiny3	UTF-16	0	1200
+he/utf32le-bom/tiny4	UTF-16	0	1200
+he/utf32le-bom/tiny5	UTF-16	0	1200
+he/utf32le-bom/tiny7	UTF-16	0	1200
+he/utf32le-bom/tiny10	UTF-16	0	1200
+he/utf32le-bom/boundary-2	UTF-16	1	1200
+he/utf32le-bom/boundary-1	UTF-16	1	1200
+he/utf32le-bom/boundary0	UTF-16	1	1200
+he/utf32le-bom/boundary+1	UTF-16	1	1200
+he/utf32le-bom/boundary+2	UTF-16	1	1200
+he/utf32le-bom/boundary+3	UTF-16	1	1200
+he/utf32le-bom/boundary+7	UTF-16	1	1200
+he/utf32le-bom/large	UTF-16	1	1200
+he/utf32be-bom/medium/lf		0	1255
+he/utf32be-bom/medium/crlf		0	1255
+he/utf32be-bom/line		0	1255
+he/utf32be-bom/tiny1		0	1255
+he/utf32be-bom/tiny2		0	1255
+he/utf32be-bom/tiny3		0	1255
+he/utf32be-bom/tiny4		0	1255
+he/utf32be-bom/tiny5		0	1255
+he/utf32be-bom/tiny7		0	1255
+he/utf32be-bom/tiny10		0	1255
+he/utf32be-bom/boundary-2		0	1255
+he/utf32be-bom/boundary-1		0	1255
+he/utf32be-bom/boundary0		0	1255
+he/utf32be-bom/boundary+1		0	1255
+he/utf32be-bom/boundary+2		0	1255
+he/utf32be-bom/boundary+3		0	1255
+he/utf32be-bom/boundary+7		0	1255
+he/utf32be-bom/large		0	1255
+he/cp1255/medium/lf	windows-1255	0	1255
+he/cp1255/medium/crlf	windows-1255	0	1255
+he/cp1255/line	windows-1255	0	1255
+he/cp1255/tiny1		0	65001
+he/cp1255/tiny2		0	1255
+he/cp1255/tiny3	windows-1251	0	1251
+he/cp1255/tiny4	windows-1251	0	1251
+he/cp1255/tiny5	windows-1255	0	1255
+he/cp1255/tiny7	windows-1255	0	1255
+he/cp1255/tiny10	windows-1255	0	1255
+he/cp1255/boundary-2	windows-1255	0	1255
+he/cp1255/boundary-1	windows-1255	0	1255
+he/cp1255/boundary0	windows-1255	0	1255
+he/cp1255/boundary+1	windows-1255	0	1255
+he/cp1255/boundary+2	windows-1255	0	1255
+he/cp1255/boundary+3	windows-1255	0	1255
+he/cp1255/boundary+7	windows-1255	0	1255
+he/cp1255/large	windows-1255	0	1255
+he/iso8859-8-visual/medium/lf	ISO-8859-8	0	28598
+he/iso8859-8-visual/medium/crlf	ISO-8859-8	0	28598
+he/iso8859-8-visual/line	ISO-8859-8	0	28598
+he/iso8859-8-visual/tiny1		0	65001
+he/iso8859-8-visual/tiny2		0	65001
+he/iso8859-8-visual/tiny3		0	65001
+he/iso8859-8-visual/tiny4		0	65001
+he/iso8859-8-visual/tiny5		0	65001
+he/iso8859-8-visual/tiny7		0	65001
+he/iso8859-8-visual/tiny10	windows-1255	0	1255
+he/iso8859-8-visual/boundary-2	ISO-8859-8	0	28598
+he/iso8859-8-visual/boundary-1	ISO-8859-8	0	28598
+he/iso8859-8-visual/boundary0	ISO-8859-8	0	28598
+he/iso8859-8-visual/boundary+1	ISO-8859-8	0	28598
+he/iso8859-8-visual/boundary+2	ISO-8859-8	0	28598
+he/iso8859-8-visual/boundary+3	ISO-8859-8	0	28598
+he/iso8859-8-visual/boundary+7	ISO-8859-8	0	28598
+he/iso8859-8-visual/large	ISO-8859-8	0	28598
+he/iso8859-8-logical/medium/lf	windows-1255	0	1255
+he/iso8859-8-logical/medium/crlf	windows-1255	0	1255
+he/iso8859-8-logical/line	windows-1255	0	1255
+he/iso8859-8-logical/tiny1		0	65001
+he/iso8859-8-logical/tiny2		0	1255
+he/iso8859-8-logical/tiny3	windows-1251	0	1251
+he/iso8859-8-logical/tiny4	windows-1251	0	1251
+he/iso8859-8-logical/tiny5	windows-1255	0	1255
+he/iso8859-8-logical/tiny7	windows-1255	0	1255
+he/iso8859-8-logical/tiny10	windows-1255	0	1255
+he/iso8859-8-logical/boundary-2	windows-1255	0	1255
+he/iso8859-8-logical/boundary-1	windows-1255	0	1255
+he/iso8859-8-logical/boundary0	windows-1255	0	1255
+he/iso8859-8-logical/boundary+1	windows-1255	0	1255
+he/iso8859-8-logical/boundary+2	windows-1255	0	1255
+he/iso8859-8-logical/boundary+3	windows-1255	0	1255
+he/iso8859-8-logical/boundary+7	windows-1255	0	1255
+he/iso8859-8-logical/large	windows-1255	0	1255
+he/cp862/medium/lf		0	1255
+he/cp862/medium/crlf		0	1255
+he/cp862/line		0	1255
+he/cp862/tiny1		0	65001
+he/cp862/tiny2		0	1255
+he/cp862/tiny3		0	1255
+he/cp862/tiny4		0	1255
+he/cp862/tiny5		0	1255
+he/cp862/tiny7		0	1255
+he/cp862/tiny10		0	1255
+he/cp862/boundary-2		0	1255
+he/cp862/boundary-1		0	1255
+he/cp862/boundary0		0	1255
+he/cp862/boundary+1		0	1255
+he/cp862/boundary+2		0	1255
+he/cp862/boundary+3		0	1255
+he/cp862/boundary+7		0	1255
+he/cp862/large		0	1255
+he-en/utf8bom/medium/lf	UTF-8	0	65001
+he-en/utf8bom/medium/crlf	UTF-8	0	65001
+he-en/utf8bom/line	UTF-8	0	65001
+he-en/utf8bom/tiny1		0	1255
+he-en/utf8bom/tiny2		0	1255
+he-en/utf8bom/tiny3	UTF-8	0	65001
+he-en/utf8bom/tiny4	UTF-8	0	65001
+he-en/utf8bom/tiny5	UTF-8	0	65001
+he-en/utf8bom/tiny7	UTF-8	0	65001
+he-en/utf8bom/tiny10	UTF-8	0	65001
+he-en/utf8bom/boundary-2	UTF-8	0	65001
+he-en/utf8bom/boundary-1	UTF-8	0	65001
+he-en/utf8bom/boundary0	UTF-8	0	65001
+he-en/utf8bom/boundary+1	UTF-8	0	65001
+he-en/utf8bom/boundary+2	UTF-8	0	65001
+he-en/utf8bom/boundary+3	UTF-8	0	65001
+he-en/utf8bom/boundary+7	UTF-8	0	65001
+he-en/utf8bom/large	UTF-8	0	65001
+he-en/utf8/medium/lf	UTF-8	0	65001
+he-en/utf8/medium/crlf	UTF-8	0	65001
+he-en/utf8/line	UTF-8	0	65001
+he-en/utf8/tiny1		0	65001
+he-en/utf8/tiny2		0	1255
+he-en/utf8/tiny3		0	65001
+he-en/utf8/tiny4		0	1255
+he-en/utf8/tiny5	UTF-8	0	65001
+he-en/utf8/tiny7	UTF-8	0	65001
+he-en/utf8/tiny10	UTF-8	0	65001
+he-en/utf8/boundary-2	UTF-8	0	65001
+he-en/utf8/boundary-1	UTF-8	0	65001
+he-en/utf8/boundary0	UTF-8	0	65001
+he-en/utf8/boundary+1	UTF-8	0	65001
+he-en/utf8/boundary+2	UTF-8	0	65001
+he-en/utf8/boundary+3	UTF-8	0	65001
+he-en/utf8/boundary+7	UTF-8	0	65001
+he-en/utf8/large	UTF-8	0	65001
+he-en/utf16le-bom/medium/lf	UTF-16	1	1200
+he-en/utf16le-bom/medium/crlf	UTF-16	1	1200
+he-en/utf16le-bom/line	UTF-16	1	1200
+he-en/utf16le-bom/tiny1		0	1255
+he-en/utf16le-bom/tiny2		0	1200
+he-en/utf16le-bom/tiny3	UTF-16	0	1200
+he-en/utf16le-bom/tiny4	UTF-16	0	1200
+he-en/utf16le-bom/tiny5	UTF-16	0	1200
+he-en/utf16le-bom/tiny7	UTF-16	0	1200
+he-en/utf16le-bom/tiny10	UTF-16	0	1200
+he-en/utf16le-bom/boundary-2	UTF-16	1	1200
+he-en/utf16le-bom/boundary-1	UTF-16	1	1200
+he-en/utf16le-bom/boundary0	UTF-16	1	1200
+he-en/utf16le-bom/boundary+1	UTF-16	1	1200
+he-en/utf16le-bom/boundary+2	UTF-16	1	1200
+he-en/utf16le-bom/boundary+3	UTF-16	1	1200
+he-en/utf16le-bom/boundary+7	UTF-16	1	1200
+he-en/utf16le-bom/large	UTF-16	1	1200
+he-en/utf16le/medium/lf		1	1200
+he-en/utf16le/medium/crlf		1	1200
+he-en/utf16le/line		1	1200
+he-en/utf16le/tiny1		0	65001
+he-en/utf16le/tiny2		0	1255
+he-en/utf16le/tiny3		1	1255
+he-en/utf16le/tiny4		1	1200
+he-en/utf16le/tiny5		1	1255
+he-en/utf16le/tiny7		1	1255
+he-en/utf16le/tiny10		1	1200
+he-en/utf16le/boundary-2		1	1200
+he-en/utf16le/boundary-1		1	1255
+he-en/utf16le/boundary0		1	1200
+he-en/utf16le/boundary+1		1	1200
+he-en/utf16le/boundary+2		1	1200
+he-en/utf16le/boundary+3		1	1200
+he-en/utf16le/boundary+7		1	1200
+he-en/utf16le/large		1	1200
+he-en/utf16be-bom/medium/lf	UTF-16	0	1201
+he-en/utf16be-bom/medium/crlf	UTF-16	0	1201
+he-en/utf16be-bom/line	UTF-16	0	1201
+he-en/utf16be-bom/tiny1		0	1255
+he-en/utf16be-bom/tiny2		0	1201
+he-en/utf16be-bom/tiny3	UTF-16	0	1201
+he-en/utf16be-bom/tiny4	UTF-16	0	1201
+he-en/utf16be-bom/tiny5	UTF-16	0	1201
+he-en/utf16be-bom/tiny7	UTF-16	0	1201
+he-en/utf16be-bom/tiny10	UTF-16	0	1201
+he-en/utf16be-bom/boundary-2	UTF-16	0	1201
+he-en/utf16be-bom/boundary-1	UTF-16	0	1201
+he-en/utf16be-bom/boundary0	UTF-16	0	1201
+he-en/utf16be-bom/boundary+1	UTF-16	0	1201
+he-en/utf16be-bom/boundary+2	UTF-16	0	1201
+he-en/utf16be-bom/boundary+3	UTF-16	0	1201
+he-en/utf16be-bom/boundary+7	UTF-16	0	1201
+he-en/utf16be-bom/large	UTF-16	0	1201
+he-en/utf16be/medium/lf		0	1255
+he-en/utf16be/medium/crlf		0	1255
+he-en/utf16be/line		0	1255
+he-en/utf16be/tiny1		0	1255
+he-en/utf16be/tiny2		0	1255
+he-en/utf16be/tiny3		0	1255
+he-en/utf16be/tiny4		0	1255
+he-en/utf16be/tiny5		0	1255
+he-en/utf16be/tiny7		0	1255
+he-en/utf16be/tiny10		0	1255
+he-en/utf16be/boundary-2		0	1255
+he-en/utf16be/boundary-1		0	1255
+he-en/utf16be/boundary0		0	1255
+he-en/utf16be/boundary+1		0	1255
+he-en/utf16be/boundary+2		0	1255
+he-en/utf16be/boundary+3		0	1255
+he-en/utf16be/boundary+7		0	1255
+he-en/utf16be/large		0	1255
+he-en/utf32le-bom/medium/lf	UTF-16	1	1200
+he-en/utf32le-bom/medium/crlf	UTF-16	1	1200
+he-en/utf32le-bom/line	UTF-16	1	1200
+he-en/utf32le-bom/tiny1		0	1255
+he-en/utf32le-bom/tiny2		0	1200
+he-en/utf32le-bom/tiny3	UTF-16	0	1200
+he-en/utf32le-bom/tiny4	UTF-16	0	1200
+he-en/utf32le-bom/tiny5	UTF-16	0	1200
+he-en/utf32le-bom/tiny7	UTF-16	0	1200
+he-en/utf32le-bom/tiny10	UTF-16	0	1200
+he-en/utf32le-bom/boundary-2	UTF-16	1	1200
+he-en/utf32le-bom/boundary-1	UTF-16	1	1200
+he-en/utf32le-bom/boundary0	UTF-16	1	1200
+he-en/utf32le-bom/boundary+1	UTF-16	1	1200
+he-en/utf32le-bom/boundary+2	UTF-16	1	1200
+he-en/utf32le-bom/boundary+3	UTF-16	1	1200
+he-en/utf32le-bom/boundary+7	UTF-16	1	1200
+he-en/utf32le-bom/large	UTF-16	1	1200
+he-en/utf32be-bom/medium/lf		0	1255
+he-en/utf32be-bom/medium/crlf		0	1255
+he-en/utf32be-bom/line		0	1255
+he-en/utf32be-bom/tiny1		0	1255
+he-en/utf32be-bom/tiny2		0	1255
+he-en/utf32be-bom/tiny3		0	1255
+he-en/utf32be-bom/tiny4		0	1255
+he-en/utf32be-bom/tiny5		0	1255
+he-en/utf32be-bom/tiny7		0	1255
+he-en/utf32be-bom/tiny10		0	1255
+he-en/utf32be-bom/boundary-2		0	1255
+he-en/utf32be-bom/boundary-1		0	1255
+he-en/utf32be-bom/boundary0		0	1255
+he-en/utf32be-bom/boundary+1		0	1255
+he-en/utf32be-bom/boundary+2		0	1255
+he-en/utf32be-bom/boundary+3		0	1255
+he-en/utf32be-bom/boundary+7		0	1255
+he-en/utf32be-bom/large		0	1255
+he-en/cp1255/medium/lf	windows-1255	0	1255
+he-en/cp1255/medium/crlf	windows-1255	0	1255
+he-en/cp1255/line	windows-1255	0	1255
+he-en/cp1255/tiny1		0	65001
+he-en/cp1255/tiny2		0	1255
+he-en/cp1255/tiny3	windows-1251	0	1251
+he-en/cp1255/tiny4	windows-1251	0	1251
+he-en/cp1255/tiny5	windows-1255	0	1255
+he-en/cp1255/tiny7	windows-1255	0	1255
+he-en/cp1255/tiny10	windows-1255	0	1255
+he-en/cp1255/boundary-2	windows-1255	0	1255
+he-en/cp1255/boundary-1	windows-1255	0	1255
+he-en/cp1255/boundary0	windows-1255	0	1255
+he-en/cp1255/boundary+1	windows-1255	0	1255
+he-en/cp1255/boundary+2	windows-1255	0	1255
+he-en/cp1255/boundary+3	windows-1255	0	1255
+he-en/cp1255/boundary+7	windows-1255	0	1255
+he-en/cp1255/large	windows-1255	0	1255
+he-en/iso8859-8-visual/medium/lf	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/medium/crlf	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/line	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/tiny1		0	65001
+he-en/iso8859-8-visual/tiny2		0	65001
+he-en/iso8859-8-visual/tiny3		0	65001
+he-en/iso8859-8-visual/tiny4		0	65001
+he-en/iso8859-8-visual/tiny5		0	65001
+he-en/iso8859-8-visual/tiny7		0	65001
+he-en/iso8859-8-visual/tiny10		0	65001
+he-en/iso8859-8-visual/boundary-2	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/boundary-1	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/boundary0	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/boundary+1	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/boundary+2	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/boundary+3	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/boundary+7	ISO-8859-8	0	28598
+he-en/iso8859-8-visual/large	ISO-8859-8	0	28598
+ascii/utf8bom/medium/lf	UTF-8	0	65001
+ascii/utf8bom/medium/crlf	UTF-8	0	65001
+ascii/utf8bom/line	UTF-8	0	65001
+ascii/utf8bom/tiny1		0	1255
+ascii/utf8bom/tiny2		0	1255
+ascii/utf8bom/tiny3	UTF-8	0	65001
+ascii/utf8bom/tiny4	UTF-8	0	65001
+ascii/utf8bom/tiny5	UTF-8	0	65001
+ascii/utf8bom/tiny7	UTF-8	0	65001
+ascii/utf8bom/tiny10	UTF-8	0	65001
+ascii/utf8bom/boundary-2	UTF-8	0	65001
+ascii/utf8bom/boundary-1	UTF-8	0	65001
+ascii/utf8bom/boundary0	UTF-8	0	65001
+ascii/utf8bom/boundary+1	UTF-8	0	65001
+ascii/utf8bom/boundary+2	UTF-8	0	65001
+ascii/utf8bom/boundary+3	UTF-8	0	65001
+ascii/utf8bom/boundary+7	UTF-8	0	65001
+ascii/utf8bom/large	UTF-8	0	65001
+ascii/utf8/medium/lf		0	65001
+ascii/utf8/medium/crlf		0	65001
+ascii/utf8/line		0	65001
+ascii/utf8/tiny1		0	65001
+ascii/utf8/tiny2		0	65001
+ascii/utf8/tiny3		0	65001
+ascii/utf8/tiny4		0	65001
+ascii/utf8/tiny5		0	65001
+ascii/utf8/tiny7		0	65001
+ascii/utf8/tiny10		0	65001
+ascii/utf8/boundary-2		0	65001
+ascii/utf8/boundary-1		0	65001
+ascii/utf8/boundary0		0	65001
+ascii/utf8/boundary+1		0	65001
+ascii/utf8/boundary+2		0	65001
+ascii/utf8/boundary+3		0	65001
+ascii/utf8/boundary+7		0	65001
+ascii/utf8/large		0	65001
+ascii/utf16le-bom/medium/lf	UTF-16	1	1200
+ascii/utf16le-bom/medium/crlf	UTF-16	1	1200
+ascii/utf16le-bom/line	UTF-16	0	1200
+ascii/utf16le-bom/tiny1		0	1255
+ascii/utf16le-bom/tiny2		0	1200
+ascii/utf16le-bom/tiny3	UTF-16	0	1200
+ascii/utf16le-bom/tiny4	UTF-16	0	1200
+ascii/utf16le-bom/tiny5	UTF-16	0	1200
+ascii/utf16le-bom/tiny7	UTF-16	0	1200
+ascii/utf16le-bom/tiny10	UTF-16	0	1200
+ascii/utf16le-bom/boundary-2	UTF-16	1	1200
+ascii/utf16le-bom/boundary-1	UTF-16	1	1200
+ascii/utf16le-bom/boundary0	UTF-16	1	1200
+ascii/utf16le-bom/boundary+1	UTF-16	1	1200
+ascii/utf16le-bom/boundary+2	UTF-16	1	1200
+ascii/utf16le-bom/boundary+3	UTF-16	1	1200
+ascii/utf16le-bom/boundary+7	UTF-16	1	1200
+ascii/utf16le-bom/large	UTF-16	1	1200
+ascii/utf16le/medium/lf		1	1200
+ascii/utf16le/medium/crlf		1	1200
+ascii/utf16le/line		1	1200
+ascii/utf16le/tiny1		0	65001
+ascii/utf16le/tiny2		0	1255
+ascii/utf16le/tiny3		1	1255
+ascii/utf16le/tiny4		1	1200
+ascii/utf16le/tiny5		1	1255
+ascii/utf16le/tiny7		1	1255
+ascii/utf16le/tiny10		1	1200
+ascii/utf16le/boundary-2		1	1200
+ascii/utf16le/boundary-1		1	1255
+ascii/utf16le/boundary0		1	1200
+ascii/utf16le/boundary+1		1	1200
+ascii/utf16le/boundary+2		1	1200
+ascii/utf16le/boundary+3		1	1200
+ascii/utf16le/boundary+7		1	1200
+ascii/utf16le/large		1	1200
+ascii/utf16be-bom/medium/lf	UTF-16	0	1201
+ascii/utf16be-bom/medium/crlf	UTF-16	0	1201
+ascii/utf16be-bom/line	UTF-16	0	1201
+ascii/utf16be-bom/tiny1		0	1255
+ascii/utf16be-bom/tiny2		0	1201
+ascii/utf16be-bom/tiny3	UTF-16	0	1201
+ascii/utf16be-bom/tiny4	UTF-16	0	1201
+ascii/utf16be-bom/tiny5	UTF-16	0	1201
+ascii/utf16be-bom/tiny7	UTF-16	0	1201
+ascii/utf16be-bom/tiny10	UTF-16	0	1201
+ascii/utf16be-bom/boundary-2	UTF-16	0	1201
+ascii/utf16be-bom/boundary-1	UTF-16	0	1201
+ascii/utf16be-bom/boundary0	UTF-16	0	1201
+ascii/utf16be-bom/boundary+1	UTF-16	0	1201
+ascii/utf16be-bom/boundary+2	UTF-16	0	1201
+ascii/utf16be-bom/boundary+3	UTF-16	0	1201
+ascii/utf16be-bom/boundary+7	UTF-16	0	1201
+ascii/utf16be-bom/large	UTF-16	0	1201
+ascii/utf16be/medium/lf		0	1255
+ascii/utf16be/medium/crlf		0	1255
+ascii/utf16be/line		0	1255
+ascii/utf16be/tiny1		0	1255
+ascii/utf16be/tiny2		0	1255
+ascii/utf16be/tiny3		0	1255
+ascii/utf16be/tiny4		0	1255
+ascii/utf16be/tiny5		0	1255
+ascii/utf16be/tiny7		0	1255
+ascii/utf16be/tiny10		0	1255
+ascii/utf16be/boundary-2		0	1255
+ascii/utf16be/boundary-1		0	1255
+ascii/utf16be/boundary0		0	1255
+ascii/utf16be/boundary+1		0	1255
+ascii/utf16be/boundary+2		0	1255
+ascii/utf16be/boundary+3		0	1255
+ascii/utf16be/boundary+7		0	1255
+ascii/utf16be/large		0	1255
+ascii/utf32le-bom/medium/lf	UTF-16	1	1200
+ascii/utf32le-bom/medium/crlf	UTF-16	1	1200
+ascii/utf32le-bom/line	UTF-16	1	1200
+ascii/utf32le-bom/tiny1		0	1255
+ascii/utf32le-bom/tiny2		0	1200
+ascii/utf32le-bom/tiny3	UTF-16	0	1200
+ascii/utf32le-bom/tiny4	UTF-16	0	1200
+ascii/utf32le-bom/tiny5	UTF-16	0	1200
+ascii/utf32le-bom/tiny7	UTF-16	0	1200
+ascii/utf32le-bom/tiny10	UTF-16	0	1200
+ascii/utf32le-bom/boundary-2	UTF-16	1	1200
+ascii/utf32le-bom/boundary-1	UTF-16	1	1200
+ascii/utf32le-bom/boundary0	UTF-16	1	1200
+ascii/utf32le-bom/boundary+1	UTF-16	1	1200
+ascii/utf32le-bom/boundary+2	UTF-16	1	1200
+ascii/utf32le-bom/boundary+3	UTF-16	1	1200
+ascii/utf32le-bom/boundary+7	UTF-16	1	1200
+ascii/utf32le-bom/large	UTF-16	1	1200
+ascii/utf32be-bom/medium/lf		0	1255
+ascii/utf32be-bom/medium/crlf		0	1255
+ascii/utf32be-bom/line		0	1255
+ascii/utf32be-bom/tiny1		0	1255
+ascii/utf32be-bom/tiny2		0	1255
+ascii/utf32be-bom/tiny3		0	1255
+ascii/utf32be-bom/tiny4		0	1255
+ascii/utf32be-bom/tiny5		0	1255
+ascii/utf32be-bom/tiny7		0	1255
+ascii/utf32be-bom/tiny10		0	1255
+ascii/utf32be-bom/boundary-2		0	1255
+ascii/utf32be-bom/boundary-1		0	1255
+ascii/utf32be-bom/boundary0		0	1255
+ascii/utf32be-bom/boundary+1		0	1255
+ascii/utf32be-bom/boundary+2		0	1255
+ascii/utf32be-bom/boundary+3		0	1255
+ascii/utf32be-bom/boundary+7		0	1255
+ascii/utf32be-bom/large		0	1255
+ascii/cp1252/medium/lf		0	65001
+ascii/cp1252/medium/crlf		0	65001
+ascii/cp1252/line		0	65001
+ascii/cp1252/tiny1		0	65001
+ascii/cp1252/tiny2		0	65001
+ascii/cp1252/tiny3		0	65001
+ascii/cp1252/tiny4		0	65001
+ascii/cp1252/tiny5		0	65001
+ascii/cp1252/tiny7		0	65001
+ascii/cp1252/tiny10		0	65001
+ascii/cp1252/boundary-2		0	65001
+ascii/cp1252/boundary-1		0	65001
+ascii/cp1252/boundary0		0	65001
+ascii/cp1252/boundary+1		0	65001
+ascii/cp1252/boundary+2		0	65001
+ascii/cp1252/boundary+3		0	65001
+ascii/cp1252/boundary+7		0	65001
+ascii/cp1252/large		0	65001
+fr/utf8bom/medium/lf	UTF-8	0	65001
+fr/utf8bom/medium/crlf	UTF-8	0	65001
+fr/utf8bom/line	UTF-8	0	65001
+fr/utf8bom/tiny1		0	1255
+fr/utf8bom/tiny2		0	1255
+fr/utf8bom/tiny3	UTF-8	0	65001
+fr/utf8bom/tiny4	UTF-8	0	65001
+fr/utf8bom/tiny5	UTF-8	0	65001
+fr/utf8bom/tiny7	UTF-8	0	65001
+fr/utf8bom/tiny10	UTF-8	0	65001
+fr/utf8bom/boundary-2	UTF-8	0	65001
+fr/utf8bom/boundary-1	UTF-8	0	65001
+fr/utf8bom/boundary0	UTF-8	0	65001
+fr/utf8bom/boundary+1	UTF-8	0	65001
+fr/utf8bom/boundary+2	UTF-8	0	65001
+fr/utf8bom/boundary+3	UTF-8	0	65001
+fr/utf8bom/boundary+7	UTF-8	0	65001
+fr/utf8bom/large	UTF-8	0	65001
+fr/utf8/medium/lf	UTF-8	0	65001
+fr/utf8/medium/crlf	UTF-8	0	65001
+fr/utf8/line	UTF-8	0	65001
+fr/utf8/tiny1		0	65001
+fr/utf8/tiny2		0	65001
+fr/utf8/tiny3		0	65001
+fr/utf8/tiny4		0	65001
+fr/utf8/tiny5		0	65001
+fr/utf8/tiny7		0	65001
+fr/utf8/tiny10		0	65001
+fr/utf8/boundary-2	UTF-8	0	65001
+fr/utf8/boundary-1	UTF-8	0	65001
+fr/utf8/boundary0	UTF-8	0	65001
+fr/utf8/boundary+1	UTF-8	0	65001
+fr/utf8/boundary+2	UTF-8	0	65001
+fr/utf8/boundary+3	UTF-8	0	65001
+fr/utf8/boundary+7	UTF-8	0	65001
+fr/utf8/large	UTF-8	0	65001
+fr/utf16le-bom/medium/lf	UTF-16	1	1200
+fr/utf16le-bom/medium/crlf	UTF-16	1	1200
+fr/utf16le-bom/line	UTF-16	1	1200
+fr/utf16le-bom/tiny1		0	1255
+fr/utf16le-bom/tiny2		0	1200
+fr/utf16le-bom/tiny3	UTF-16	0	1200
+fr/utf16le-bom/tiny4	UTF-16	0	1200
+fr/utf16le-bom/tiny5	UTF-16	0	1200
+fr/utf16le-bom/tiny7	UTF-16	0	1200
+fr/utf16le-bom/tiny10	UTF-16	0	1200
+fr/utf16le-bom/boundary-2	UTF-16	1	1200
+fr/utf16le-bom/boundary-1	UTF-16	1	1200
+fr/utf16le-bom/boundary0	UTF-16	1	1200
+fr/utf16le-bom/boundary+1	UTF-16	1	1200
+fr/utf16le-bom/boundary+2	UTF-16	1	1200
+fr/utf16le-bom/boundary+3	UTF-16	1	1200
+fr/utf16le-bom/boundary+7	UTF-16	1	1200
+fr/utf16le-bom/large	UTF-16	1	1200
+fr/utf16le/medium/lf		1	1200
+fr/utf16le/medium/crlf		1	1200
+fr/utf16le/line		1	1200
+fr/utf16le/tiny1		0	65001
+fr/utf16le/tiny2		0	1255
+fr/utf16le/tiny3		1	1255
+fr/utf16le/tiny4		1	1200
+fr/utf16le/tiny5		1	1255
+fr/utf16le/tiny7		1	1255
+fr/utf16le/tiny10		1	1200
+fr/utf16le/boundary-2		1	1200
+fr/utf16le/boundary-1		1	1255
+fr/utf16le/boundary0		1	1200
+fr/utf16le/boundary+1		1	1200
+fr/utf16le/boundary+2		1	1200
+fr/utf16le/boundary+3		1	1200
+fr/utf16le/boundary+7		1	1200
+fr/utf16le/large		1	1200
+fr/utf16be-bom/medium/lf	UTF-16	0	1201
+fr/utf16be-bom/medium/crlf	UTF-16	0	1201
+fr/utf16be-bom/line	UTF-16	0	1201
+fr/utf16be-bom/tiny1		0	1255
+fr/utf16be-bom/tiny2		0	1201
+fr/utf16be-bom/tiny3	UTF-16	0	1201
+fr/utf16be-bom/tiny4	UTF-16	0	1201
+fr/utf16be-bom/tiny5	UTF-16	0	1201
+fr/utf16be-bom/tiny7	UTF-16	0	1201
+fr/utf16be-bom/tiny10	UTF-16	0	1201
+fr/utf16be-bom/boundary-2	UTF-16	0	1201
+fr/utf16be-bom/boundary-1	UTF-16	0	1201
+fr/utf16be-bom/boundary0	UTF-16	0	1201
+fr/utf16be-bom/boundary+1	UTF-16	0	1201
+fr/utf16be-bom/boundary+2	UTF-16	0	1201
+fr/utf16be-bom/boundary+3	UTF-16	0	1201
+fr/utf16be-bom/boundary+7	UTF-16	0	1201
+fr/utf16be-bom/large	UTF-16	0	1201
+fr/utf16be/medium/lf		0	1255
+fr/utf16be/medium/crlf		0	1255
+fr/utf16be/line		0	1255
+fr/utf16be/tiny1		0	1255
+fr/utf16be/tiny2		0	1255
+fr/utf16be/tiny3		0	1255
+fr/utf16be/tiny4		0	1255
+fr/utf16be/tiny5		0	1255
+fr/utf16be/tiny7		0	1255
+fr/utf16be/tiny10		0	1255
+fr/utf16be/boundary-2		0	1255
+fr/utf16be/boundary-1		0	1255
+fr/utf16be/boundary0		0	1255
+fr/utf16be/boundary+1		0	1255
+fr/utf16be/boundary+2		0	1255
+fr/utf16be/boundary+3		0	1255
+fr/utf16be/boundary+7		0	1255
+fr/utf16be/large		0	1255
+fr/utf32le-bom/medium/lf	UTF-16	1	1200
+fr/utf32le-bom/medium/crlf	UTF-16	1	1200
+fr/utf32le-bom/line	UTF-16	1	1200
+fr/utf32le-bom/tiny1		0	1255
+fr/utf32le-bom/tiny2		0	1200
+fr/utf32le-bom/tiny3	UTF-16	0	1200
+fr/utf32le-bom/tiny4	UTF-16	0	1200
+fr/utf32le-bom/tiny5	UTF-16	0	1200
+fr/utf32le-bom/tiny7	UTF-16	0	1200
+fr/utf32le-bom/tiny10	UTF-16	0	1200
+fr/utf32le-bom/boundary-2	UTF-16	1	1200
+fr/utf32le-bom/boundary-1	UTF-16	1	1200
+fr/utf32le-bom/boundary0	UTF-16	1	1200
+fr/utf32le-bom/boundary+1	UTF-16	1	1200
+fr/utf32le-bom/boundary+2	UTF-16	1	1200
+fr/utf32le-bom/boundary+3	UTF-16	1	1200
+fr/utf32le-bom/boundary+7	UTF-16	1	1200
+fr/utf32le-bom/large	UTF-16	1	1200
+fr/utf32be-bom/medium/lf		0	1255
+fr/utf32be-bom/medium/crlf		0	1255
+fr/utf32be-bom/line		0	1255
+fr/utf32be-bom/tiny1		0	1255
+fr/utf32be-bom/tiny2		0	1255
+fr/utf32be-bom/tiny3		0	1255
+fr/utf32be-bom/tiny4		0	1255
+fr/utf32be-bom/tiny5		0	1255
+fr/utf32be-bom/tiny7		0	1255
+fr/utf32be-bom/tiny10		0	1255
+fr/utf32be-bom/boundary-2		0	1255
+fr/utf32be-bom/boundary-1		0	1255
+fr/utf32be-bom/boundary0		0	1255
+fr/utf32be-bom/boundary+1		0	1255
+fr/utf32be-bom/boundary+2		0	1255
+fr/utf32be-bom/boundary+3		0	1255
+fr/utf32be-bom/boundary+7		0	1255
+fr/utf32be-bom/large		0	1255
+fr/cp1252/medium/lf		0	1255
+fr/cp1252/medium/crlf		0	1255
+fr/cp1252/line		0	1255
+fr/cp1252/tiny1		0	65001
+fr/cp1252/tiny2		0	65001
+fr/cp1252/tiny3		0	65001
+fr/cp1252/tiny4		0	65001
+fr/cp1252/tiny5		0	65001
+fr/cp1252/tiny7		0	65001
+fr/cp1252/tiny10		0	65001
+fr/cp1252/boundary-2		0	1255
+fr/cp1252/boundary-1		0	1255
+fr/cp1252/boundary0		0	1255
+fr/cp1252/boundary+1		0	1255
+fr/cp1252/boundary+2		0	1255
+fr/cp1252/boundary+3		0	1255
+fr/cp1252/boundary+7		0	1255
+fr/cp1252/large		0	1255
+fr/iso8859-1/medium/lf		0	1255
+fr/iso8859-1/medium/crlf		0	1255
+fr/iso8859-1/line		0	1255
+fr/iso8859-1/tiny1		0	65001
+fr/iso8859-1/tiny2		0	65001
+fr/iso8859-1/tiny3		0	65001
+fr/iso8859-1/tiny4		0	65001
+fr/iso8859-1/tiny5		0	65001
+fr/iso8859-1/tiny7		0	65001
+fr/iso8859-1/tiny10		0	65001
+fr/iso8859-1/boundary-2		0	1255
+fr/iso8859-1/boundary-1		0	1255
+fr/iso8859-1/boundary0		0	1255
+fr/iso8859-1/boundary+1		0	1255
+fr/iso8859-1/boundary+2		0	1255
+fr/iso8859-1/boundary+3		0	1255
+fr/iso8859-1/boundary+7		0	1255
+fr/iso8859-1/large		0	1255
+fr/iso8859-15/medium/lf		0	1255
+fr/iso8859-15/medium/crlf		0	1255
+fr/iso8859-15/line		0	1255
+fr/iso8859-15/tiny1		0	65001
+fr/iso8859-15/tiny2		0	65001
+fr/iso8859-15/tiny3		0	65001
+fr/iso8859-15/tiny4		0	65001
+fr/iso8859-15/tiny5		0	65001
+fr/iso8859-15/tiny7		0	65001
+fr/iso8859-15/tiny10		0	65001
+fr/iso8859-15/boundary-2		0	1255
+fr/iso8859-15/boundary-1		0	1255
+fr/iso8859-15/boundary0		0	1255
+fr/iso8859-15/boundary+1		0	1255
+fr/iso8859-15/boundary+2		0	1255
+fr/iso8859-15/boundary+3		0	1255
+fr/iso8859-15/boundary+7		0	1255
+fr/iso8859-15/large		0	1255
+fr/cp850/medium/lf		0	1255
+fr/cp850/medium/crlf		0	1255
+fr/cp850/line		0	1255
+fr/cp850/tiny1		0	65001
+fr/cp850/tiny2		0	65001
+fr/cp850/tiny3		0	65001
+fr/cp850/tiny4		0	65001
+fr/cp850/tiny5		0	65001
+fr/cp850/tiny7		0	65001
+fr/cp850/tiny10		0	65001
+fr/cp850/boundary-2		0	1255
+fr/cp850/boundary-1		0	1255
+fr/cp850/boundary0		0	1255
+fr/cp850/boundary+1		0	1255
+fr/cp850/boundary+2		0	1255
+fr/cp850/boundary+3		0	1255
+fr/cp850/boundary+7		0	1255
+fr/cp850/large		0	1255
+de/utf8bom/medium/lf	UTF-8	0	65001
+de/utf8bom/medium/crlf	UTF-8	0	65001
+de/utf8bom/line	UTF-8	0	65001
+de/utf8bom/tiny1		0	1255
+de/utf8bom/tiny2		0	1255
+de/utf8bom/tiny3	UTF-8	0	65001
+de/utf8bom/tiny4	UTF-8	0	65001
+de/utf8bom/tiny5	UTF-8	0	65001
+de/utf8bom/tiny7	UTF-8	0	65001
+de/utf8bom/tiny10	UTF-8	0	65001
+de/utf8bom/boundary-2	UTF-8	0	65001
+de/utf8bom/boundary-1	UTF-8	0	65001
+de/utf8bom/boundary0	UTF-8	0	65001
+de/utf8bom/boundary+1	UTF-8	0	65001
+de/utf8bom/boundary+2	UTF-8	0	65001
+de/utf8bom/boundary+3	UTF-8	0	65001
+de/utf8bom/boundary+7	UTF-8	0	65001
+de/utf8bom/large	UTF-8	0	65001
+de/utf8/medium/lf	UTF-8	0	65001
+de/utf8/medium/crlf	UTF-8	0	65001
+de/utf8/line	UTF-8	0	65001
+de/utf8/tiny1		0	65001
+de/utf8/tiny2		0	65001
+de/utf8/tiny3		0	65001
+de/utf8/tiny4		0	65001
+de/utf8/tiny5		0	65001
+de/utf8/tiny7		0	65001
+de/utf8/tiny10		0	65001
+de/utf8/boundary-2	UTF-8	0	65001
+de/utf8/boundary-1	UTF-8	0	65001
+de/utf8/boundary0	UTF-8	0	65001
+de/utf8/boundary+1	UTF-8	0	65001
+de/utf8/boundary+2	UTF-8	0	65001
+de/utf8/boundary+3	UTF-8	0	65001
+de/utf8/boundary+7	UTF-8	0	65001
+de/utf8/large	UTF-8	0	65001
+de/utf16le-bom/medium/lf	UTF-16	1	1200
+de/utf16le-bom/medium/crlf	UTF-16	1	1200
+de/utf16le-bom/line	UTF-16	1	1200
+de/utf16le-bom/tiny1		0	1255
+de/utf16le-bom/tiny2		0	1200
+de/utf16le-bom/tiny3	UTF-16	0	1200
+de/utf16le-bom/tiny4	UTF-16	0	1200
+de/utf16le-bom/tiny5	UTF-16	0	1200
+de/utf16le-bom/tiny7	UTF-16	0	1200
+de/utf16le-bom/tiny10	UTF-16	0	1200
+de/utf16le-bom/boundary-2	UTF-16	1	1200
+de/utf16le-bom/boundary-1	UTF-16	1	1200
+de/utf16le-bom/boundary0	UTF-16	1	1200
+de/utf16le-bom/boundary+1	UTF-16	1	1200
+de/utf16le-bom/boundary+2	UTF-16	1	1200
+de/utf16le-bom/boundary+3	UTF-16	1	1200
+de/utf16le-bom/boundary+7	UTF-16	1	1200
+de/utf16le-bom/large	UTF-16	1	1200
+de/utf16le/medium/lf		1	1200
+de/utf16le/medium/crlf		1	1200
+de/utf16le/line		1	1200
+de/utf16le/tiny1		0	65001
+de/utf16le/tiny2		0	1255
+de/utf16le/tiny3		1	1255
+de/utf16le/tiny4		1	1200
+de/utf16le/tiny5		1	1255
+de/utf16le/tiny7		1	1255
+de/utf16le/tiny10		1	1200
+de/utf16le/boundary-2		1	1200
+de/utf16le/boundary-1		1	1255
+de/utf16le/boundary0		1	1200
+de/utf16le/boundary+1		1	1200
+de/utf16le/boundary+2		1	1200
+de/utf16le/boundary+3		1	1200
+de/utf16le/boundary+7		1	1200
+de/utf16le/large		1	1200
+de/utf16be-bom/medium/lf	UTF-16	0	1201
+de/utf16be-bom/medium/crlf	UTF-16	0	1201
+de/utf16be-bom/line	UTF-16	0	1201
+de/utf16be-bom/tiny1		0	1255
+de/utf16be-bom/tiny2		0	1201
+de/utf16be-bom/tiny3	UTF-16	0	1201
+de/utf16be-bom/tiny4	UTF-16	0	1201
+de/utf16be-bom/tiny5	UTF-16	0	1201
+de/utf16be-bom/tiny7	UTF-16	0	1201
+de/utf16be-bom/tiny10	UTF-16	0	1201
+de/utf16be-bom/boundary-2	UTF-16	0	1201
+de/utf16be-bom/boundary-1	UTF-16	0	1201
+de/utf16be-bom/boundary0	UTF-16	0	1201
+de/utf16be-bom/boundary+1	UTF-16	0	1201
+de/utf16be-bom/boundary+2	UTF-16	0	1201
+de/utf16be-bom/boundary+3	UTF-16	0	1201
+de/utf16be-bom/boundary+7	UTF-16	0	1201
+de/utf16be-bom/large	UTF-16	0	1201
+de/utf16be/medium/lf		0	1255
+de/utf16be/medium/crlf		0	1255
+de/utf16be/line		0	1255
+de/utf16be/tiny1		0	1255
+de/utf16be/tiny2		0	1255
+de/utf16be/tiny3		0	1255
+de/utf16be/tiny4		0	1255
+de/utf16be/tiny5		0	1255
+de/utf16be/tiny7		0	1255
+de/utf16be/tiny10		0	1255
+de/utf16be/boundary-2		0	1255
+de/utf16be/boundary-1		0	1255
+de/utf16be/boundary0		0	1255
+de/utf16be/boundary+1		0	1255
+de/utf16be/boundary+2		0	1255
+de/utf16be/boundary+3		0	1255
+de/utf16be/boundary+7		0	1255
+de/utf16be/large		0	1255
+de/utf32le-bom/medium/lf	UTF-16	1	1200
+de/utf32le-bom/medium/crlf	UTF-16	1	1200
+de/utf32le-bom/line	UTF-16	1	1200
+de/utf32le-bom/tiny1		0	1255
+de/utf32le-bom/tiny2		0	1200
+de/utf32le-bom/tiny3	UTF-16	0	1200
+de/utf32le-bom/tiny4	UTF-16	0	1200
+de/utf32le-bom/tiny5	UTF-16	0	1200
+de/utf32le-bom/tiny7	UTF-16	0	1200
+de/utf32le-bom/tiny10	UTF-16	0	1200
+de/utf32le-bom/boundary-2	UTF-16	1	1200
+de/utf32le-bom/boundary-1	UTF-16	1	1200
+de/utf32le-bom/boundary0	UTF-16	1	1200
+de/utf32le-bom/boundary+1	UTF-16	1	1200
+de/utf32le-bom/boundary+2	UTF-16	1	1200
+de/utf32le-bom/boundary+3	UTF-16	1	1200
+de/utf32le-bom/boundary+7	UTF-16	1	1200
+de/utf32le-bom/large	UTF-16	1	1200
+de/utf32be-bom/medium/lf		0	1255
+de/utf32be-bom/medium/crlf		0	1255
+de/utf32be-bom/line		0	1255
+de/utf32be-bom/tiny1		0	1255
+de/utf32be-bom/tiny2		0	1255
+de/utf32be-bom/tiny3		0	1255
+de/utf32be-bom/tiny4		0	1255
+de/utf32be-bom/tiny5		0	1255
+de/utf32be-bom/tiny7		0	1255
+de/utf32be-bom/tiny10		0	1255
+de/utf32be-bom/boundary-2		0	1255
+de/utf32be-bom/boundary-1		0	1255
+de/utf32be-bom/boundary0		0	1255
+de/utf32be-bom/boundary+1		0	1255
+de/utf32be-bom/boundary+2		0	1255
+de/utf32be-bom/boundary+3		0	1255
+de/utf32be-bom/boundary+7		0	1255
+de/utf32be-bom/large		0	1255
+de/cp1252/medium/lf		0	1255
+de/cp1252/medium/crlf		0	1255
+de/cp1252/line		0	1255
+de/cp1252/tiny1		0	65001
+de/cp1252/tiny2		0	65001
+de/cp1252/tiny3		0	65001
+de/cp1252/tiny4		0	65001
+de/cp1252/tiny5		0	65001
+de/cp1252/tiny7		0	65001
+de/cp1252/tiny10		0	65001
+de/cp1252/boundary-2		0	1255
+de/cp1252/boundary-1		0	1255
+de/cp1252/boundary0		0	1255
+de/cp1252/boundary+1		0	1255
+de/cp1252/boundary+2		0	1255
+de/cp1252/boundary+3		0	1255
+de/cp1252/boundary+7		0	1255
+de/cp1252/large		0	1255
+de/iso8859-1/medium/lf		0	1255
+de/iso8859-1/medium/crlf		0	1255
+de/iso8859-1/line		0	1255
+de/iso8859-1/tiny1		0	65001
+de/iso8859-1/tiny2		0	65001
+de/iso8859-1/tiny3		0	65001
+de/iso8859-1/tiny4		0	65001
+de/iso8859-1/tiny5		0	65001
+de/iso8859-1/tiny7		0	65001
+de/iso8859-1/tiny10		0	65001
+de/iso8859-1/boundary-2		0	1255
+de/iso8859-1/boundary-1		0	1255
+de/iso8859-1/boundary0		0	1255
+de/iso8859-1/boundary+1		0	1255
+de/iso8859-1/boundary+2		0	1255
+de/iso8859-1/boundary+3		0	1255
+de/iso8859-1/boundary+7		0	1255
+de/iso8859-1/large		0	1255
+ar/utf8bom/medium/lf	UTF-8	0	65001
+ar/utf8bom/medium/crlf	UTF-8	0	65001
+ar/utf8bom/line	UTF-8	0	65001
+ar/utf8bom/tiny1		0	1255
+ar/utf8bom/tiny2		0	1255
+ar/utf8bom/tiny3	UTF-8	0	65001
+ar/utf8bom/tiny4	UTF-8	0	65001
+ar/utf8bom/tiny5	UTF-8	0	65001
+ar/utf8bom/tiny7	UTF-8	0	65001
+ar/utf8bom/tiny10	UTF-8	0	65001
+ar/utf8bom/boundary-2	UTF-8	0	65001
+ar/utf8bom/boundary-1	UTF-8	0	65001
+ar/utf8bom/boundary0	UTF-8	0	65001
+ar/utf8bom/boundary+1	UTF-8	0	65001
+ar/utf8bom/boundary+2	UTF-8	0	65001
+ar/utf8bom/boundary+3	UTF-8	0	65001
+ar/utf8bom/boundary+7	UTF-8	0	65001
+ar/utf8bom/large	UTF-8	0	65001
+ar/utf8/medium/lf	UTF-8	0	65001
+ar/utf8/medium/crlf	UTF-8	0	65001
+ar/utf8/line	UTF-8	0	65001
+ar/utf8/tiny1		0	1255
+ar/utf8/tiny2		0	65001
+ar/utf8/tiny3		0	1255
+ar/utf8/tiny4	UTF-8	0	65001
+ar/utf8/tiny5	UTF-8	0	65001
+ar/utf8/tiny7	UTF-8	0	65001
+ar/utf8/tiny10	UTF-8	0	65001
+ar/utf8/boundary-2	UTF-8	0	65001
+ar/utf8/boundary-1	UTF-8	0	65001
+ar/utf8/boundary0	UTF-8	0	65001
+ar/utf8/boundary+1	UTF-8	0	65001
+ar/utf8/boundary+2	UTF-8	0	65001
+ar/utf8/boundary+3	UTF-8	0	65001
+ar/utf8/boundary+7	UTF-8	0	65001
+ar/utf8/large	UTF-8	0	65001
+ar/utf16le-bom/medium/lf	UTF-16	1	1200
+ar/utf16le-bom/medium/crlf	UTF-16	1	1200
+ar/utf16le-bom/line	UTF-16	0	1200
+ar/utf16le-bom/tiny1		0	1255
+ar/utf16le-bom/tiny2		0	1200
+ar/utf16le-bom/tiny3	UTF-16	0	1200
+ar/utf16le-bom/tiny4	UTF-16	0	1200
+ar/utf16le-bom/tiny5	UTF-16	0	1200
+ar/utf16le-bom/tiny7	UTF-16	0	1200
+ar/utf16le-bom/tiny10	UTF-16	0	1200
+ar/utf16le-bom/boundary-2	UTF-16	1	1200
+ar/utf16le-bom/boundary-1	UTF-16	1	1200
+ar/utf16le-bom/boundary0	UTF-16	1	1200
+ar/utf16le-bom/boundary+1	UTF-16	1	1200
+ar/utf16le-bom/boundary+2	UTF-16	1	1200
+ar/utf16le-bom/boundary+3	UTF-16	1	1200
+ar/utf16le-bom/boundary+7	UTF-16	1	1200
+ar/utf16le-bom/large	UTF-16	1	1200
+ar/utf16le/medium/lf		1	1255
+ar/utf16le/medium/crlf		1	1255
+ar/utf16le/line		1	1255
+ar/utf16le/tiny1		0	65001
+ar/utf16le/tiny2		1	65001
+ar/utf16le/tiny3		1	65001
+ar/utf16le/tiny4		1	65001
+ar/utf16le/tiny5		1	65001
+ar/utf16le/tiny7		1	65001
+ar/utf16le/tiny10		1	65001
+ar/utf16le/boundary-2		1	1255
+ar/utf16le/boundary-1		1	1255
+ar/utf16le/boundary0		1	1255
+ar/utf16le/boundary+1		1	1255
+ar/utf16le/boundary+2		1	1255
+ar/utf16le/boundary+3		1	1255
+ar/utf16le/boundary+7		1	1255
+ar/utf16le/large		1	1255
+ar/utf16be-bom/medium/lf	UTF-16	0	1201
+ar/utf16be-bom/medium/crlf	UTF-16	0	1201
+ar/utf16be-bom/line	UTF-16	0	1201
+ar/utf16be-bom/tiny1		0	1255
+ar/utf16be-bom/tiny2		0	1201
+ar/utf16be-bom/tiny3	UTF-16	0	1201
+ar/utf16be-bom/tiny4	UTF-16	0	1201
+ar/utf16be-bom/tiny5	UTF-16	0	1201
+ar/utf16be-bom/tiny7	UTF-16	0	1201
+ar/utf16be-bom/tiny10	UTF-16	0	1201
+ar/utf16be-bom/boundary-2	UTF-16	0	1201
+ar/utf16be-bom/boundary-1	UTF-16	0	1201
+ar/utf16be-bom/boundary0	UTF-16	0	1201
+ar/utf16be-bom/boundary+1	UTF-16	0	1201
+ar/utf16be-bom/boundary+2	UTF-16	0	1201
+ar/utf16be-bom/boundary+3	UTF-16	0	1201
+ar/utf16be-bom/boundary+7	UTF-16	0	1201
+ar/utf16be-bom/large	UTF-16	0	1201
+ar/utf16be/medium/lf		0	1255
+ar/utf16be/medium/crlf		0	1255
+ar/utf16be/line		0	1255
+ar/utf16be/tiny1		0	65001
+ar/utf16be/tiny2		0	65001
+ar/utf16be/tiny3		0	65001
+ar/utf16be/tiny4		0	65001
+ar/utf16be/tiny5		0	65001
+ar/utf16be/tiny7		0	65001
+ar/utf16be/tiny10		0	65001
+ar/utf16be/boundary-2		0	1255
+ar/utf16be/boundary-1		0	1255
+ar/utf16be/boundary0		0	1255
+ar/utf16be/boundary+1		0	1255
+ar/utf16be/boundary+2		0	1255
+ar/utf16be/boundary+3		0	1255
+ar/utf16be/boundary+7		0	1255
+ar/utf16be/large		0	1255
+ar/utf32le-bom/medium/lf	UTF-16	1	1200
+ar/utf32le-bom/medium/crlf	UTF-16	1	1200
+ar/utf32le-bom/line	UTF-16	1	1200
+ar/utf32le-bom/tiny1		0	1255
+ar/utf32le-bom/tiny2		0	1200
+ar/utf32le-bom/tiny3	UTF-16	0	1200
+ar/utf32le-bom/tiny4	UTF-16	0	1200
+ar/utf32le-bom/tiny5	UTF-16	0	1200
+ar/utf32le-bom/tiny7	UTF-16	0	1200
+ar/utf32le-bom/tiny10	UTF-16	0	1200
+ar/utf32le-bom/boundary-2	UTF-16	1	1200
+ar/utf32le-bom/boundary-1	UTF-16	1	1200
+ar/utf32le-bom/boundary0	UTF-16	1	1200
+ar/utf32le-bom/boundary+1	UTF-16	1	1200
+ar/utf32le-bom/boundary+2	UTF-16	1	1200
+ar/utf32le-bom/boundary+3	UTF-16	1	1200
+ar/utf32le-bom/boundary+7	UTF-16	1	1200
+ar/utf32le-bom/large	UTF-16	1	1200
+ar/utf32be-bom/medium/lf		0	1255
+ar/utf32be-bom/medium/crlf		0	1255
+ar/utf32be-bom/line		0	1255
+ar/utf32be-bom/tiny1		0	1255
+ar/utf32be-bom/tiny2		0	1255
+ar/utf32be-bom/tiny3		0	1255
+ar/utf32be-bom/tiny4		0	1255
+ar/utf32be-bom/tiny5		0	1255
+ar/utf32be-bom/tiny7		0	1255
+ar/utf32be-bom/tiny10		0	1255
+ar/utf32be-bom/boundary-2		0	1255
+ar/utf32be-bom/boundary-1		0	1255
+ar/utf32be-bom/boundary0		0	1255
+ar/utf32be-bom/boundary+1		0	1255
+ar/utf32be-bom/boundary+2		0	1255
+ar/utf32be-bom/boundary+3		0	1255
+ar/utf32be-bom/boundary+7		0	1255
+ar/utf32be-bom/large		0	1255
+ar/cp1256/medium/lf		0	1255
+ar/cp1256/medium/crlf		0	1255
+ar/cp1256/line		0	1255
+ar/cp1256/tiny1		0	1255
+ar/cp1256/tiny2	windows-1251	0	1251
+ar/cp1256/tiny3	windows-1251	0	1251
+ar/cp1256/tiny4	x-mac-cyrillic	0	10007
+ar/cp1256/tiny5	x-mac-cyrillic	0	10007
+ar/cp1256/tiny7	x-mac-cyrillic	0	10007
+ar/cp1256/tiny10	x-mac-cyrillic	0	10007
+ar/cp1256/boundary-2		0	1255
+ar/cp1256/boundary-1		0	1255
+ar/cp1256/boundary0		0	1255
+ar/cp1256/boundary+1		0	1255
+ar/cp1256/boundary+2		0	1255
+ar/cp1256/boundary+3		0	1255
+ar/cp1256/boundary+7		0	1255
+ar/cp1256/large		0	1255
+ar/iso8859-6/medium/lf		0	1255
+ar/iso8859-6/medium/crlf		0	1255
+ar/iso8859-6/line		0	1255
+ar/iso8859-6/tiny1		0	1255
+ar/iso8859-6/tiny2	windows-1251	0	1251
+ar/iso8859-6/tiny3		0	1255
+ar/iso8859-6/tiny4		0	1255
+ar/iso8859-6/tiny5		0	1255
+ar/iso8859-6/tiny7		0	1255
+ar/iso8859-6/tiny10		0	1255
+ar/iso8859-6/boundary-2		0	1255
+ar/iso8859-6/boundary-1		0	1255
+ar/iso8859-6/boundary0		0	1255
+ar/iso8859-6/boundary+1		0	1255
+ar/iso8859-6/boundary+2		0	1255
+ar/iso8859-6/boundary+3		0	1255
+ar/iso8859-6/boundary+7		0	1255
+ar/iso8859-6/large		0	1255
+ru/utf8bom/medium/lf	UTF-8	0	65001
+ru/utf8bom/medium/crlf	UTF-8	0	65001
+ru/utf8bom/line	UTF-8	0	65001
+ru/utf8bom/tiny1		0	1255
+ru/utf8bom/tiny2		0	1255
+ru/utf8bom/tiny3	UTF-8	0	65001
+ru/utf8bom/tiny4	UTF-8	0	65001
+ru/utf8bom/tiny5	UTF-8	0	65001
+ru/utf8bom/tiny7	UTF-8	0	65001
+ru/utf8bom/tiny10	UTF-8	0	65001
+ru/utf8bom/boundary-2	UTF-8	0	65001
+ru/utf8bom/boundary-1	UTF-8	0	65001
+ru/utf8bom/boundary0	UTF-8	0	65001
+ru/utf8bom/boundary+1	UTF-8	0	65001
+ru/utf8bom/boundary+2	UTF-8	0	65001
+ru/utf8bom/boundary+3	UTF-8	0	65001
+ru/utf8bom/boundary+7	UTF-8	0	65001
+ru/utf8bom/large	UTF-8	0	65001
+ru/utf8/medium/lf	UTF-8	0	65001
+ru/utf8/medium/crlf	UTF-8	0	65001
+ru/utf8/line	UTF-8	0	65001
+ru/utf8/tiny1		0	1255
+ru/utf8/tiny2	TIS-620	0	65001
+ru/utf8/tiny3	TIS-620	0	1255
+ru/utf8/tiny4	TIS-620	0	65001
+ru/utf8/tiny5	TIS-620	0	1255
+ru/utf8/tiny7	UTF-8	0	65001
+ru/utf8/tiny10	UTF-8	0	65001
+ru/utf8/boundary-2	UTF-8	0	65001
+ru/utf8/boundary-1	UTF-8	0	65001
+ru/utf8/boundary0	UTF-8	0	65001
+ru/utf8/boundary+1	UTF-8	0	65001
+ru/utf8/boundary+2	UTF-8	0	65001
+ru/utf8/boundary+3	UTF-8	0	65001
+ru/utf8/boundary+7	UTF-8	0	65001
+ru/utf8/large	UTF-8	0	65001
+ru/utf16le-bom/medium/lf	UTF-16	1	1200
+ru/utf16le-bom/medium/crlf	UTF-16	1	1200
+ru/utf16le-bom/line	UTF-16	1	1200
+ru/utf16le-bom/tiny1		0	1255
+ru/utf16le-bom/tiny2		0	1200
+ru/utf16le-bom/tiny3	UTF-16	0	1200
+ru/utf16le-bom/tiny4	UTF-16	0	1200
+ru/utf16le-bom/tiny5	UTF-16	0	1200
+ru/utf16le-bom/tiny7	UTF-16	0	1200
+ru/utf16le-bom/tiny10	UTF-16	0	1200
+ru/utf16le-bom/boundary-2	UTF-16	1	1200
+ru/utf16le-bom/boundary-1	UTF-16	1	1200
+ru/utf16le-bom/boundary0	UTF-16	1	1200
+ru/utf16le-bom/boundary+1	UTF-16	1	1200
+ru/utf16le-bom/boundary+2	UTF-16	1	1200
+ru/utf16le-bom/boundary+3	UTF-16	1	1200
+ru/utf16le-bom/boundary+7	UTF-16	1	1200
+ru/utf16le-bom/large	UTF-16	1	1200
+ru/utf16le/medium/lf		1	1255
+ru/utf16le/medium/crlf		1	1255
+ru/utf16le/line		1	1255
+ru/utf16le/tiny1		0	65001
+ru/utf16le/tiny2		1	65001
+ru/utf16le/tiny3		1	65001
+ru/utf16le/tiny4		1	65001
+ru/utf16le/tiny5		1	65001
+ru/utf16le/tiny7		1	65001
+ru/utf16le/tiny10		1	65001
+ru/utf16le/boundary-2		1	1255
+ru/utf16le/boundary-1		1	1255
+ru/utf16le/boundary0		1	1255
+ru/utf16le/boundary+1		1	1255
+ru/utf16le/boundary+2		1	1255
+ru/utf16le/boundary+3		1	1255
+ru/utf16le/boundary+7		1	1255
+ru/utf16le/large		1	1255
+ru/utf16be-bom/medium/lf	UTF-16	0	1201
+ru/utf16be-bom/medium/crlf	UTF-16	0	1201
+ru/utf16be-bom/line	UTF-16	0	1201
+ru/utf16be-bom/tiny1		0	1255
+ru/utf16be-bom/tiny2		0	1201
+ru/utf16be-bom/tiny3	UTF-16	0	1201
+ru/utf16be-bom/tiny4	UTF-16	0	1201
+ru/utf16be-bom/tiny5	UTF-16	0	1201
+ru/utf16be-bom/tiny7	UTF-16	0	1201
+ru/utf16be-bom/tiny10	UTF-16	0	1201
+ru/utf16be-bom/boundary-2	UTF-16	0	1201
+ru/utf16be-bom/boundary-1	UTF-16	0	1201
+ru/utf16be-bom/boundary0	UTF-16	0	1201
+ru/utf16be-bom/boundary+1	UTF-16	0	1201
+ru/utf16be-bom/boundary+2	UTF-16	0	1201
+ru/utf16be-bom/boundary+3	UTF-16	0	1201
+ru/utf16be-bom/boundary+7	UTF-16	0	1201
+ru/utf16be-bom/large	UTF-16	0	1201
+ru/utf16be/medium/lf		0	1255
+ru/utf16be/medium/crlf		0	1255
+ru/utf16be/line		0	1255
+ru/utf16be/tiny1		0	65001
+ru/utf16be/tiny2		0	65001
+ru/utf16be/tiny3		0	65001
+ru/utf16be/tiny4		0	65001
+ru/utf16be/tiny5		0	65001
+ru/utf16be/tiny7		0	65001
+ru/utf16be/tiny10		0	65001
+ru/utf16be/boundary-2		0	1255
+ru/utf16be/boundary-1		0	1255
+ru/utf16be/boundary0		0	1255
+ru/utf16be/boundary+1		0	1255
+ru/utf16be/boundary+2		0	1255
+ru/utf16be/boundary+3		0	1255
+ru/utf16be/boundary+7		0	1255
+ru/utf16be/large		0	1255
+ru/utf32le-bom/medium/lf	UTF-16	1	1200
+ru/utf32le-bom/medium/crlf	UTF-16	1	1200
+ru/utf32le-bom/line	UTF-16	1	1200
+ru/utf32le-bom/tiny1		0	1255
+ru/utf32le-bom/tiny2		0	1200
+ru/utf32le-bom/tiny3	UTF-16	0	1200
+ru/utf32le-bom/tiny4	UTF-16	0	1200
+ru/utf32le-bom/tiny5	UTF-16	0	1200
+ru/utf32le-bom/tiny7	UTF-16	0	1200
+ru/utf32le-bom/tiny10	UTF-16	0	1200
+ru/utf32le-bom/boundary-2	UTF-16	1	1200
+ru/utf32le-bom/boundary-1	UTF-16	1	1200
+ru/utf32le-bom/boundary0	UTF-16	1	1200
+ru/utf32le-bom/boundary+1	UTF-16	1	1200
+ru/utf32le-bom/boundary+2	UTF-16	1	1200
+ru/utf32le-bom/boundary+3	UTF-16	1	1200
+ru/utf32le-bom/boundary+7	UTF-16	1	1200
+ru/utf32le-bom/large	UTF-16	1	1200
+ru/utf32be-bom/medium/lf		0	1255
+ru/utf32be-bom/medium/crlf		0	1255
+ru/utf32be-bom/line		0	1255
+ru/utf32be-bom/tiny1		0	1255
+ru/utf32be-bom/tiny2		0	1255
+ru/utf32be-bom/tiny3		0	1255
+ru/utf32be-bom/tiny4		0	1255
+ru/utf32be-bom/tiny5		0	1255
+ru/utf32be-bom/tiny7		0	1255
+ru/utf32be-bom/tiny10		0	1255
+ru/utf32be-bom/boundary-2		0	1255
+ru/utf32be-bom/boundary-1		0	1255
+ru/utf32be-bom/boundary0		0	1255
+ru/utf32be-bom/boundary+1		0	1255
+ru/utf32be-bom/boundary+2		0	1255
+ru/utf32be-bom/boundary+3		0	1255
+ru/utf32be-bom/boundary+7		0	1255
+ru/utf32be-bom/large		0	1255
+ru/cp1251/medium/lf	x-mac-cyrillic	0	10007
+ru/cp1251/medium/crlf	x-mac-cyrillic	0	10007
+ru/cp1251/line	x-mac-cyrillic	0	10007
+ru/cp1251/tiny1		0	1255
+ru/cp1251/tiny2		0	1255
+ru/cp1251/tiny3	x-mac-cyrillic	0	10007
+ru/cp1251/tiny4	x-mac-cyrillic	0	10007
+ru/cp1251/tiny5	x-mac-cyrillic	0	10007
+ru/cp1251/tiny7	x-mac-cyrillic	0	10007
+ru/cp1251/tiny10	x-mac-cyrillic	0	10007
+ru/cp1251/boundary-2	windows-1251	0	1251
+ru/cp1251/boundary-1	windows-1251	0	1251
+ru/cp1251/boundary0	windows-1251	0	1251
+ru/cp1251/boundary+1	windows-1251	0	1251
+ru/cp1251/boundary+2	windows-1251	0	1251
+ru/cp1251/boundary+3	windows-1251	0	1251
+ru/cp1251/boundary+7	windows-1251	0	1251
+ru/cp1251/large	windows-1251	0	1251
+ru/koi8-r/medium/lf	KOI8-R	0	1255
+ru/koi8-r/medium/crlf	KOI8-R	0	1255
+ru/koi8-r/line	KOI8-R	0	1255
+ru/koi8-r/tiny1		0	1255
+ru/koi8-r/tiny2		0	1255
+ru/koi8-r/tiny3	ISO-8859-5	0	28595
+ru/koi8-r/tiny4	KOI8-R	0	1255
+ru/koi8-r/tiny5	KOI8-R	0	1255
+ru/koi8-r/tiny7	KOI8-R	0	1255
+ru/koi8-r/tiny10	KOI8-R	0	1255
+ru/koi8-r/boundary-2	KOI8-R	0	1255
+ru/koi8-r/boundary-1	KOI8-R	0	1255
+ru/koi8-r/boundary0	KOI8-R	0	1255
+ru/koi8-r/boundary+1	KOI8-R	0	1255
+ru/koi8-r/boundary+2	KOI8-R	0	1255
+ru/koi8-r/boundary+3	KOI8-R	0	1255
+ru/koi8-r/boundary+7	KOI8-R	0	1255
+ru/koi8-r/large	KOI8-R	0	1255
+ru/iso8859-5/medium/lf	ISO-8859-5	0	28595
+ru/iso8859-5/medium/crlf	ISO-8859-5	0	28595
+ru/iso8859-5/line	ISO-8859-5	0	28595
+ru/iso8859-5/tiny1		0	1255
+ru/iso8859-5/tiny2		0	1255
+ru/iso8859-5/tiny3	x-mac-cyrillic	0	10007
+ru/iso8859-5/tiny4	ISO-8859-5	0	28595
+ru/iso8859-5/tiny5	ISO-8859-5	0	28595
+ru/iso8859-5/tiny7	ISO-8859-5	0	28595
+ru/iso8859-5/tiny10	ISO-8859-5	0	28595
+ru/iso8859-5/boundary-2	ISO-8859-5	0	28595
+ru/iso8859-5/boundary-1	ISO-8859-5	0	28595
+ru/iso8859-5/boundary0	ISO-8859-5	0	28595
+ru/iso8859-5/boundary+1	ISO-8859-5	0	28595
+ru/iso8859-5/boundary+2	ISO-8859-5	0	28595
+ru/iso8859-5/boundary+3	ISO-8859-5	0	28595
+ru/iso8859-5/boundary+7	ISO-8859-5	0	28595
+ru/iso8859-5/large	ISO-8859-5	0	28595
+ru/cp866/medium/lf	IBM866	0	866
+ru/cp866/medium/crlf	IBM866	0	866
+ru/cp866/line	IBM866	0	866
+ru/cp866/tiny1		0	1255
+ru/cp866/tiny2		0	1255
+ru/cp866/tiny3	ISO-8859-5	0	28595
+ru/cp866/tiny4	IBM866	0	866
+ru/cp866/tiny5	IBM866	0	866
+ru/cp866/tiny7	IBM866	0	866
+ru/cp866/tiny10	IBM866	0	866
+ru/cp866/boundary-2	IBM866	0	866
+ru/cp866/boundary-1	IBM866	0	866
+ru/cp866/boundary0	IBM866	0	866
+ru/cp866/boundary+1	IBM866	0	866
+ru/cp866/boundary+2	IBM866	0	866
+ru/cp866/boundary+3	IBM866	0	866
+ru/cp866/boundary+7	IBM866	0	866
+ru/cp866/large	IBM866	0	866
+ru/cp855/medium/lf	IBM855	0	855
+ru/cp855/medium/crlf	IBM855	0	855
+ru/cp855/line	IBM855	0	855
+ru/cp855/tiny1		0	1255
+ru/cp855/tiny2	ISO-8859-7	0	28597
+ru/cp855/tiny3	windows-1255	0	1255
+ru/cp855/tiny4	IBM855	0	855
+ru/cp855/tiny5	IBM855	0	855
+ru/cp855/tiny7	IBM855	0	855
+ru/cp855/tiny10	IBM855	0	855
+ru/cp855/boundary-2	IBM855	0	855
+ru/cp855/boundary-1	IBM855	0	855
+ru/cp855/boundary0	IBM855	0	855
+ru/cp855/boundary+1	IBM855	0	855
+ru/cp855/boundary+2	IBM855	0	855
+ru/cp855/boundary+3	IBM855	0	855
+ru/cp855/boundary+7	IBM855	0	855
+ru/cp855/large	IBM855	0	855
+ru/x-mac-cyrillic/medium/lf	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/medium/crlf	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/line	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/tiny1		0	1255
+ru/x-mac-cyrillic/tiny2		0	1255
+ru/x-mac-cyrillic/tiny3	ISO-8859-7	0	28597
+ru/x-mac-cyrillic/tiny4	windows-1251	0	1251
+ru/x-mac-cyrillic/tiny5	windows-1251	0	1251
+ru/x-mac-cyrillic/tiny7	windows-1251	0	1251
+ru/x-mac-cyrillic/tiny10	windows-1251	0	1251
+ru/x-mac-cyrillic/boundary-2	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/boundary-1	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/boundary0	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/boundary+1	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/boundary+2	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/boundary+3	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/boundary+7	x-mac-cyrillic	0	10007
+ru/x-mac-cyrillic/large	x-mac-cyrillic	0	10007
+bg/utf8bom/medium/lf	UTF-8	0	65001
+bg/utf8bom/medium/crlf	UTF-8	0	65001
+bg/utf8bom/line	UTF-8	0	65001
+bg/utf8bom/tiny1		0	1255
+bg/utf8bom/tiny2		0	1255
+bg/utf8bom/tiny3	UTF-8	0	65001
+bg/utf8bom/tiny4	UTF-8	0	65001
+bg/utf8bom/tiny5	UTF-8	0	65001
+bg/utf8bom/tiny7	UTF-8	0	65001
+bg/utf8bom/tiny10	UTF-8	0	65001
+bg/utf8bom/boundary-2	UTF-8	0	65001
+bg/utf8bom/boundary-1	UTF-8	0	65001
+bg/utf8bom/boundary0	UTF-8	0	65001
+bg/utf8bom/boundary+1	UTF-8	0	65001
+bg/utf8bom/boundary+2	UTF-8	0	65001
+bg/utf8bom/boundary+3	UTF-8	0	65001
+bg/utf8bom/boundary+7	UTF-8	0	65001
+bg/utf8bom/large	UTF-8	0	65001
+bg/utf8/medium/lf	UTF-8	0	65001
+bg/utf8/medium/crlf	UTF-8	0	65001
+bg/utf8/line	UTF-8	0	65001
+bg/utf8/tiny1		0	1255
+bg/utf8/tiny2	IBM855	0	855
+bg/utf8/tiny3		0	1255
+bg/utf8/tiny4	UTF-8	0	65001
+bg/utf8/tiny5	UTF-8	0	65001
+bg/utf8/tiny7	UTF-8	0	65001
+bg/utf8/tiny10	UTF-8	0	65001
+bg/utf8/boundary-2	UTF-8	0	65001
+bg/utf8/boundary-1	UTF-8	0	65001
+bg/utf8/boundary0	UTF-8	0	65001
+bg/utf8/boundary+1	UTF-8	0	65001
+bg/utf8/boundary+2	UTF-8	0	65001
+bg/utf8/boundary+3	UTF-8	0	65001
+bg/utf8/boundary+7	UTF-8	0	65001
+bg/utf8/large	UTF-8	0	65001
+bg/utf16le-bom/medium/lf	UTF-16	1	1200
+bg/utf16le-bom/medium/crlf	UTF-16	1	1200
+bg/utf16le-bom/line	UTF-16	1	1200
+bg/utf16le-bom/tiny1		0	1255
+bg/utf16le-bom/tiny2		0	1200
+bg/utf16le-bom/tiny3	UTF-16	0	1200
+bg/utf16le-bom/tiny4	UTF-16	0	1200
+bg/utf16le-bom/tiny5	UTF-16	0	1200
+bg/utf16le-bom/tiny7	UTF-16	0	1200
+bg/utf16le-bom/tiny10	UTF-16	0	1200
+bg/utf16le-bom/boundary-2	UTF-16	1	1200
+bg/utf16le-bom/boundary-1	UTF-16	1	1200
+bg/utf16le-bom/boundary0	UTF-16	1	1200
+bg/utf16le-bom/boundary+1	UTF-16	1	1200
+bg/utf16le-bom/boundary+2	UTF-16	1	1200
+bg/utf16le-bom/boundary+3	UTF-16	1	1200
+bg/utf16le-bom/boundary+7	UTF-16	1	1200
+bg/utf16le-bom/large	UTF-16	1	1200
+bg/utf16le/medium/lf		1	1255
+bg/utf16le/medium/crlf		1	1255
+bg/utf16le/line		1	1255
+bg/utf16le/tiny1		0	65001
+bg/utf16le/tiny2		1	65001
+bg/utf16le/tiny3		1	65001
+bg/utf16le/tiny4		1	65001
+bg/utf16le/tiny5		1	65001
+bg/utf16le/tiny7		1	65001
+bg/utf16le/tiny10		1	65001
+bg/utf16le/boundary-2		1	1255
+bg/utf16le/boundary-1		1	1255
+bg/utf16le/boundary0		1	1255
+bg/utf16le/boundary+1		1	1255
+bg/utf16le/boundary+2		1	1255
+bg/utf16le/boundary+3		1	1255
+bg/utf16le/boundary+7		1	1255
+bg/utf16le/large		1	1255
+bg/utf16be-bom/medium/lf	UTF-16	0	1201
+bg/utf16be-bom/medium/crlf	UTF-16	0	1201
+bg/utf16be-bom/line	UTF-16	0	1201
+bg/utf16be-bom/tiny1		0	1255
+bg/utf16be-bom/tiny2		0	1201
+bg/utf16be-bom/tiny3	UTF-16	0	1201
+bg/utf16be-bom/tiny4	UTF-16	0	1201
+bg/utf16be-bom/tiny5	UTF-16	0	1201
+bg/utf16be-bom/tiny7	UTF-16	0	1201
+bg/utf16be-bom/tiny10	UTF-16	0	1201
+bg/utf16be-bom/boundary-2	UTF-16	0	1201
+bg/utf16be-bom/boundary-1	UTF-16	0	1201
+bg/utf16be-bom/boundary0	UTF-16	0	1201
+bg/utf16be-bom/boundary+1	UTF-16	0	1201
+bg/utf16be-bom/boundary+2	UTF-16	0	1201
+bg/utf16be-bom/boundary+3	UTF-16	0	1201
+bg/utf16be-bom/boundary+7	UTF-16	0	1201
+bg/utf16be-bom/large	UTF-16	0	1201
+bg/utf16be/medium/lf		0	1255
+bg/utf16be/medium/crlf		0	1255
+bg/utf16be/line		0	1255
+bg/utf16be/tiny1		0	65001
+bg/utf16be/tiny2		0	65001
+bg/utf16be/tiny3		0	65001
+bg/utf16be/tiny4		0	65001
+bg/utf16be/tiny5		0	65001
+bg/utf16be/tiny7		0	65001
+bg/utf16be/tiny10		0	65001
+bg/utf16be/boundary-2		0	1255
+bg/utf16be/boundary-1		0	1255
+bg/utf16be/boundary0		0	1255
+bg/utf16be/boundary+1		0	1255
+bg/utf16be/boundary+2		0	1255
+bg/utf16be/boundary+3		0	1255
+bg/utf16be/boundary+7		0	1255
+bg/utf16be/large		0	1255
+bg/utf32le-bom/medium/lf	UTF-16	1	1200
+bg/utf32le-bom/medium/crlf	UTF-16	1	1200
+bg/utf32le-bom/line	UTF-16	1	1200
+bg/utf32le-bom/tiny1		0	1255
+bg/utf32le-bom/tiny2		0	1200
+bg/utf32le-bom/tiny3	UTF-16	0	1200
+bg/utf32le-bom/tiny4	UTF-16	0	1200
+bg/utf32le-bom/tiny5	UTF-16	0	1200
+bg/utf32le-bom/tiny7	UTF-16	0	1200
+bg/utf32le-bom/tiny10	UTF-16	0	1200
+bg/utf32le-bom/boundary-2	UTF-16	1	1200
+bg/utf32le-bom/boundary-1	UTF-16	1	1200
+bg/utf32le-bom/boundary0	UTF-16	1	1200
+bg/utf32le-bom/boundary+1	UTF-16	1	1200
+bg/utf32le-bom/boundary+2	UTF-16	1	1200
+bg/utf32le-bom/boundary+3	UTF-16	1	1200
+bg/utf32le-bom/boundary+7	UTF-16	1	1200
+bg/utf32le-bom/large	UTF-16	1	1200
+bg/utf32be-bom/medium/lf		0	1255
+bg/utf32be-bom/medium/crlf		0	1255
+bg/utf32be-bom/line		0	1255
+bg/utf32be-bom/tiny1		0	1255
+bg/utf32be-bom/tiny2		0	1255
+bg/utf32be-bom/tiny3		0	1255
+bg/utf32be-bom/tiny4		0	1255
+bg/utf32be-bom/tiny5		0	1255
+bg/utf32be-bom/tiny7		0	1255
+bg/utf32be-bom/tiny10		0	1255
+bg/utf32be-bom/boundary-2		0	1255
+bg/utf32be-bom/boundary-1		0	1255
+bg/utf32be-bom/boundary0		0	1255
+bg/utf32be-bom/boundary+1		0	1255
+bg/utf32be-bom/boundary+2		0	1255
+bg/utf32be-bom/boundary+3		0	1255
+bg/utf32be-bom/boundary+7		0	1255
+bg/utf32be-bom/large		0	1255
+bg/cp1251/medium/lf	windows-1251	0	1251
+bg/cp1251/medium/crlf	windows-1251	0	1251
+bg/cp1251/line	windows-1251	0	1251
+bg/cp1251/tiny1		0	1255
+bg/cp1251/tiny2	windows-1251	0	1251
+bg/cp1251/tiny3	windows-1251	0	1251
+bg/cp1251/tiny4	windows-1251	0	1251
+bg/cp1251/tiny5	windows-1251	0	1251
+bg/cp1251/tiny7	windows-1251	0	1251
+bg/cp1251/tiny10	windows-1251	0	1251
+bg/cp1251/boundary-2	windows-1251	0	1251
+bg/cp1251/boundary-1	windows-1251	0	1251
+bg/cp1251/boundary0	windows-1251	0	1251
+bg/cp1251/boundary+1	windows-1251	0	1251
+bg/cp1251/boundary+2	windows-1251	0	1251
+bg/cp1251/boundary+3	windows-1251	0	1251
+bg/cp1251/boundary+7	windows-1251	0	1251
+bg/cp1251/large	windows-1251	0	1251
+bg/iso8859-5/medium/lf	ISO-8859-5	0	28595
+bg/iso8859-5/medium/crlf	ISO-8859-5	0	28595
+bg/iso8859-5/line	ISO-8859-5	0	28595
+bg/iso8859-5/tiny1		0	1255
+bg/iso8859-5/tiny2	ISO-8859-5	0	28595
+bg/iso8859-5/tiny3	windows-1251	0	1251
+bg/iso8859-5/tiny4	ISO-8859-5	0	28595
+bg/iso8859-5/tiny5	ISO-8859-5	0	28595
+bg/iso8859-5/tiny7	ISO-8859-5	0	28595
+bg/iso8859-5/tiny10	ISO-8859-5	0	28595
+bg/iso8859-5/boundary-2	ISO-8859-5	0	28595
+bg/iso8859-5/boundary-1	ISO-8859-5	0	28595
+bg/iso8859-5/boundary0	ISO-8859-5	0	28595
+bg/iso8859-5/boundary+1	ISO-8859-5	0	28595
+bg/iso8859-5/boundary+2	ISO-8859-5	0	28595
+bg/iso8859-5/boundary+3	ISO-8859-5	0	28595
+bg/iso8859-5/boundary+7	ISO-8859-5	0	28595
+bg/iso8859-5/large	ISO-8859-5	0	28595
+el/utf8bom/medium/lf	UTF-8	0	65001
+el/utf8bom/medium/crlf	UTF-8	0	65001
+el/utf8bom/line	UTF-8	0	65001
+el/utf8bom/tiny1		0	1255
+el/utf8bom/tiny2		0	1255
+el/utf8bom/tiny3	UTF-8	0	65001
+el/utf8bom/tiny4	UTF-8	0	65001
+el/utf8bom/tiny5	UTF-8	0	65001
+el/utf8bom/tiny7	UTF-8	0	65001
+el/utf8bom/tiny10	UTF-8	0	65001
+el/utf8bom/boundary-2	UTF-8	0	65001
+el/utf8bom/boundary-1	UTF-8	0	65001
+el/utf8bom/boundary0	UTF-8	0	65001
+el/utf8bom/boundary+1	UTF-8	0	65001
+el/utf8bom/boundary+2	UTF-8	0	65001
+el/utf8bom/boundary+3	UTF-8	0	65001
+el/utf8bom/boundary+7	UTF-8	0	65001
+el/utf8bom/large	UTF-8	0	65001
+el/utf8/medium/lf	UTF-8	0	65001
+el/utf8/medium/crlf	UTF-8	0	65001
+el/utf8/line	UTF-8	0	65001
+el/utf8/tiny1		0	1255
+el/utf8/tiny2		0	65001
+el/utf8/tiny3		0	1255
+el/utf8/tiny4	UTF-8	0	65001
+el/utf8/tiny5	UTF-8	0	65001
+el/utf8/tiny7	UTF-8	0	65001
+el/utf8/tiny10	UTF-8	0	65001
+el/utf8/boundary-2	UTF-8	0	65001
+el/utf8/boundary-1	UTF-8	0	65001
+el/utf8/boundary0	UTF-8	0	65001
+el/utf8/boundary+1	UTF-8	0	65001
+el/utf8/boundary+2	UTF-8	0	65001
+el/utf8/boundary+3	UTF-8	0	65001
+el/utf8/boundary+7	UTF-8	0	65001
+el/utf8/large	UTF-8	0	65001
+el/utf16le-bom/medium/lf	UTF-16	1	1200
+el/utf16le-bom/medium/crlf	UTF-16	1	1200
+el/utf16le-bom/line	UTF-16	1	1200
+el/utf16le-bom/tiny1		0	1255
+el/utf16le-bom/tiny2		0	1200
+el/utf16le-bom/tiny3	UTF-16	0	1200
+el/utf16le-bom/tiny4	UTF-16	0	1200
+el/utf16le-bom/tiny5	UTF-16	0	1200
+el/utf16le-bom/tiny7	UTF-16	0	1200
+el/utf16le-bom/tiny10	UTF-16	0	1200
+el/utf16le-bom/boundary-2	UTF-16	1	1200
+el/utf16le-bom/boundary-1	UTF-16	1	1200
+el/utf16le-bom/boundary0	UTF-16	1	1200
+el/utf16le-bom/boundary+1	UTF-16	1	1200
+el/utf16le-bom/boundary+2	UTF-16	1	1200
+el/utf16le-bom/boundary+3	UTF-16	1	1200
+el/utf16le-bom/boundary+7	UTF-16	1	1200
+el/utf16le-bom/large	UTF-16	1	1200
+el/utf16le/medium/lf		1	1255
+el/utf16le/medium/crlf		1	1255
+el/utf16le/line		1	1255
+el/utf16le/tiny1		0	1255
+el/utf16le/tiny2		1	1255
+el/utf16le/tiny3		1	1255
+el/utf16le/tiny4		1	1255
+el/utf16le/tiny5		1	1255
+el/utf16le/tiny7		1	1255
+el/utf16le/tiny10		1	1255
+el/utf16le/boundary-2		1	1255
+el/utf16le/boundary-1		1	1255
+el/utf16le/boundary0		1	1255
+el/utf16le/boundary+1		1	1255
+el/utf16le/boundary+2		1	1255
+el/utf16le/boundary+3		1	1255
+el/utf16le/boundary+7		1	1255
+el/utf16le/large		1	1255
+el/utf16be-bom/medium/lf	UTF-16	0	1201
+el/utf16be-bom/medium/crlf	UTF-16	0	1201
+el/utf16be-bom/line	UTF-16	0	1201
+el/utf16be-bom/tiny1		0	1255
+el/utf16be-bom/tiny2		0	1201
+el/utf16be-bom/tiny3	UTF-16	0	1201
+el/utf16be-bom/tiny4	UTF-16	0	1201
+el/utf16be-bom/tiny5	UTF-16	0	1201
+el/utf16be-bom/tiny7	UTF-16	0	1201
+el/utf16be-bom/tiny10	UTF-16	0	1201
+el/utf16be-bom/boundary-2	UTF-16	0	1201
+el/utf16be-bom/boundary-1	UTF-16	0	1201
+el/utf16be-bom/boundary0	UTF-16	0	1201
+el/utf16be-bom/boundary+1	UTF-16	0	1201
+el/utf16be-bom/boundary+2	UTF-16	0	1201
+el/utf16be-bom/boundary+3	UTF-16	0	1201
+el/utf16be-bom/boundary+7	UTF-16	0	1201
+el/utf16be-bom/large	UTF-16	0	1201
+el/utf16be/medium/lf		0	1255
+el/utf16be/medium/crlf		0	1255
+el/utf16be/line		0	1255
+el/utf16be/tiny1		0	65001
+el/utf16be/tiny2		0	1255
+el/utf16be/tiny3		0	1255
+el/utf16be/tiny4		0	1255
+el/utf16be/tiny5		0	1255
+el/utf16be/tiny7		0	1255
+el/utf16be/tiny10		0	1255
+el/utf16be/boundary-2		0	1255
+el/utf16be/boundary-1		0	1255
+el/utf16be/boundary0		0	1255
+el/utf16be/boundary+1		0	1255
+el/utf16be/boundary+2		0	1255
+el/utf16be/boundary+3		0	1255
+el/utf16be/boundary+7		0	1255
+el/utf16be/large		0	1255
+el/utf32le-bom/medium/lf	UTF-16	1	1200
+el/utf32le-bom/medium/crlf	UTF-16	1	1200
+el/utf32le-bom/line	UTF-16	1	1200
+el/utf32le-bom/tiny1		0	1255
+el/utf32le-bom/tiny2		0	1200
+el/utf32le-bom/tiny3	UTF-16	0	1200
+el/utf32le-bom/tiny4	UTF-16	0	1200
+el/utf32le-bom/tiny5	UTF-16	0	1200
+el/utf32le-bom/tiny7	UTF-16	0	1200
+el/utf32le-bom/tiny10	UTF-16	0	1200
+el/utf32le-bom/boundary-2	UTF-16	1	1200
+el/utf32le-bom/boundary-1	UTF-16	1	1200
+el/utf32le-bom/boundary0	UTF-16	1	1200
+el/utf32le-bom/boundary+1	UTF-16	1	1200
+el/utf32le-bom/boundary+2	UTF-16	1	1200
+el/utf32le-bom/boundary+3	UTF-16	1	1200
+el/utf32le-bom/boundary+7	UTF-16	1	1200
+el/utf32le-bom/large	UTF-16	1	1200
+el/utf32be-bom/medium/lf		0	1255
+el/utf32be-bom/medium/crlf		0	1255
+el/utf32be-bom/line		0	1255
+el/utf32be-bom/tiny1		0	1255
+el/utf32be-bom/tiny2		0	1255
+el/utf32be-bom/tiny3		0	1255
+el/utf32be-bom/tiny4		0	1255
+el/utf32be-bom/tiny5		0	1255
+el/utf32be-bom/tiny7		0	1255
+el/utf32be-bom/tiny10		0	1255
+el/utf32be-bom/boundary-2		0	1255
+el/utf32be-bom/boundary-1		0	1255
+el/utf32be-bom/boundary0		0	1255
+el/utf32be-bom/boundary+1		0	1255
+el/utf32be-bom/boundary+2		0	1255
+el/utf32be-bom/boundary+3		0	1255
+el/utf32be-bom/boundary+7		0	1255
+el/utf32be-bom/large		0	1255
+el/cp1253/medium/lf	ISO-8859-7	0	28597
+el/cp1253/medium/crlf	ISO-8859-7	0	28597
+el/cp1253/line	ISO-8859-7	0	28597
+el/cp1253/tiny1		0	1255
+el/cp1253/tiny2	ISO-8859-5	0	28595
+el/cp1253/tiny3	ISO-8859-5	0	28595
+el/cp1253/tiny4	ISO-8859-5	0	28595
+el/cp1253/tiny5	ISO-8859-5	0	28595
+el/cp1253/tiny7	ISO-8859-5	0	28595
+el/cp1253/tiny10	ISO-8859-5	0	28595
+el/cp1253/boundary-2	ISO-8859-7	0	28597
+el/cp1253/boundary-1	ISO-8859-7	0	28597
+el/cp1253/boundary0	ISO-8859-7	0	28597
+el/cp1253/boundary+1	ISO-8859-7	0	28597
+el/cp1253/boundary+2	ISO-8859-7	0	28597
+el/cp1253/boundary+3	ISO-8859-7	0	28597
+el/cp1253/boundary+7	ISO-8859-7	0	28597
+el/cp1253/large	ISO-8859-7	0	28597
+el/iso8859-7/medium/lf	ISO-8859-7	0	28597
+el/iso8859-7/medium/crlf	ISO-8859-7	0	28597
+el/iso8859-7/line	ISO-8859-7	0	28597
+el/iso8859-7/tiny1		0	1255
+el/iso8859-7/tiny2	ISO-8859-5	0	28595
+el/iso8859-7/tiny3	ISO-8859-5	0	28595
+el/iso8859-7/tiny4	ISO-8859-5	0	28595
+el/iso8859-7/tiny5	ISO-8859-5	0	28595
+el/iso8859-7/tiny7	ISO-8859-5	0	28595
+el/iso8859-7/tiny10	ISO-8859-5	0	28595
+el/iso8859-7/boundary-2	ISO-8859-7	0	28597
+el/iso8859-7/boundary-1	ISO-8859-7	0	28597
+el/iso8859-7/boundary0	ISO-8859-7	0	28597
+el/iso8859-7/boundary+1	ISO-8859-7	0	28597
+el/iso8859-7/boundary+2	ISO-8859-7	0	28597
+el/iso8859-7/boundary+3	ISO-8859-7	0	28597
+el/iso8859-7/boundary+7	ISO-8859-7	0	28597
+el/iso8859-7/large	ISO-8859-7	0	28597
+th/utf8bom/medium/lf	UTF-8	0	65001
+th/utf8bom/medium/crlf	UTF-8	0	65001
+th/utf8bom/line	UTF-8	0	65001
+th/utf8bom/tiny1		0	1255
+th/utf8bom/tiny2		0	1255
+th/utf8bom/tiny3	UTF-8	0	65001
+th/utf8bom/tiny4	UTF-8	0	65001
+th/utf8bom/tiny5	UTF-8	0	65001
+th/utf8bom/tiny7	UTF-8	0	65001
+th/utf8bom/tiny10	UTF-8	0	65001
+th/utf8bom/boundary-2	UTF-8	0	65001
+th/utf8bom/boundary-1	UTF-8	0	65001
+th/utf8bom/boundary0	UTF-8	0	65001
+th/utf8bom/boundary+1	UTF-8	0	65001
+th/utf8bom/boundary+2	UTF-8	0	65001
+th/utf8bom/boundary+3	UTF-8	0	65001
+th/utf8bom/boundary+7	UTF-8	0	65001
+th/utf8bom/large	UTF-8	0	65001
+th/utf8/medium/lf	UTF-8	0	65001
+th/utf8/medium/crlf	UTF-8	0	65001
+th/utf8/line	UTF-8	0	65001
+th/utf8/tiny1		0	1255
+th/utf8/tiny2		0	1255
+th/utf8/tiny3		0	65001
+th/utf8/tiny4	IBM866	0	866
+th/utf8/tiny5	IBM866	0	866
+th/utf8/tiny7	UTF-8	0	65001
+th/utf8/tiny10	UTF-8	0	65001
+th/utf8/boundary-2	UTF-8	0	65001
+th/utf8/boundary-1	UTF-8	0	65001
+th/utf8/boundary0	UTF-8	0	65001
+th/utf8/boundary+1	UTF-8	0	65001
+th/utf8/boundary+2	UTF-8	0	65001
+th/utf8/boundary+3	UTF-8	0	65001
+th/utf8/boundary+7	UTF-8	0	65001
+th/utf8/large	UTF-8	0	65001
+th/utf16le-bom/medium/lf	UTF-16	1	1200
+th/utf16le-bom/medium/crlf	UTF-16	1	1200
+th/utf16le-bom/line	UTF-16	1	1200
+th/utf16le-bom/tiny1		0	1255
+th/utf16le-bom/tiny2		0	1200
+th/utf16le-bom/tiny3	UTF-16	0	1200
+th/utf16le-bom/tiny4	UTF-16	0	1200
+th/utf16le-bom/tiny5	UTF-16	0	1200
+th/utf16le-bom/tiny7	UTF-16	0	1200
+th/utf16le-bom/tiny10	UTF-16	0	1200
+th/utf16le-bom/boundary-2	UTF-16	1	1200
+th/utf16le-bom/boundary-1	UTF-16	1	1200
+th/utf16le-bom/boundary0	UTF-16	1	1200
+th/utf16le-bom/boundary+1	UTF-16	1	1200
+th/utf16le-bom/boundary+2	UTF-16	1	1200
+th/utf16le-bom/boundary+3	UTF-16	1	1200
+th/utf16le-bom/boundary+7	UTF-16	1	1200
+th/utf16le-bom/large	UTF-16	1	1200
+th/utf16le/medium/lf		1	1255
+th/utf16le/medium/crlf		1	1255
+th/utf16le/line		1	1255
+th/utf16le/tiny1		0	65001
+th/utf16le/tiny2		0	65001
+th/utf16le/tiny3		0	65001
+th/utf16le/tiny4		1	65001
+th/utf16le/tiny5		1	65001
+th/utf16le/tiny7		1	65001
+th/utf16le/tiny10		1	65001
+th/utf16le/boundary-2		1	1255
+th/utf16le/boundary-1		1	1255
+th/utf16le/boundary0		1	1255
+th/utf16le/boundary+1		1	1255
+th/utf16le/boundary+2		1	1255
+th/utf16le/boundary+3		1	1255
+th/utf16le/boundary+7		1	1255
+th/utf16le/large		1	1255
+th/utf16be-bom/medium/lf	UTF-16	0	1201
+th/utf16be-bom/medium/crlf	UTF-16	0	1201
+th/utf16be-bom/line	UTF-16	0	1201
+th/utf16be-bom/tiny1		0	1255
+th/utf16be-bom/tiny2		0	1201
+th/utf16be-bom/tiny3	UTF-16	0	1201
+th/utf16be-bom/tiny4	UTF-16	0	1201
+th/utf16be-bom/tiny5	UTF-16	0	1201
+th/utf16be-bom/tiny7	UTF-16	0	1201
+th/utf16be-bom/tiny10	UTF-16	0	1201
+th/utf16be-bom/boundary-2	UTF-16	0	1201
+th/utf16be-bom/boundary-1	UTF-16	0	1201
+th/utf16be-bom/boundary0	UTF-16	0	1201
+th/utf16be-bom/boundary+1	UTF-16	0	1201
+th/utf16be-bom/boundary+2	UTF-16	0	1201
+th/utf16be-bom/boundary+3	UTF-16	0	1201
+th/utf16be-bom/boundary+7	UTF-16	0	1201
+th/utf16be-bom/large	UTF-16	0	1201
+th/utf16be/medium/lf		0	1255
+th/utf16be/medium/crlf		0	1255
+th/utf16be/line		0	1255
+th/utf16be/tiny1		0	65001
+th/utf16be/tiny2		0	65001
+th/utf16be/tiny3		0	65001
+th/utf16be/tiny4		0	65001
+th/utf16be/tiny5		0	65001
+th/utf16be/tiny7		0	65001
+th/utf16be/tiny10		0	65001
+th/utf16be/boundary-2		0	1255
+th/utf16be/boundary-1		0	1255
+th/utf16be/boundary0		0	1255
+th/utf16be/boundary+1		0	1255
+th/utf16be/boundary+2		0	1255
+th/utf16be/boundary+3		0	1255
+th/utf16be/boundary+7		0	1255
+th/utf16be/large		0	1255
+th/utf32le-bom/medium/lf	UTF-16	0	1200
+th/utf32le-bom/medium/crlf	UTF-16	0	1200
+th/utf32le-bom/line	UTF-16	0	1200
+th/utf32le-bom/tiny1		0	1255
+th/utf32le-bom/tiny2		0	1200
+th/utf32le-bom/tiny3	UTF-16	0	1200
+th/utf32le-bom/tiny4	UTF-16	0	1200
+th/utf32le-bom/tiny5	UTF-16	0	1200
+th/utf32le-bom/tiny7	UTF-16	0	1200
+th/utf32le-bom/tiny10	UTF-16	0	1200
+th/utf32le-bom/boundary-2	UTF-16	0	1200
+th/utf32le-bom/boundary-1	UTF-16	0	1200
+th/utf32le-bom/boundary0	UTF-16	0	1200
+th/utf32le-bom/boundary+1	UTF-16	0	1200
+th/utf32le-bom/boundary+2	UTF-16	0	1200
+th/utf32le-bom/boundary+3	UTF-16	0	1200
+th/utf32le-bom/boundary+7	UTF-16	0	1200
+th/utf32le-bom/large	UTF-16	0	1200
+th/utf32be-bom/medium/lf		0	1255
+th/utf32be-bom/medium/crlf		0	1255
+th/utf32be-bom/line		0	1255
+th/utf32be-bom/tiny1		0	1255
+th/utf32be-bom/tiny2		0	1255
+th/utf32be-bom/tiny3		0	1255
+th/utf32be-bom/tiny4		0	1255
+th/utf32be-bom/tiny5		0	1255
+th/utf32be-bom/tiny7		0	1255
+th/utf32be-bom/tiny10		0	1255
+th/utf32be-bom/boundary-2		0	1255
+th/utf32be-bom/boundary-1		0	1255
+th/utf32be-bom/boundary0		0	1255
+th/utf32be-bom/boundary+1		0	1255
+th/utf32be-bom/boundary+2		0	1255
+th/utf32be-bom/boundary+3		0	1255
+th/utf32be-bom/boundary+7		0	1255
+th/utf32be-bom/large		0	1255
+th/cp874/medium/lf	TIS-620	0	1255
+th/cp874/medium/crlf	TIS-620	0	1255
+th/cp874/line	TIS-620	0	1255
+th/cp874/tiny1		0	1255
+th/cp874/tiny2	KOI8-R	0	1255
+th/cp874/tiny3	KOI8-R	0	1255
+th/cp874/tiny4	KOI8-R	0	1255
+th/cp874/tiny5		0	1255
+th/cp874/tiny7		0	1255
+th/cp874/tiny10		0	1255
+th/cp874/boundary-2	TIS-620	0	1255
+th/cp874/boundary-1	TIS-620	0	1255
+th/cp874/boundary0	TIS-620	0	1255
+th/cp874/boundary+1	TIS-620	0	1255
+th/cp874/boundary+2	TIS-620	0	1255
+th/cp874/boundary+3	TIS-620	0	1255
+th/cp874/boundary+7	TIS-620	0	1255
+th/cp874/large	TIS-620	0	1255
+ja/utf8bom/medium/lf	UTF-8	0	65001
+ja/utf8bom/medium/crlf	UTF-8	0	65001
+ja/utf8bom/line	UTF-8	0	65001
+ja/utf8bom/tiny1		0	1255
+ja/utf8bom/tiny2		0	1255
+ja/utf8bom/tiny3	UTF-8	0	65001
+ja/utf8bom/tiny4	UTF-8	0	65001
+ja/utf8bom/tiny5	UTF-8	0	65001
+ja/utf8bom/tiny7	UTF-8	0	65001
+ja/utf8bom/tiny10	UTF-8	0	65001
+ja/utf8bom/boundary-2	UTF-8	0	65001
+ja/utf8bom/boundary-1	UTF-8	0	65001
+ja/utf8bom/boundary0	UTF-8	0	65001
+ja/utf8bom/boundary+1	UTF-8	0	65001
+ja/utf8bom/boundary+2	UTF-8	0	65001
+ja/utf8bom/boundary+3	UTF-8	0	65001
+ja/utf8bom/boundary+7	UTF-8	0	65001
+ja/utf8bom/large	UTF-8	0	65001
+ja/utf8/medium/lf	UTF-8	0	65001
+ja/utf8/medium/crlf	UTF-8	0	65001
+ja/utf8/line	UTF-8	0	65001
+ja/utf8/tiny1		0	65001
+ja/utf8/tiny2		0	65001
+ja/utf8/tiny3		0	65001
+ja/utf8/tiny4		0	65001
+ja/utf8/tiny5		0	65001
+ja/utf8/tiny7		0	1255
+ja/utf8/tiny10		0	1255
+ja/utf8/boundary-2	UTF-8	0	65001
+ja/utf8/boundary-1	UTF-8	0	65001
+ja/utf8/boundary0	UTF-8	0	65001
+ja/utf8/boundary+1	UTF-8	0	65001
+ja/utf8/boundary+2	UTF-8	0	65001
+ja/utf8/boundary+3	UTF-8	0	65001
+ja/utf8/boundary+7	UTF-8	0	65001
+ja/utf8/large	UTF-8	0	65001
+ja/utf16le-bom/medium/lf	UTF-16	0	1200
+ja/utf16le-bom/medium/crlf	UTF-16	0	1200
+ja/utf16le-bom/line	UTF-16	0	1200
+ja/utf16le-bom/tiny1		0	1255
+ja/utf16le-bom/tiny2		0	1200
+ja/utf16le-bom/tiny3	UTF-16	0	1200
+ja/utf16le-bom/tiny4	UTF-16	0	1200
+ja/utf16le-bom/tiny5	UTF-16	0	1200
+ja/utf16le-bom/tiny7	UTF-16	0	1200
+ja/utf16le-bom/tiny10	UTF-16	0	1200
+ja/utf16le-bom/boundary-2	UTF-16	0	1200
+ja/utf16le-bom/boundary-1	UTF-16	0	1200
+ja/utf16le-bom/boundary0	UTF-16	0	1200
+ja/utf16le-bom/boundary+1	UTF-16	0	1200
+ja/utf16le-bom/boundary+2	UTF-16	0	1200
+ja/utf16le-bom/boundary+3	UTF-16	0	1200
+ja/utf16le-bom/boundary+7	UTF-16	0	1200
+ja/utf16le-bom/large	UTF-16	0	1200
+ja/utf16le/medium/lf		0	1255
+ja/utf16le/medium/crlf		0	1255
+ja/utf16le/line		1	1200
+ja/utf16le/tiny1		0	65001
+ja/utf16le/tiny2		0	1255
+ja/utf16le/tiny3		1	1255
+ja/utf16le/tiny4		1	1200
+ja/utf16le/tiny5		1	1255
+ja/utf16le/tiny7		1	1255
+ja/utf16le/tiny10		1	1200
+ja/utf16le/boundary-2		0	1255
+ja/utf16le/boundary-1		0	1255
+ja/utf16le/boundary0		0	1255
+ja/utf16le/boundary+1		0	1255
+ja/utf16le/boundary+2		0	1255
+ja/utf16le/boundary+3		0	1255
+ja/utf16le/boundary+7		0	1255
+ja/utf16le/large		0	1255
+ja/utf16be-bom/medium/lf	UTF-16	0	1201
+ja/utf16be-bom/medium/crlf	UTF-16	0	1201
+ja/utf16be-bom/line	UTF-16	0	1201
+ja/utf16be-bom/tiny1		0	1255
+ja/utf16be-bom/tiny2		0	1201
+ja/utf16be-bom/tiny3	UTF-16	0	1201
+ja/utf16be-bom/tiny4	UTF-16	0	1201
+ja/utf16be-bom/tiny5	UTF-16	0	1201
+ja/utf16be-bom/tiny7	UTF-16	0	1201
+ja/utf16be-bom/tiny10	UTF-16	0	1201
+ja/utf16be-bom/boundary-2	UTF-16	0	1201
+ja/utf16be-bom/boundary-1	UTF-16	0	1201
+ja/utf16be-bom/boundary0	UTF-16	0	1201
+ja/utf16be-bom/boundary+1	UTF-16	0	1201
+ja/utf16be-bom/boundary+2	UTF-16	0	1201
+ja/utf16be-bom/boundary+3	UTF-16	0	1201
+ja/utf16be-bom/boundary+7	UTF-16	0	1201
+ja/utf16be-bom/large	UTF-16	0	1201
+ja/utf16be/medium/lf		0	1255
+ja/utf16be/medium/crlf		0	1255
+ja/utf16be/line		0	1255
+ja/utf16be/tiny1		0	1255
+ja/utf16be/tiny2		0	1255
+ja/utf16be/tiny3		0	1255
+ja/utf16be/tiny4		0	1255
+ja/utf16be/tiny5		0	1255
+ja/utf16be/tiny7		0	1255
+ja/utf16be/tiny10		0	1255
+ja/utf16be/boundary-2		0	1255
+ja/utf16be/boundary-1		0	1255
+ja/utf16be/boundary0		0	1255
+ja/utf16be/boundary+1		0	1255
+ja/utf16be/boundary+2		0	1255
+ja/utf16be/boundary+3		0	1255
+ja/utf16be/boundary+7		0	1255
+ja/utf16be/large		0	1255
+ja/utf32le-bom/medium/lf	UTF-16	0	1200
+ja/utf32le-bom/medium/crlf	UTF-16	0	1200
+ja/utf32le-bom/line	UTF-16	0	1200
+ja/utf32le-bom/tiny1		0	1255
+ja/utf32le-bom/tiny2		0	1200
+ja/utf32le-bom/tiny3	UTF-16	0	1200
+ja/utf32le-bom/tiny4	UTF-16	0	1200
+ja/utf32le-bom/tiny5	UTF-16	0	1200
+ja/utf32le-bom/tiny7	UTF-16	0	1200
+ja/utf32le-bom/tiny10	UTF-16	0	1200
+ja/utf32le-bom/boundary-2	UTF-16	0	1200
+ja/utf32le-bom/boundary-1	UTF-16	0	1200
+ja/utf32le-bom/boundary0	UTF-16	0	1200
+ja/utf32le-bom/boundary+1	UTF-16	0	1200
+ja/utf32le-bom/boundary+2	UTF-16	0	1200
+ja/utf32le-bom/boundary+3	UTF-16	0	1200
+ja/utf32le-bom/boundary+7	UTF-16	0	1200
+ja/utf32le-bom/large	UTF-16	0	1200
+ja/utf32be-bom/medium/lf		0	1255
+ja/utf32be-bom/medium/crlf		0	1255
+ja/utf32be-bom/line		0	1255
+ja/utf32be-bom/tiny1		0	1255
+ja/utf32be-bom/tiny2		0	1255
+ja/utf32be-bom/tiny3		0	1255
+ja/utf32be-bom/tiny4		0	1255
+ja/utf32be-bom/tiny5		0	1255
+ja/utf32be-bom/tiny7		0	1255
+ja/utf32be-bom/tiny10		0	1255
+ja/utf32be-bom/boundary-2		0	1255
+ja/utf32be-bom/boundary-1		0	1255
+ja/utf32be-bom/boundary0		0	1255
+ja/utf32be-bom/boundary+1		0	1255
+ja/utf32be-bom/boundary+2		0	1255
+ja/utf32be-bom/boundary+3		0	1255
+ja/utf32be-bom/boundary+7		0	1255
+ja/utf32be-bom/large		0	1255
+ja/shift_jis/medium/lf	Shift_JIS	0	932
+ja/shift_jis/medium/crlf	Shift_JIS	0	932
+ja/shift_jis/line	Shift_JIS	0	932
+ja/shift_jis/tiny1		0	65001
+ja/shift_jis/tiny2		0	65001
+ja/shift_jis/tiny3		0	65001
+ja/shift_jis/tiny4		0	65001
+ja/shift_jis/tiny5		0	65001
+ja/shift_jis/tiny7		0	1255
+ja/shift_jis/tiny10		0	1255
+ja/shift_jis/boundary-2	Shift_JIS	0	932
+ja/shift_jis/boundary-1	Shift_JIS	0	932
+ja/shift_jis/boundary0	Shift_JIS	0	932
+ja/shift_jis/boundary+1	Shift_JIS	0	932
+ja/shift_jis/boundary+2	Shift_JIS	0	932
+ja/shift_jis/boundary+3	Shift_JIS	0	932
+ja/shift_jis/boundary+7	Shift_JIS	0	932
+ja/shift_jis/large	Shift_JIS	0	932
+ja/euc-jp/medium/lf	EUC-JP	0	1255
+ja/euc-jp/medium/crlf	EUC-JP	0	1255
+ja/euc-jp/line	EUC-JP	0	1255
+ja/euc-jp/tiny1		0	65001
+ja/euc-jp/tiny2		0	65001
+ja/euc-jp/tiny3		0	65001
+ja/euc-jp/tiny4		0	65001
+ja/euc-jp/tiny5		0	65001
+ja/euc-jp/tiny7		0	1255
+ja/euc-jp/tiny10		0	1255
+ja/euc-jp/boundary-2	EUC-JP	0	1255
+ja/euc-jp/boundary-1	EUC-JP	0	1255
+ja/euc-jp/boundary0	EUC-JP	0	1255
+ja/euc-jp/boundary+1	EUC-JP	0	1255
+ja/euc-jp/boundary+2	EUC-JP	0	1255
+ja/euc-jp/boundary+3	EUC-JP	0	1255
+ja/euc-jp/boundary+7	EUC-JP	0	1255
+ja/euc-jp/large	EUC-JP	0	1255
+ja/iso-2022-jp/medium/lf	ISO-2022-JP	0	65001
+ja/iso-2022-jp/medium/crlf	ISO-2022-JP	0	65001
+ja/iso-2022-jp/line	ISO-2022-JP	0	65001
+ja/iso-2022-jp/tiny1		0	65001
+ja/iso-2022-jp/tiny2		0	65001
+ja/iso-2022-jp/tiny3		0	65001
+ja/iso-2022-jp/tiny4		0	65001
+ja/iso-2022-jp/tiny5		0	65001
+ja/iso-2022-jp/tiny7		0	65001
+ja/iso-2022-jp/tiny10	ISO-2022-JP	0	65001
+ja/iso-2022-jp/boundary-2	ISO-2022-JP	0	65001
+ja/iso-2022-jp/boundary-1	ISO-2022-JP	0	65001
+ja/iso-2022-jp/boundary0	ISO-2022-JP	0	65001
+ja/iso-2022-jp/boundary+1	ISO-2022-JP	0	65001
+ja/iso-2022-jp/boundary+2	ISO-2022-JP	0	65001
+ja/iso-2022-jp/boundary+3	ISO-2022-JP	0	65001
+ja/iso-2022-jp/boundary+7	ISO-2022-JP	0	65001
+ja/iso-2022-jp/large	ISO-2022-JP	0	65001
+zh-hans/utf8bom/medium/lf	UTF-8	0	65001
+zh-hans/utf8bom/medium/crlf	UTF-8	0	65001
+zh-hans/utf8bom/line	UTF-8	0	65001
+zh-hans/utf8bom/tiny1		0	1255
+zh-hans/utf8bom/tiny2		0	1255
+zh-hans/utf8bom/tiny3	UTF-8	0	65001
+zh-hans/utf8bom/tiny4	UTF-8	0	65001
+zh-hans/utf8bom/tiny5	UTF-8	0	65001
+zh-hans/utf8bom/tiny7	UTF-8	0	65001
+zh-hans/utf8bom/tiny10	UTF-8	0	65001
+zh-hans/utf8bom/boundary-2	UTF-8	0	65001
+zh-hans/utf8bom/boundary-1	UTF-8	0	65001
+zh-hans/utf8bom/boundary0	UTF-8	0	65001
+zh-hans/utf8bom/boundary+1	UTF-8	0	65001
+zh-hans/utf8bom/boundary+2	UTF-8	0	65001
+zh-hans/utf8bom/boundary+3	UTF-8	0	65001
+zh-hans/utf8bom/boundary+7	UTF-8	0	65001
+zh-hans/utf8bom/large	UTF-8	0	65001
+zh-hans/utf8/medium/lf	UTF-8	0	65001
+zh-hans/utf8/medium/crlf	UTF-8	0	65001
+zh-hans/utf8/line	UTF-8	0	65001
+zh-hans/utf8/tiny1		0	1255
+zh-hans/utf8/tiny2		0	1255
+zh-hans/utf8/tiny3		0	65001
+zh-hans/utf8/tiny4		0	1255
+zh-hans/utf8/tiny5		0	1255
+zh-hans/utf8/tiny7	UTF-8	0	65001
+zh-hans/utf8/tiny10	UTF-8	0	65001
+zh-hans/utf8/boundary-2	UTF-8	0	65001
+zh-hans/utf8/boundary-1	UTF-8	0	65001
+zh-hans/utf8/boundary0	UTF-8	0	65001
+zh-hans/utf8/boundary+1	UTF-8	0	65001
+zh-hans/utf8/boundary+2	UTF-8	0	65001
+zh-hans/utf8/boundary+3	UTF-8	0	65001
+zh-hans/utf8/boundary+7	UTF-8	0	65001
+zh-hans/utf8/large	UTF-8	0	65001
+zh-hans/utf16le-bom/medium/lf	UTF-16	0	1200
+zh-hans/utf16le-bom/medium/crlf	UTF-16	0	1200
+zh-hans/utf16le-bom/line	UTF-16	0	1200
+zh-hans/utf16le-bom/tiny1		0	1255
+zh-hans/utf16le-bom/tiny2		0	1200
+zh-hans/utf16le-bom/tiny3	UTF-16	0	1200
+zh-hans/utf16le-bom/tiny4	UTF-16	0	1200
+zh-hans/utf16le-bom/tiny5	UTF-16	0	1200
+zh-hans/utf16le-bom/tiny7	UTF-16	0	1200
+zh-hans/utf16le-bom/tiny10	UTF-16	0	1200
+zh-hans/utf16le-bom/boundary-2	UTF-16	0	1200
+zh-hans/utf16le-bom/boundary-1	UTF-16	0	1200
+zh-hans/utf16le-bom/boundary0	UTF-16	0	1200
+zh-hans/utf16le-bom/boundary+1	UTF-16	0	1200
+zh-hans/utf16le-bom/boundary+2	UTF-16	0	1200
+zh-hans/utf16le-bom/boundary+3	UTF-16	0	1200
+zh-hans/utf16le-bom/boundary+7	UTF-16	0	1200
+zh-hans/utf16le-bom/large	UTF-16	0	1200
+zh-hans/utf16le/medium/lf		0	1255
+zh-hans/utf16le/medium/crlf		0	1255
+zh-hans/utf16le/line		0	1255
+zh-hans/utf16le/tiny1		0	1255
+zh-hans/utf16le/tiny2		0	1255
+zh-hans/utf16le/tiny3		0	1255
+zh-hans/utf16le/tiny4		0	1255
+zh-hans/utf16le/tiny5		0	1255
+zh-hans/utf16le/tiny7		0	1255
+zh-hans/utf16le/tiny10		0	1255
+zh-hans/utf16le/boundary-2		0	1255
+zh-hans/utf16le/boundary-1		0	1255
+zh-hans/utf16le/boundary0		0	1255
+zh-hans/utf16le/boundary+1		0	1255
+zh-hans/utf16le/boundary+2		0	1255
+zh-hans/utf16le/boundary+3		0	1255
+zh-hans/utf16le/boundary+7		0	1255
+zh-hans/utf16le/large		0	1255
+zh-hans/utf16be-bom/medium/lf	UTF-16	0	1201
+zh-hans/utf16be-bom/medium/crlf	UTF-16	0	1201
+zh-hans/utf16be-bom/line	UTF-16	0	1201
+zh-hans/utf16be-bom/tiny1		0	1255
+zh-hans/utf16be-bom/tiny2		0	1201
+zh-hans/utf16be-bom/tiny3	UTF-16	0	1201
+zh-hans/utf16be-bom/tiny4	UTF-16	0	1201
+zh-hans/utf16be-bom/tiny5	UTF-16	0	1201
+zh-hans/utf16be-bom/tiny7	UTF-16	0	1201
+zh-hans/utf16be-bom/tiny10	UTF-16	0	1201
+zh-hans/utf16be-bom/boundary-2	UTF-16	0	1201
+zh-hans/utf16be-bom/boundary-1	UTF-16	0	1201
+zh-hans/utf16be-bom/boundary0	UTF-16	0	1201
+zh-hans/utf16be-bom/boundary+1	UTF-16	0	1201
+zh-hans/utf16be-bom/boundary+2	UTF-16	0	1201
+zh-hans/utf16be-bom/boundary+3	UTF-16	0	1201
+zh-hans/utf16be-bom/boundary+7	UTF-16	0	1201
+zh-hans/utf16be-bom/large	UTF-16	0	1201
+zh-hans/utf16be/medium/lf		0	1255
+zh-hans/utf16be/medium/crlf		0	1255
+zh-hans/utf16be/line		0	1255
+zh-hans/utf16be/tiny1		0	65001
+zh-hans/utf16be/tiny2		0	1255
+zh-hans/utf16be/tiny3		0	1255
+zh-hans/utf16be/tiny4		0	1255
+zh-hans/utf16be/tiny5		0	1255
+zh-hans/utf16be/tiny7		0	1255
+zh-hans/utf16be/tiny10		0	1255
+zh-hans/utf16be/boundary-2		0	1255
+zh-hans/utf16be/boundary-1		0	1255
+zh-hans/utf16be/boundary0		0	1255
+zh-hans/utf16be/boundary+1		0	1255
+zh-hans/utf16be/boundary+2		0	1255
+zh-hans/utf16be/boundary+3		0	1255
+zh-hans/utf16be/boundary+7		0	1255
+zh-hans/utf16be/large		0	1255
+zh-hans/utf32le-bom/medium/lf	UTF-16	0	1200
+zh-hans/utf32le-bom/medium/crlf	UTF-16	0	1200
+zh-hans/utf32le-bom/line	UTF-16	0	1200
+zh-hans/utf32le-bom/tiny1		0	1255
+zh-hans/utf32le-bom/tiny2		0	1200
+zh-hans/utf32le-bom/tiny3	UTF-16	0	1200
+zh-hans/utf32le-bom/tiny4	UTF-16	0	1200
+zh-hans/utf32le-bom/tiny5	UTF-16	0	1200
+zh-hans/utf32le-bom/tiny7	UTF-16	0	1200
+zh-hans/utf32le-bom/tiny10	UTF-16	0	1200
+zh-hans/utf32le-bom/boundary-2	UTF-16	0	1200
+zh-hans/utf32le-bom/boundary-1	UTF-16	0	1200
+zh-hans/utf32le-bom/boundary0	UTF-16	0	1200
+zh-hans/utf32le-bom/boundary+1	UTF-16	0	1200
+zh-hans/utf32le-bom/boundary+2	UTF-16	0	1200
+zh-hans/utf32le-bom/boundary+3	UTF-16	0	1200
+zh-hans/utf32le-bom/boundary+7	UTF-16	0	1200
+zh-hans/utf32le-bom/large	UTF-16	0	1200
+zh-hans/utf32be-bom/medium/lf		0	1255
+zh-hans/utf32be-bom/medium/crlf		0	1255
+zh-hans/utf32be-bom/line		0	1255
+zh-hans/utf32be-bom/tiny1		0	1255
+zh-hans/utf32be-bom/tiny2		0	1255
+zh-hans/utf32be-bom/tiny3		0	1255
+zh-hans/utf32be-bom/tiny4		0	1255
+zh-hans/utf32be-bom/tiny5		0	1255
+zh-hans/utf32be-bom/tiny7		0	1255
+zh-hans/utf32be-bom/tiny10		0	1255
+zh-hans/utf32be-bom/boundary-2		0	1255
+zh-hans/utf32be-bom/boundary-1		0	1255
+zh-hans/utf32be-bom/boundary0		0	1255
+zh-hans/utf32be-bom/boundary+1		0	1255
+zh-hans/utf32be-bom/boundary+2		0	1255
+zh-hans/utf32be-bom/boundary+3		0	1255
+zh-hans/utf32be-bom/boundary+7		0	1255
+zh-hans/utf32be-bom/large		0	1255
+zh-hans/gb2312/medium/lf	gb18030	0	936
+zh-hans/gb2312/medium/crlf	gb18030	0	936
+zh-hans/gb2312/line	gb18030	0	936
+zh-hans/gb2312/tiny1		0	1255
+zh-hans/gb2312/tiny2		0	1255
+zh-hans/gb2312/tiny3		0	1255
+zh-hans/gb2312/tiny4		0	1255
+zh-hans/gb2312/tiny5	IBM855	0	855
+zh-hans/gb2312/tiny7		0	1255
+zh-hans/gb2312/tiny10		0	1255
+zh-hans/gb2312/boundary-2	gb18030	0	936
+zh-hans/gb2312/boundary-1	gb18030	0	936
+zh-hans/gb2312/boundary0	gb18030	0	936
+zh-hans/gb2312/boundary+1	gb18030	0	936
+zh-hans/gb2312/boundary+2	gb18030	0	936
+zh-hans/gb2312/boundary+3	gb18030	0	936
+zh-hans/gb2312/boundary+7	gb18030	0	936
+zh-hans/gb2312/large	gb18030	0	936
+zh-hans/gb18030/medium/lf	gb18030	0	936
+zh-hans/gb18030/medium/crlf	gb18030	0	936
+zh-hans/gb18030/line	gb18030	0	936
+zh-hans/gb18030/tiny1		0	1255
+zh-hans/gb18030/tiny2		0	1255
+zh-hans/gb18030/tiny3		0	1255
+zh-hans/gb18030/tiny4		0	1255
+zh-hans/gb18030/tiny5	IBM855	0	855
+zh-hans/gb18030/tiny7		0	1255
+zh-hans/gb18030/tiny10		0	1255
+zh-hans/gb18030/boundary-2	gb18030	0	936
+zh-hans/gb18030/boundary-1	gb18030	0	936
+zh-hans/gb18030/boundary0	gb18030	0	936
+zh-hans/gb18030/boundary+1	gb18030	0	936
+zh-hans/gb18030/boundary+2	gb18030	0	936
+zh-hans/gb18030/boundary+3	gb18030	0	936
+zh-hans/gb18030/boundary+7	gb18030	0	936
+zh-hans/gb18030/large	gb18030	0	936
+zh-hant/utf8bom/medium/lf	UTF-8	0	65001
+zh-hant/utf8bom/medium/crlf	UTF-8	0	65001
+zh-hant/utf8bom/line	UTF-8	0	65001
+zh-hant/utf8bom/tiny1		0	1255
+zh-hant/utf8bom/tiny2		0	1255
+zh-hant/utf8bom/tiny3	UTF-8	0	65001
+zh-hant/utf8bom/tiny4	UTF-8	0	65001
+zh-hant/utf8bom/tiny5	UTF-8	0	65001
+zh-hant/utf8bom/tiny7	UTF-8	0	65001
+zh-hant/utf8bom/tiny10	UTF-8	0	65001
+zh-hant/utf8bom/boundary-2	UTF-8	0	65001
+zh-hant/utf8bom/boundary-1	UTF-8	0	65001
+zh-hant/utf8bom/boundary0	UTF-8	0	65001
+zh-hant/utf8bom/boundary+1	UTF-8	0	65001
+zh-hant/utf8bom/boundary+2	UTF-8	0	65001
+zh-hant/utf8bom/boundary+3	UTF-8	0	65001
+zh-hant/utf8bom/boundary+7	UTF-8	0	65001
+zh-hant/utf8bom/large	UTF-8	0	65001
+zh-hant/utf8/medium/lf	UTF-8	0	65001
+zh-hant/utf8/medium/crlf	UTF-8	0	65001
+zh-hant/utf8/line	UTF-8	0	65001
+zh-hant/utf8/tiny1		0	1255
+zh-hant/utf8/tiny2	TIS-620	0	1255
+zh-hant/utf8/tiny3	TIS-620	0	65001
+zh-hant/utf8/tiny4	TIS-620	0	1255
+zh-hant/utf8/tiny5		0	1255
+zh-hant/utf8/tiny7	UTF-8	0	65001
+zh-hant/utf8/tiny10	UTF-8	0	65001
+zh-hant/utf8/boundary-2	UTF-8	0	65001
+zh-hant/utf8/boundary-1	UTF-8	0	65001
+zh-hant/utf8/boundary0	UTF-8	0	65001
+zh-hant/utf8/boundary+1	UTF-8	0	65001
+zh-hant/utf8/boundary+2	UTF-8	0	65001
+zh-hant/utf8/boundary+3	UTF-8	0	65001
+zh-hant/utf8/boundary+7	UTF-8	0	65001
+zh-hant/utf8/large	UTF-8	0	65001
+zh-hant/utf16le-bom/medium/lf	UTF-16	0	1200
+zh-hant/utf16le-bom/medium/crlf	UTF-16	0	1200
+zh-hant/utf16le-bom/line	UTF-16	0	1200
+zh-hant/utf16le-bom/tiny1		0	1255
+zh-hant/utf16le-bom/tiny2		0	1200
+zh-hant/utf16le-bom/tiny3	UTF-16	0	1200
+zh-hant/utf16le-bom/tiny4	UTF-16	0	1200
+zh-hant/utf16le-bom/tiny5	UTF-16	0	1200
+zh-hant/utf16le-bom/tiny7	UTF-16	0	1200
+zh-hant/utf16le-bom/tiny10	UTF-16	0	1200
+zh-hant/utf16le-bom/boundary-2	UTF-16	1	1200
+zh-hant/utf16le-bom/boundary-1	UTF-16	1	1200
+zh-hant/utf16le-bom/boundary0	UTF-16	1	1200
+zh-hant/utf16le-bom/boundary+1	UTF-16	1	1200
+zh-hant/utf16le-bom/boundary+2	UTF-16	1	1200
+zh-hant/utf16le-bom/boundary+3	UTF-16	1	1200
+zh-hant/utf16le-bom/boundary+7	UTF-16	1	1200
+zh-hant/utf16le-bom/large	UTF-16	1	1200
+zh-hant/utf16le/medium/lf		0	1255
+zh-hant/utf16le/medium/crlf		0	1255
+zh-hant/utf16le/line		0	1255
+zh-hant/utf16le/tiny1		0	65001
+zh-hant/utf16le/tiny2		0	65001
+zh-hant/utf16le/tiny3		0	1255
+zh-hant/utf16le/tiny4		0	65001
+zh-hant/utf16le/tiny5		0	65001
+zh-hant/utf16le/tiny7		0	1255
+zh-hant/utf16le/tiny10		0	1255
+zh-hant/utf16le/boundary-2		1	1255
+zh-hant/utf16le/boundary-1		1	1255
+zh-hant/utf16le/boundary0		1	1255
+zh-hant/utf16le/boundary+1		1	1255
+zh-hant/utf16le/boundary+2		1	1255
+zh-hant/utf16le/boundary+3		1	1255
+zh-hant/utf16le/boundary+7		1	1255
+zh-hant/utf16le/large		1	1255
+zh-hant/utf16be-bom/medium/lf	UTF-16	0	1201
+zh-hant/utf16be-bom/medium/crlf	UTF-16	0	1201
+zh-hant/utf16be-bom/line	UTF-16	0	1201
+zh-hant/utf16be-bom/tiny1		0	1255
+zh-hant/utf16be-bom/tiny2		0	1201
+zh-hant/utf16be-bom/tiny3	UTF-16	0	1201
+zh-hant/utf16be-bom/tiny4	UTF-16	0	1201
+zh-hant/utf16be-bom/tiny5	UTF-16	0	1201
+zh-hant/utf16be-bom/tiny7	UTF-16	0	1201
+zh-hant/utf16be-bom/tiny10	UTF-16	0	1201
+zh-hant/utf16be-bom/boundary-2	UTF-16	0	1201
+zh-hant/utf16be-bom/boundary-1	UTF-16	0	1201
+zh-hant/utf16be-bom/boundary0	UTF-16	0	1201
+zh-hant/utf16be-bom/boundary+1	UTF-16	0	1201
+zh-hant/utf16be-bom/boundary+2	UTF-16	0	1201
+zh-hant/utf16be-bom/boundary+3	UTF-16	0	1201
+zh-hant/utf16be-bom/boundary+7	UTF-16	0	1201
+zh-hant/utf16be-bom/large	UTF-16	0	1201
+zh-hant/utf16be/medium/lf		0	1255
+zh-hant/utf16be/medium/crlf		0	1255
+zh-hant/utf16be/line		0	1255
+zh-hant/utf16be/tiny1		0	65001
+zh-hant/utf16be/tiny2		0	65001
+zh-hant/utf16be/tiny3		0	1255
+zh-hant/utf16be/tiny4		0	1255
+zh-hant/utf16be/tiny5		0	1255
+zh-hant/utf16be/tiny7		0	1255
+zh-hant/utf16be/tiny10		0	1255
+zh-hant/utf16be/boundary-2		0	1255
+zh-hant/utf16be/boundary-1		0	1255
+zh-hant/utf16be/boundary0		0	1255
+zh-hant/utf16be/boundary+1		0	1255
+zh-hant/utf16be/boundary+2		0	1255
+zh-hant/utf16be/boundary+3		0	1255
+zh-hant/utf16be/boundary+7		0	1255
+zh-hant/utf16be/large		0	1255
+zh-hant/utf32le-bom/medium/lf	UTF-16	0	1200
+zh-hant/utf32le-bom/medium/crlf	UTF-16	0	1200
+zh-hant/utf32le-bom/line	UTF-16	0	1200
+zh-hant/utf32le-bom/tiny1		0	1255
+zh-hant/utf32le-bom/tiny2		0	1200
+zh-hant/utf32le-bom/tiny3	UTF-16	0	1200
+zh-hant/utf32le-bom/tiny4	UTF-16	0	1200
+zh-hant/utf32le-bom/tiny5	UTF-16	0	1200
+zh-hant/utf32le-bom/tiny7	UTF-16	0	1200
+zh-hant/utf32le-bom/tiny10	UTF-16	0	1200
+zh-hant/utf32le-bom/boundary-2	UTF-16	0	1200
+zh-hant/utf32le-bom/boundary-1	UTF-16	0	1200
+zh-hant/utf32le-bom/boundary0	UTF-16	0	1200
+zh-hant/utf32le-bom/boundary+1	UTF-16	0	1200
+zh-hant/utf32le-bom/boundary+2	UTF-16	0	1200
+zh-hant/utf32le-bom/boundary+3	UTF-16	0	1200
+zh-hant/utf32le-bom/boundary+7	UTF-16	0	1200
+zh-hant/utf32le-bom/large	UTF-16	0	1200
+zh-hant/utf32be-bom/medium/lf		0	1255
+zh-hant/utf32be-bom/medium/crlf		0	1255
+zh-hant/utf32be-bom/line		0	1255
+zh-hant/utf32be-bom/tiny1		0	1255
+zh-hant/utf32be-bom/tiny2		0	1255
+zh-hant/utf32be-bom/tiny3		0	1255
+zh-hant/utf32be-bom/tiny4		0	1255
+zh-hant/utf32be-bom/tiny5		0	1255
+zh-hant/utf32be-bom/tiny7		0	1255
+zh-hant/utf32be-bom/tiny10		0	1255
+zh-hant/utf32be-bom/boundary-2		0	1255
+zh-hant/utf32be-bom/boundary-1		0	1255
+zh-hant/utf32be-bom/boundary0		0	1255
+zh-hant/utf32be-bom/boundary+1		0	1255
+zh-hant/utf32be-bom/boundary+2		0	1255
+zh-hant/utf32be-bom/boundary+3		0	1255
+zh-hant/utf32be-bom/boundary+7		0	1255
+zh-hant/utf32be-bom/large		0	1255
+zh-hant/big5/medium/lf	Big5	0	950
+zh-hant/big5/medium/crlf	Big5	0	950
+zh-hant/big5/line	Big5	0	950
+zh-hant/big5/tiny1		0	1255
+zh-hant/big5/tiny2		0	1255
+zh-hant/big5/tiny3		0	1255
+zh-hant/big5/tiny4	TIS-620	0	1255
+zh-hant/big5/tiny5		0	1255
+zh-hant/big5/tiny7		0	1255
+zh-hant/big5/tiny10		0	1255
+zh-hant/big5/boundary-2	Big5	0	950
+zh-hant/big5/boundary-1	Big5	0	950
+zh-hant/big5/boundary0	Big5	0	950
+zh-hant/big5/boundary+1	Big5	0	950
+zh-hant/big5/boundary+2	Big5	0	950
+zh-hant/big5/boundary+3	Big5	0	950
+zh-hant/big5/boundary+7	Big5	0	950
+zh-hant/big5/large	Big5	0	950
+ko/utf8bom/medium/lf	UTF-8	0	65001
+ko/utf8bom/medium/crlf	UTF-8	0	65001
+ko/utf8bom/line	UTF-8	0	65001
+ko/utf8bom/tiny1		0	1255
+ko/utf8bom/tiny2		0	1255
+ko/utf8bom/tiny3	UTF-8	0	65001
+ko/utf8bom/tiny4	UTF-8	0	65001
+ko/utf8bom/tiny5	UTF-8	0	65001
+ko/utf8bom/tiny7	UTF-8	0	65001
+ko/utf8bom/tiny10	UTF-8	0	65001
+ko/utf8bom/boundary-2	UTF-8	0	65001
+ko/utf8bom/boundary-1	UTF-8	0	65001
+ko/utf8bom/boundary0	UTF-8	0	65001
+ko/utf8bom/boundary+1	UTF-8	0	65001
+ko/utf8bom/boundary+2	UTF-8	0	65001
+ko/utf8bom/boundary+3	UTF-8	0	65001
+ko/utf8bom/boundary+7	UTF-8	0	65001
+ko/utf8bom/large	UTF-8	0	65001
+ko/utf8/medium/lf	UTF-8	0	65001
+ko/utf8/medium/crlf	UTF-8	0	65001
+ko/utf8/line	UTF-8	0	65001
+ko/utf8/tiny1		0	65001
+ko/utf8/tiny2		0	65001
+ko/utf8/tiny3		0	65001
+ko/utf8/tiny4		0	65001
+ko/utf8/tiny5		0	65001
+ko/utf8/tiny7		0	1255
+ko/utf8/tiny10		0	1255
+ko/utf8/boundary-2	UTF-8	0	65001
+ko/utf8/boundary-1	UTF-8	0	65001
+ko/utf8/boundary0	UTF-8	0	65001
+ko/utf8/boundary+1	UTF-8	0	65001
+ko/utf8/boundary+2	UTF-8	0	65001
+ko/utf8/boundary+3	UTF-8	0	65001
+ko/utf8/boundary+7	UTF-8	0	65001
+ko/utf8/large	UTF-8	0	65001
+ko/utf16le-bom/medium/lf	UTF-16	0	1200
+ko/utf16le-bom/medium/crlf	UTF-16	0	1200
+ko/utf16le-bom/line	UTF-16	0	1200
+ko/utf16le-bom/tiny1		0	1255
+ko/utf16le-bom/tiny2		0	1200
+ko/utf16le-bom/tiny3	UTF-16	0	1200
+ko/utf16le-bom/tiny4	UTF-16	0	1200
+ko/utf16le-bom/tiny5	UTF-16	0	1200
+ko/utf16le-bom/tiny7	UTF-16	0	1200
+ko/utf16le-bom/tiny10	UTF-16	0	1200
+ko/utf16le-bom/boundary-2	UTF-16	0	1200
+ko/utf16le-bom/boundary-1	UTF-16	0	1200
+ko/utf16le-bom/boundary0	UTF-16	0	1200
+ko/utf16le-bom/boundary+1	UTF-16	0	1200
+ko/utf16le-bom/boundary+2	UTF-16	0	1200
+ko/utf16le-bom/boundary+3	UTF-16	0	1200
+ko/utf16le-bom/boundary+7	UTF-16	0	1200
+ko/utf16le-bom/large	UTF-16	0	1200
+ko/utf16le/medium/lf		0	1255
+ko/utf16le/medium/crlf		0	1255
+ko/utf16le/line		0	1255
+ko/utf16le/tiny1		0	65001
+ko/utf16le/tiny2		0	1255
+ko/utf16le/tiny3		1	1255
+ko/utf16le/tiny4		1	1200
+ko/utf16le/tiny5		1	1255
+ko/utf16le/tiny7		1	1255
+ko/utf16le/tiny10		1	1200
+ko/utf16le/boundary-2		0	1255
+ko/utf16le/boundary-1		0	1255
+ko/utf16le/boundary0		0	1255
+ko/utf16le/boundary+1		0	1255
+ko/utf16le/boundary+2		0	1255
+ko/utf16le/boundary+3		0	1255
+ko/utf16le/boundary+7		0	1255
+ko/utf16le/large		0	1255
+ko/utf16be-bom/medium/lf	UTF-16	0	1201
+ko/utf16be-bom/medium/crlf	UTF-16	0	1201
+ko/utf16be-bom/line	UTF-16	0	1201
+ko/utf16be-bom/tiny1		0	1255
+ko/utf16be-bom/tiny2		0	1201
+ko/utf16be-bom/tiny3	UTF-16	0	1201
+ko/utf16be-bom/tiny4	UTF-16	0	1201
+ko/utf16be-bom/tiny5	UTF-16	0	1201
+ko/utf16be-bom/tiny7	UTF-16	0	1201
+ko/utf16be-bom/tiny10	UTF-16	0	1201
+ko/utf16be-bom/boundary-2	UTF-16	0	1201
+ko/utf16be-bom/boundary-1	UTF-16	0	1201
+ko/utf16be-bom/boundary0	UTF-16	0	1201
+ko/utf16be-bom/boundary+1	UTF-16	0	1201
+ko/utf16be-bom/boundary+2	UTF-16	0	1201
+ko/utf16be-bom/boundary+3	UTF-16	0	1201
+ko/utf16be-bom/boundary+7	UTF-16	0	1201
+ko/utf16be-bom/large	UTF-16	0	1201
+ko/utf16be/medium/lf		0	1255
+ko/utf16be/medium/crlf		0	1255
+ko/utf16be/line		0	1255
+ko/utf16be/tiny1		0	1255
+ko/utf16be/tiny2		0	1255
+ko/utf16be/tiny3		0	1255
+ko/utf16be/tiny4		0	1255
+ko/utf16be/tiny5		0	1255
+ko/utf16be/tiny7		0	1255
+ko/utf16be/tiny10		0	1255
+ko/utf16be/boundary-2		0	1255
+ko/utf16be/boundary-1		0	1255
+ko/utf16be/boundary0		0	1255
+ko/utf16be/boundary+1		0	1255
+ko/utf16be/boundary+2		0	1255
+ko/utf16be/boundary+3		0	1255
+ko/utf16be/boundary+7		0	1255
+ko/utf16be/large		0	1255
+ko/utf32le-bom/medium/lf	UTF-16	0	1200
+ko/utf32le-bom/medium/crlf	UTF-16	0	1200
+ko/utf32le-bom/line	UTF-16	0	1200
+ko/utf32le-bom/tiny1		0	1255
+ko/utf32le-bom/tiny2		0	1200
+ko/utf32le-bom/tiny3	UTF-16	0	1200
+ko/utf32le-bom/tiny4	UTF-16	0	1200
+ko/utf32le-bom/tiny5	UTF-16	0	1200
+ko/utf32le-bom/tiny7	UTF-16	0	1200
+ko/utf32le-bom/tiny10	UTF-16	0	1200
+ko/utf32le-bom/boundary-2	UTF-16	0	1200
+ko/utf32le-bom/boundary-1	UTF-16	0	1200
+ko/utf32le-bom/boundary0	UTF-16	0	1200
+ko/utf32le-bom/boundary+1	UTF-16	0	1200
+ko/utf32le-bom/boundary+2	UTF-16	0	1200
+ko/utf32le-bom/boundary+3	UTF-16	0	1200
+ko/utf32le-bom/boundary+7	UTF-16	0	1200
+ko/utf32le-bom/large	UTF-16	0	1200
+ko/utf32be-bom/medium/lf		0	1255
+ko/utf32be-bom/medium/crlf		0	1255
+ko/utf32be-bom/line		0	1255
+ko/utf32be-bom/tiny1		0	1255
+ko/utf32be-bom/tiny2		0	1255
+ko/utf32be-bom/tiny3		0	1255
+ko/utf32be-bom/tiny4		0	1255
+ko/utf32be-bom/tiny5		0	1255
+ko/utf32be-bom/tiny7		0	1255
+ko/utf32be-bom/tiny10		0	1255
+ko/utf32be-bom/boundary-2		0	1255
+ko/utf32be-bom/boundary-1		0	1255
+ko/utf32be-bom/boundary0		0	1255
+ko/utf32be-bom/boundary+1		0	1255
+ko/utf32be-bom/boundary+2		0	1255
+ko/utf32be-bom/boundary+3		0	1255
+ko/utf32be-bom/boundary+7		0	1255
+ko/utf32be-bom/large		0	1255
+ko/euc-kr/medium/lf	EUC-KR	0	51949
+ko/euc-kr/medium/crlf	EUC-KR	0	51949
+ko/euc-kr/line	EUC-KR	0	51949
+ko/euc-kr/tiny1		0	65001
+ko/euc-kr/tiny2		0	65001
+ko/euc-kr/tiny3		0	65001
+ko/euc-kr/tiny4		0	65001
+ko/euc-kr/tiny5		0	65001
+ko/euc-kr/tiny7		0	65001
+ko/euc-kr/tiny10		0	65001
+ko/euc-kr/boundary-2	EUC-KR	0	51949
+ko/euc-kr/boundary-1	EUC-KR	0	51949
+ko/euc-kr/boundary0	EUC-KR	0	51949
+ko/euc-kr/boundary+1	EUC-KR	0	51949
+ko/euc-kr/boundary+2	EUC-KR	0	51949
+ko/euc-kr/boundary+3	EUC-KR	0	51949
+ko/euc-kr/boundary+7	EUC-KR	0	51949
+ko/euc-kr/large	EUC-KR	0	51949
+ko/iso-2022-kr/medium/lf	ISO-2022-KR	0	65001
+ko/iso-2022-kr/medium/crlf	ISO-2022-KR	0	65001
+ko/iso-2022-kr/line	ISO-2022-KR	0	65001
+ko/iso-2022-kr/tiny1		0	65001
+ko/iso-2022-kr/tiny2		0	65001
+ko/iso-2022-kr/tiny3		0	65001
+ko/iso-2022-kr/tiny4		0	65001
+ko/iso-2022-kr/tiny5		0	65001
+ko/iso-2022-kr/tiny7		0	65001
+ko/iso-2022-kr/tiny10	ISO-2022-KR	0	65001
+ko/iso-2022-kr/boundary-2	ISO-2022-KR	0	65001
+ko/iso-2022-kr/boundary-1	ISO-2022-KR	0	65001
+ko/iso-2022-kr/boundary0	ISO-2022-KR	0	65001
+ko/iso-2022-kr/boundary+1	ISO-2022-KR	0	65001
+ko/iso-2022-kr/boundary+2	ISO-2022-KR	0	65001
+ko/iso-2022-kr/boundary+3	ISO-2022-KR	0	65001
+ko/iso-2022-kr/boundary+7	ISO-2022-KR	0	65001
+ko/iso-2022-kr/large	ISO-2022-KR	0	65001
