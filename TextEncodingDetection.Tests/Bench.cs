@@ -81,7 +81,7 @@ static class Bench
         foreach (var c in cases)
         {
             var u = UniversalDetector.Detect(c.Sample, c.Sample.Length);
-            var r = TextEncodingDetector.Detect(c.Sample, c.FileLength);
+            var r = TextEncodingDetector.Detect(c.Sample, c.FileLength, mode: DetectionMode.NotepadPlusPlus);
             sb.Append(c.Id).Append('\t').Append(u.Charset).Append('\t').Append(Bits(u.Confidence)).Append('\t')
               .Append(r.CodePage).Append('\t').Append(r.Reason).Append('\t').Append(Bits(r.Confidence)).Append('\t')
               .Append(r.UchardetCharset).Append('\n');

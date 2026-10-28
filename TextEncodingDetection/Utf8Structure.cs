@@ -12,7 +12,9 @@ internal enum Utf8Kind { SevenBit, Utf8, EightBit }
 /// </summary>
 internal static class Utf8Structure
 {
-    public static Utf8Kind Classify(ReadOnlySpan<byte> s)
+    /// <param name="allowCutEnd">Improved mode: a sequence cut off by the end of the sample still
+    /// counts as UTF-8 when its bytes so far are valid.</param>
+    public static Utf8Kind Classify(ReadOnlySpan<byte> s, bool allowCutEnd = false)
     {
         bool sevenBitOnly = true;
         int i = 0, n = s.Length;
@@ -33,7 +35,11 @@ internal static class Utf8Structure
             else if ((b & 0xF0) == 0xE0) follow = 2;
             else if ((b & 0xF8) == 0xF0) follow = 3;
             else return Utf8Kind.EightBit; // 10xxxxxx as a lead byte, or F8..FF
-            if (n - i < follow + 1) return Utf8Kind.EightBit;
+            if (n - i < follow + 1)
+            {
+                if (!allowCutEnd) return Utf8Kind.EightBit;
+                follow = n - i - 1;
+            }
             for (int k = 1; k <= follow; k++)
                 if ((s[i + k] & 0xC0) != 0x80) return Utf8Kind.EightBit;
             i += follow + 1;

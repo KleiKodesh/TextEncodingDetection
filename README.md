@@ -10,6 +10,28 @@ string text = enc.GetString(bytes, r.BomLength, bytes.Length - r.BomLength);
 // r.CodePage, r.Name, r.HasBom, r.BomLength, r.Confidence, r.Reason, r.UchardetCharset
 ```
 
+## Modes
+
+`DetectionMode.Improved` (the default) keeps Notepad++'s answer wherever Notepad++ is right and fills
+the gaps where it is blind; `DetectionMode.NotepadPlusPlus` is the exact Notepad++ decision below
+(the golden tests check it). Improved adds, in order:
+
+- UTF-32 LE / BE BOMs (`FF FE 00 00`, `00 00 FE FF`).
+- Every name uchardet reports gets a code page: KOI8-R 20866, EUC-JP 51932, ISO-2022-JP/KR/CN
+  50220/50225/50227, HZ-GB-2312 52936, TIS-620 874 (x-euc-tw stays unmapped).
+- A single-byte uchardet answer on a sample that is valid UTF-8 (a sequence cut by the sample end
+  allowed) is UTF-8; one that ICU's detector (`Icu/`, a managed port of ICU4C ucsdet, ICU 74.2)
+  contradicts with a non-Hebrew single-byte match of another script at confidence >= 30 takes ICU's
+  answer (only for charsets ICU also knows; never when uchardet says Hebrew or ICU's list reaches
+  Hebrew first).
+- After the UTF-16 LE and UTF-8 checks, before the ANSI fallback: ICU's top match (BOM-less UTF-16/32
+  BE/LE included) when it maps to a code page, is not Hebrew, has confidence >= 10 and, for a
+  single-byte answer, no Hebrew match reaches half its confidence. Otherwise windows-1255 as before.
+
+Measured with known truth (decoded text identical), matrix 2,628 cases: Improved 2,143, Notepad++
+1,347, ICU top match 2,029; uchardet test folder 104 / 62 / 100 of 112. Every encoding row is at
+least ICU's and Notepad++'s; Hebrew rows are unchanged.
+
 ## The algorithm (verified in Notepad++ source, commit ee71355, 2026-10-28)
 
 `PowerEditor/src/ScintillaComponent/Buffer.cpp` `FileManager::loadFileData` →

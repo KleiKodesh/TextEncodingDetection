@@ -84,7 +84,7 @@ int EdgeCases()
     int f = 0;
     void Expect(string name, byte[] data, long len, int cp, DetectionReason reason, int bom = 0)
     {
-        var r = TextEncodingDetector.Detect(data, len);
+        var r = TextEncodingDetector.Detect(data, len, mode: DetectionMode.NotepadPlusPlus);
         if (r.CodePage != cp || r.Reason != reason || r.BomLength != bom)
         {
             Console.WriteLine($"   FAIL {name}: got {r.CodePage}/{r.Reason}/bom{r.BomLength}, want {cp}/{reason}/bom{bom}");
@@ -127,7 +127,7 @@ int CompareWithGolden(List<Case> cases, string goldenPath)
     foreach (var c in cases)
     {
         if (!golden.TryGetValue(c.Id, out var g)) { missing++; continue; }
-        var r = TextEncodingDetector.Detect(c.Sample, c.FileLength);
+        var r = TextEncodingDetector.Detect(c.Sample, c.FileLength, mode: DetectionMode.NotepadPlusPlus);
         var raw = UniversalDetector.Detect(c.Sample, c.Sample.Length).Charset;
         bool itu = c.Sample.Length > 0 && TextUnicodeStatistics.Passes(c.Sample);
         if (raw != g.Uchardet || r.CodePage != g.CodePage || itu != g.IsTextUnicode)
@@ -149,7 +149,7 @@ void UpstreamReport(List<Case> cases)
     {
         string file = c.Id.Substring("upstream/".Length);
         string expected = Path.GetFileNameWithoutExtension(file.Split('/')[1]).Split('.')[0];
-        var r = TextEncodingDetector.Detect(c.Sample, c.FileLength);
+        var r = TextEncodingDetector.Detect(c.Sample, c.FileLength, mode: DetectionMode.NotepadPlusPlus);
         string raw = UniversalDetector.Detect(c.Sample, c.Sample.Length).Charset;
         bool same = Norm(raw) == Norm(expected) || (r.Reason == DetectionReason.ByteOrderMark && expected.StartsWith("utf-"));
         total++; if (same) agree++;
