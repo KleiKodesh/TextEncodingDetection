@@ -7,6 +7,8 @@ using TextEncodingDetection.Uchardet;
 // Console harness (no test framework). dotnet run -c Release [-- options]
 //   --oracle <oracle.exe>   regenerate Golden/*.tsv with the MSVC-built Notepad++ uchardet oracle first
 //   --real <listfile>       real-file pass over the listed .txt files (report only)
+//   --bench                 stopwatch timings (128 KB samples, matrix, test folder, --real list)
+//   --dump <file>           write every case's full result (confidence bits too) for exact diffs
 // Prints ALL PASSED when every check holds.
 
 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
@@ -32,9 +34,14 @@ var upstreamCases = Directory.GetFiles(upstream, "*", SearchOption.AllDirectorie
 if (oracle != null) Step("oracle -> Golden/upstream.tsv", () => Golden.Regenerate(oracle, upstreamCases, Path.Combine(goldenDir, "upstream.tsv")));
 Step("uchardet test folder vs Notepad++ oracle", () => CompareWithGolden(upstreamCases, Path.Combine(goldenDir, "upstream.tsv")));
 Step("uchardet test folder vs upstream expected names (report)", () => { UpstreamReport(upstreamCases); return 0; });
+Step("fused single-byte passes vs reference loops", FusedCheck.Run);
 Step("IsTextUnicode managed vs Win32", IsTextUnicodeVsWin32);
 Step("every returned code page decodes", DecodeAll);
 if (realList != null) Step("real files", () => RealFiles.Run(realList, oracle));
+string? dump = Arg("--dump");
+List<Case>? realCases = realList != null && (dump != null || args.Contains("--bench")) ? Bench.LoadReal(realList) : null;
+if (dump != null) Step("dump", () => { Bench.Dump(dump, matrix.Concat(upstreamCases).Concat(realCases ?? [])); return 0; });
+if (args.Contains("--bench")) Step("benchmark", () => { Bench.Run(upstream, matrix, upstreamCases, realCases); return 0; });
 
 Console.WriteLine(failures == 0 ? "ALL PASSED" : $"FAILED: {failures}");
 return failures == 0 ? 0 : 1;

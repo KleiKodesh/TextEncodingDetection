@@ -18,6 +18,12 @@ internal static class Utf8Structure
         int i = 0, n = s.Length;
         while (i < n)
         {
+            // Eight bytes in 0x01..0x7F at once: the scalar loop would just step over them.
+            if (i + 8 <= n)
+            {
+                ulong v = Uchardet.Swar.Load(s, i);
+                if (((v & Uchardet.Swar.HighBits) | Uchardet.Swar.HasZeroByte(v)) == 0) { i += 8; continue; }
+            }
             byte b = s[i];
             if (b == 0) return Utf8Kind.EightBit;
             if ((b & 0x80) == 0) { i++; continue; }

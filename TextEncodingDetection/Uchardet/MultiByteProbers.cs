@@ -14,34 +14,87 @@
 
 namespace TextEncodingDetection.Uchardet;
 
-/// <summary>CharDistributionAnalysis and its subclasses (GetOrder per encoding).</summary>
-internal abstract class CharDistributionAnalysis
+/// <summary>CharDistributionAnalysis and its subclasses (GetOrder per encoding, as a switch).</summary>
+internal sealed class CharDistributionAnalysis
 {
+    internal enum Kind { EucTw, EucKr, Gb2312, Big5, Sjis, EucJp }
+
     const uint EnoughDataThreshold = 1024;
     const uint MinimumDataThreshold = 4;
     const float SureYes = 0.99f, SureNo = 0.01f;
 
     uint _freqChars, _totalChars, _dataThreshold;
+    readonly Kind _kind;
     readonly short[] _charToFreqOrder;
     readonly float _typicalDistributionRatio;
 
-    protected CharDistributionAnalysis(short[] charToFreqOrder, float typicalDistributionRatio)
+    public CharDistributionAnalysis(Kind kind)
     {
-        _charToFreqOrder = charToFreqOrder;
-        _typicalDistributionRatio = typicalDistributionRatio;
+        _kind = kind;
+        (_charToFreqOrder, _typicalDistributionRatio) = kind switch
+        {
+            Kind.EucTw => (UchardetTables.EucTw_CharToFreqOrder, UchardetTables.EucTw_TypicalDistributionRatio),
+            Kind.EucKr => (UchardetTables.EucKr_CharToFreqOrder, UchardetTables.EucKr_TypicalDistributionRatio),
+            Kind.Gb2312 => (UchardetTables.Gb2312_CharToFreqOrder, UchardetTables.Gb2312_TypicalDistributionRatio),
+            Kind.Big5 => (UchardetTables.Big5_CharToFreqOrder, UchardetTables.Big5_TypicalDistributionRatio),
+            _ => (UchardetTables.Jis_CharToFreqOrder, UchardetTables.Jis_TypicalDistributionRatio),
+        };
+        _pairClass = Volatile.Read(ref s_pairClass[(int)kind]) ?? (s_pairClass[(int)kind] = BuildPairClass());
         Reset(false);
     }
 
-    protected abstract int GetOrder(byte b0, byte b1);
+    int GetOrder(byte b0, byte b1)
+    {
+        switch (_kind)
+        {
+            case Kind.EucTw: return b0 >= 0xc4 ? 94 * (b0 - 0xc4) + b1 - 0xa1 : -1;
+            case Kind.EucKr: return b0 >= 0xb0 ? 94 * (b0 - 0xb0) + b1 - 0xa1 : -1;
+            case Kind.Gb2312: return b0 >= 0xb0 && b1 >= 0xa1 ? 94 * (b0 - 0xb0) + b1 - 0xa1 : -1;
+            case Kind.Big5:
+                if (b0 < 0xa4) return -1;
+                return b1 >= 0xa1 ? 157 * (b0 - 0xa4) + b1 - 0xa1 + 63 : 157 * (b0 - 0xa4) + b1 - 0x40;
+            case Kind.Sjis:
+            {
+                int order;
+                if (b0 >= 0x81 && b0 <= 0x9f) order = 188 * (b0 - 0x81);
+                else if (b0 >= 0xe0 && b0 <= 0xef) order = 188 * (b0 - 0xe0 + 31);
+                else return -1;
+                order += b1 - 0x40;
+                if (b1 > 0x7f) order--;
+                return order;
+            }
+            default: return b0 >= 0xa0 ? 94 * (b0 - 0xa1) + b1 - 0xa1 : -1; // EUC-JP
+        }
+    }
+
+    /// <summary>Per kind, for every byte pair: 0 = GetOrder gives no order, 1 = an order that is
+    /// not frequent, 2 = a frequent order (order inside the table and its rank below 512). Built
+    /// from <see cref="GetOrder"/> itself, so HandleOneChar counts exactly as before.</summary>
+    static readonly byte[]?[] s_pairClass = new byte[]?[6];
+
+    byte[] BuildPairClass()
+    {
+        var t = new byte[65536];
+        for (int b0 = 0; b0 < 256; b0++)
+            for (int b1 = 0; b1 < 256; b1++)
+            {
+                int order = GetOrder((byte)b0, (byte)b1);
+                if (order < 0) continue;
+                t[(b0 << 8) | b1] = (byte)((uint)order < (uint)_charToFreqOrder.Length && 512 > _charToFreqOrder[order] ? 2 : 1);
+            }
+        return t;
+    }
+
+    readonly byte[] _pairClass;
 
     public void HandleOneChar(byte b0, byte b1, int charLen)
     {
-        int order = charLen == 2 ? GetOrder(b0, b1) : -1;
-        if (order >= 0)
+        if (charLen != 2) return;
+        int v = _pairClass[(b0 << 8) | b1];
+        if (v != 0)
         {
             _totalChars++;
-            if ((uint)order < (uint)_charToFreqOrder.Length && 512 > _charToFreqOrder[order])
-                _freqChars++;
+            _freqChars += (uint)(v >> 1);
         }
     }
 
@@ -66,65 +119,24 @@ internal abstract class CharDistributionAnalysis
     public bool GotEnoughData => _totalChars > EnoughDataThreshold;
 }
 
-internal sealed class EucTwDistributionAnalysis() : CharDistributionAnalysis(UchardetTables.EucTw_CharToFreqOrder, UchardetTables.EucTw_TypicalDistributionRatio)
-{
-    protected override int GetOrder(byte b0, byte b1) => b0 >= 0xc4 ? 94 * (b0 - 0xc4) + b1 - 0xa1 : -1;
-}
-
-internal sealed class EucKrDistributionAnalysis() : CharDistributionAnalysis(UchardetTables.EucKr_CharToFreqOrder, UchardetTables.EucKr_TypicalDistributionRatio)
-{
-    protected override int GetOrder(byte b0, byte b1) => b0 >= 0xb0 ? 94 * (b0 - 0xb0) + b1 - 0xa1 : -1;
-}
-
-internal sealed class Gb2312DistributionAnalysis() : CharDistributionAnalysis(UchardetTables.Gb2312_CharToFreqOrder, UchardetTables.Gb2312_TypicalDistributionRatio)
-{
-    protected override int GetOrder(byte b0, byte b1) => b0 >= 0xb0 && b1 >= 0xa1 ? 94 * (b0 - 0xb0) + b1 - 0xa1 : -1;
-}
-
-internal sealed class Big5DistributionAnalysis() : CharDistributionAnalysis(UchardetTables.Big5_CharToFreqOrder, UchardetTables.Big5_TypicalDistributionRatio)
-{
-    protected override int GetOrder(byte b0, byte b1)
-    {
-        if (b0 < 0xa4) return -1;
-        return b1 >= 0xa1 ? 157 * (b0 - 0xa4) + b1 - 0xa1 + 63 : 157 * (b0 - 0xa4) + b1 - 0x40;
-    }
-}
-
-internal sealed class SjisDistributionAnalysis() : CharDistributionAnalysis(UchardetTables.Jis_CharToFreqOrder, UchardetTables.Jis_TypicalDistributionRatio)
-{
-    protected override int GetOrder(byte b0, byte b1)
-    {
-        int order;
-        if (b0 >= 0x81 && b0 <= 0x9f) order = 188 * (b0 - 0x81);
-        else if (b0 >= 0xe0 && b0 <= 0xef) order = 188 * (b0 - 0xe0 + 31);
-        else return -1;
-        order += b1 - 0x40;
-        if (b1 > 0x7f) order--;
-        return order;
-    }
-}
-
-internal sealed class EucJpDistributionAnalysis() : CharDistributionAnalysis(UchardetTables.Jis_CharToFreqOrder, UchardetTables.Jis_TypicalDistributionRatio)
-{
-    protected override int GetOrder(byte b0, byte b1) => b0 >= 0xa0 ? 94 * (b0 - 0xa1) + b1 - 0xa1 : -1;
-}
-
-/// <summary>JapaneseContextAnalysis (hiragana pair frequencies). Only HandleOneChar is reached
-/// from the probers; the byte-buffer HandleData of JpCntx.cpp has no caller and is not ported.</summary>
-internal abstract class JapaneseContextAnalysis
+/// <summary>JapaneseContextAnalysis (hiragana pair frequencies), SJIS or EUC-JP flavour. Only
+/// HandleOneChar is reached from the probers; the byte-buffer HandleData of JpCntx.cpp has no
+/// caller and is not ported.</summary>
+internal sealed class JapaneseContextAnalysis(bool sjis)
 {
     const int NumOfCategory = 6;
     const uint EnoughRelThreshold = 100, MaxRelThreshold = 1000, MinimumDataThreshold = 4;
     const float DontKnow = -1f;
 
+    readonly bool _sjis = sjis;
     readonly uint[] _relSample = new uint[NumOfCategory];
-    uint _totalRel, _dataThreshold;
-    int _lastCharOrder;
+    uint _totalRel, _dataThreshold = MinimumDataThreshold;
+    int _lastCharOrder = -1;
     bool _done;
 
-    protected JapaneseContextAnalysis() => Reset(false);
-
-    protected abstract int GetOrder(byte b0, byte b1);
+    int GetOrder(byte b0, byte b1) => _sjis
+        ? (b0 == 0x82 && b1 >= 0x9f && b1 <= 0xf1 ? b1 - 0x9f : -1)
+        : (b0 == 0xa4 && b1 >= 0xa1 && b1 <= 0xf3 ? b1 - 0xa1 : -1);
 
     public void HandleOneChar(byte b0, byte b1, int charLen)
     {
@@ -154,18 +166,16 @@ internal abstract class JapaneseContextAnalysis
     public bool GotEnoughData => _totalRel > EnoughRelThreshold;
 }
 
-internal sealed class SjisContextAnalysis : JapaneseContextAnalysis
+/// <summary>A prober of the MBCS group. <see cref="IsDead"/>: its coding state machine sits in an
+/// absorbing eError, so every later HandleData returns eDetecting and changes nothing that
+/// GetConfidence reads (see <see cref="StateMachineModel.ErrorIsAbsorbing"/>).</summary>
+internal abstract class MultiByteProber : CharSetProber
 {
-    protected override int GetOrder(byte b0, byte b1) => b0 == 0x82 && b1 >= 0x9f && b1 <= 0xf1 ? b1 - 0x9f : -1;
-}
-
-internal sealed class EucJpContextAnalysis : JapaneseContextAnalysis
-{
-    protected override int GetOrder(byte b0, byte b1) => b0 == 0xa4 && b1 >= 0xa1 && b1 <= 0xf3 ? b1 - 0xa1 : -1;
+    public abstract bool IsDead { get; }
 }
 
 /// <summary>nsUTF8Prober.</summary>
-internal sealed class Utf8Prober : CharSetProber
+internal sealed class Utf8Prober : MultiByteProber
 {
     const float OneCharProb = 0.50f;
     readonly CodingStateMachine _codingSm = new(UchardetTables.Utf8Sm);
@@ -176,14 +186,27 @@ internal sealed class Utf8Prober : CharSetProber
 
     public override void Reset() { _codingSm.Reset(); _numOfMbChar = 0; _state = ProbingState.Detecting; }
 
-    public override ProbingState HandleData(byte[] buf, int start, int len)
+    public override bool IsDead => _codingSm.IsDead;
+
+    public override ProbingState HandleData(ReadOnlySpan<byte> buf)
     {
-        for (int i = start, end = start + len; i < end; i++)
+        StateMachineModel m = _codingSm.Model;
+        byte[] next = m.Next, lenByByte = m.LenByByte;
+        bool absorbing = m.ErrorIsAbsorbing;
+        int state = _codingSm.CurrentState, charLen = _codingSm.CurrentCharLen;
+        uint numOfMbChar = _numOfMbChar;
+        for (int i = 0; i < buf.Length; i++)
         {
-            SmState s = _codingSm.NextState(buf[i]);
-            if (s == SmState.ItsMe) { _state = ProbingState.FoundIt; break; }
-            if (s == SmState.Start && _codingSm.CurrentCharLen >= 2) _numOfMbChar++;
+            byte b = buf[i];
+            if (state == (int)SmState.Start) charLen = lenByByte[b];
+            state = next[(state << 8) | b];
+            if (state > (int)SmState.ItsMe) continue;
+            if (state == (int)SmState.ItsMe) { _state = ProbingState.FoundIt; break; }
+            if (state == (int)SmState.Error) { if (absorbing) break; continue; }
+            if (charLen >= 2) numOfMbChar++;
         }
+        _codingSm.CurrentState = state; _codingSm.CurrentCharLen = charLen;
+        _numOfMbChar = numOfMbChar;
         if (_state == ProbingState.Detecting && GetConfidence() > ShortcutThreshold) _state = ProbingState.FoundIt;
         return _state;
     }
@@ -206,7 +229,7 @@ internal sealed class Utf8Prober : CharSetProber
 /// <summary>The common shape of nsSJISProber, nsEUCJPProber, nsGB18030Prober, nsEUCKRProber,
 /// nsBig5Prober and nsEUCTWProber: a coding state machine feeding a distribution analyser and,
 /// for the two Japanese ones, a context analyser.</summary>
-internal sealed class MultiByteDistributionProber : CharSetProber
+internal sealed class MultiByteDistributionProber : MultiByteProber
 {
     readonly CodingStateMachine _codingSm;
     readonly CharDistributionAnalysis _distribution;
@@ -222,12 +245,12 @@ internal sealed class MultiByteDistributionProber : CharSetProber
         Reset();
     }
 
-    public static MultiByteDistributionProber Sjis() => new(UchardetTables.SjisSm, new SjisDistributionAnalysis(), new SjisContextAnalysis(), "Shift_JIS");
-    public static MultiByteDistributionProber EucJp() => new(UchardetTables.EucJpSm, new EucJpDistributionAnalysis(), new EucJpContextAnalysis(), "EUC-JP");
-    public static MultiByteDistributionProber Gb18030() => new(UchardetTables.Gb18030Sm, new Gb2312DistributionAnalysis(), null, "gb18030");
-    public static MultiByteDistributionProber EucKr() => new(UchardetTables.EucKrSm, new EucKrDistributionAnalysis(), null, "EUC-KR");
-    public static MultiByteDistributionProber Big5() => new(UchardetTables.Big5Sm, new Big5DistributionAnalysis(), null, "Big5");
-    public static MultiByteDistributionProber EucTw() => new(UchardetTables.EucTwSm, new EucTwDistributionAnalysis(), null, "x-euc-tw");
+    public static MultiByteDistributionProber Sjis() => new(UchardetTables.SjisSm, new(CharDistributionAnalysis.Kind.Sjis), new(sjis: true), "Shift_JIS");
+    public static MultiByteDistributionProber EucJp() => new(UchardetTables.EucJpSm, new(CharDistributionAnalysis.Kind.EucJp), new(sjis: false), "EUC-JP");
+    public static MultiByteDistributionProber Gb18030() => new(UchardetTables.Gb18030Sm, new(CharDistributionAnalysis.Kind.Gb2312), null, "gb18030");
+    public static MultiByteDistributionProber EucKr() => new(UchardetTables.EucKrSm, new(CharDistributionAnalysis.Kind.EucKr), null, "EUC-KR");
+    public static MultiByteDistributionProber Big5() => new(UchardetTables.Big5Sm, new(CharDistributionAnalysis.Kind.Big5), null, "Big5");
+    public static MultiByteDistributionProber EucTw() => new(UchardetTables.EucTwSm, new(CharDistributionAnalysis.Kind.EucTw), null, "x-euc-tw");
 
     public override void Reset()
     {
@@ -237,38 +260,47 @@ internal sealed class MultiByteDistributionProber : CharSetProber
         _distribution.Reset(false);
     }
 
-    public override ProbingState HandleData(byte[] buf, int start, int len)
+    public override bool IsDead => _codingSm.IsDead;
+
+    public override ProbingState HandleData(ReadOnlySpan<byte> buf)
     {
-        for (int i = 0; i < len; i++)
+        StateMachineModel m = _codingSm.Model;
+        byte[] next = m.Next, lenByByte = m.LenByByte;
+        bool absorbing = m.ErrorIsAbsorbing;
+        int state = _codingSm.CurrentState, charLen = _codingSm.CurrentCharLen;
+        JapaneseContextAnalysis? context = _context;
+        CharDistributionAnalysis distribution = _distribution;
+        for (int i = 0; i < buf.Length; i++)
         {
-            SmState s = _codingSm.NextState(buf[start + i]);
-            if (s == SmState.ItsMe) { _state = ProbingState.FoundIt; break; }
-            if (s != SmState.Start) continue;
-            int charLen = _codingSm.CurrentCharLen;
-            // Both analysers only read the two bytes when charLen == 2, i.e. the pair ending at i.
+            byte b = buf[i];
+            if (state == (int)SmState.Start) charLen = lenByByte[b];
+            state = next[(state << 8) | b];
+            if (state > (int)SmState.ItsMe) continue;
+            if (state == (int)SmState.ItsMe) { _state = ProbingState.FoundIt; break; }
+            if (state == (int)SmState.Error) { if (absorbing) break; continue; }
+            // eStart: a character ended at i. Both analysers only read the two bytes when
+            // charLen == 2, i.e. the pair ending at i.
             byte b0, b1;
             if (i == 0)
             {
-                _lastChar1 = buf[start];
+                _lastChar1 = buf[0];
                 b0 = _lastChar0; b1 = _lastChar1;
             }
             else
             {
-                b0 = buf[start + i - 1]; b1 = buf[start + i];
+                b0 = buf[i - 1]; b1 = b;
             }
-            if (_context != null)
-            {
-                // nsSJISProber: context gets (i==0 ? mLastChar+2-charLen : aBuf+i+1-charLen); for
-                // charLen 2 that is the same pair. nsEUCJPProber passes the same pointer as the
-                // distribution analyser. Both only dereference when charLen == 2.
-                _context.HandleOneChar(b0, b1, charLen);
-            }
-            _distribution.HandleOneChar(b0, b1, charLen);
+            // nsSJISProber: context gets (i==0 ? mLastChar+2-charLen : aBuf+i+1-charLen); for
+            // charLen 2 that is the same pair. nsEUCJPProber passes the same pointer as the
+            // distribution analyser. Both only dereference when charLen == 2.
+            context?.HandleOneChar(b0, b1, charLen);
+            distribution.HandleOneChar(b0, b1, charLen);
         }
-        _lastChar0 = buf[start + len - 1];
+        _codingSm.CurrentState = state; _codingSm.CurrentCharLen = charLen;
+        _lastChar0 = buf[buf.Length - 1];
         if (_state == ProbingState.Detecting)
         {
-            bool enough = _context != null ? _context.GotEnoughData : _distribution.GotEnoughData;
+            bool enough = context != null ? context.GotEnoughData : distribution.GotEnoughData;
             if (enough && GetConfidence() > ShortcutThreshold) _state = ProbingState.FoundIt;
         }
         return _state;
@@ -287,10 +319,14 @@ internal sealed class MultiByteDistributionProber : CharSetProber
 }
 
 /// <summary>nsMBCSGroupProber (NS_FILTER_ALL): UTF-8, Shift_JIS, EUC-JP, GB18030, EUC-KR, Big5,
-/// EUC-TW. Feeds each prober only the high-byte runs plus the byte after each run.</summary>
+/// EUC-TW. Feeds each prober only the high-byte runs plus the byte after each run.
+/// <para>Skips (both exact): ASCII between segments is jumped over word-at-a-time (bytes below
+/// 0x80 with mKeepNext == 0 do nothing); a dead prober (<see cref="MultiByteProber.IsDead"/>) is no
+/// longer called, and once all seven are dead the rest of the buffer cannot change any result,
+/// so scanning stops.</para></summary>
 internal sealed class MbcsGroupProber : CharSetProber
 {
-    readonly CharSetProber[] _probers =
+    readonly MultiByteProber[] _probers =
     [
         new Utf8Prober(),
         MultiByteDistributionProber.Sjis(),
@@ -300,6 +336,8 @@ internal sealed class MbcsGroupProber : CharSetProber
         MultiByteDistributionProber.Big5(),
         MultiByteDistributionProber.EucTw(),
     ];
+    readonly bool[] _dead = new bool[7];
+    int _aliveNum;
     int _bestGuess;
     ProbingState _state;
     uint _keepNext;
@@ -319,47 +357,55 @@ internal sealed class MbcsGroupProber : CharSetProber
     public override void Reset()
     {
         foreach (var p in _probers) p.Reset();
+        Array.Clear(_dead, 0, _dead.Length);
+        _aliveNum = _probers.Length;
         _bestGuess = -1;
         _state = ProbingState.Detecting;
         _keepNext = 0;
     }
 
-    public override ProbingState HandleData(byte[] buf, int start, int len)
+    /// <summary>One segment to every live prober in order; true when one of them found it.</summary>
+    bool Feed(ReadOnlySpan<byte> segment)
     {
-        int segStart = 0;
+        for (int i = 0; i < _probers.Length; i++)
+        {
+            if (_dead[i]) continue;
+            var p = _probers[i];
+            if (p.HandleData(segment) == ProbingState.FoundIt)
+            {
+                _bestGuess = i;
+                _state = ProbingState.FoundIt;
+                return true;
+            }
+            if (p.IsDead) { _dead[i] = true; _aliveNum--; }
+        }
+        return false;
+    }
+
+    public override ProbingState HandleData(ReadOnlySpan<byte> buf)
+    {
+        if (_aliveNum == 0) return _state;
+        int len = buf.Length, segStart = 0;
         uint keepNext = _keepNext;
         for (int pos = 0; pos < len; ++pos)
         {
-            if ((buf[start + pos] & 0x80) != 0)
+            if (keepNext == 0)
+            {
+                pos = Swar.SkipAscii(buf, pos);
+                if (pos == len) break;
+            }
+            if ((buf[pos] & 0x80) != 0)
             {
                 if (keepNext == 0) segStart = pos;
                 keepNext = 2;
             }
             else if (keepNext != 0 && --keepNext == 0)
             {
-                for (int i = 0; i < _probers.Length; i++)
-                {
-                    if (_probers[i].HandleData(buf, start + segStart, pos + 1 - segStart) == ProbingState.FoundIt)
-                    {
-                        _bestGuess = i;
-                        _state = ProbingState.FoundIt;
-                        return _state;
-                    }
-                }
+                if (Feed(buf.Slice(segStart, pos + 1 - segStart))) return _state;
+                if (_aliveNum == 0) return _state;
             }
         }
-        if (keepNext != 0)
-        {
-            for (int i = 0; i < _probers.Length; i++)
-            {
-                if (_probers[i].HandleData(buf, start + segStart, len - segStart) == ProbingState.FoundIt)
-                {
-                    _bestGuess = i;
-                    _state = ProbingState.FoundIt;
-                    return _state;
-                }
-            }
-        }
+        if (keepNext != 0 && Feed(buf.Slice(segStart, len - segStart))) return _state;
         _keepNext = keepNext;
         return _state;
     }
@@ -383,7 +429,8 @@ internal sealed class MbcsGroupProber : CharSetProber
     public override ProbingState GetState() => _state;
 }
 
-/// <summary>nsEscCharSetProber: HZ-GB-2312, ISO-2022-CN, ISO-2022-JP, ISO-2022-KR.</summary>
+/// <summary>nsEscCharSetProber: HZ-GB-2312, ISO-2022-CN, ISO-2022-JP, ISO-2022-KR. A machine in
+/// an absorbing eError is skipped; with all four there, nothing can be found any more.</summary>
 internal sealed class EscCharSetProber : CharSetProber
 {
     readonly CodingStateMachine[] _codingSm =
@@ -405,19 +452,24 @@ internal sealed class EscCharSetProber : CharSetProber
         _detectedCharset = null;
     }
 
-    public override ProbingState HandleData(byte[] buf, int start, int len)
+    public override ProbingState HandleData(ReadOnlySpan<byte> buf)
     {
-        for (int i = 0; i < len && _state == ProbingState.Detecting; i++)
+        for (int i = 0; i < buf.Length && _state == ProbingState.Detecting; i++)
         {
+            bool anyAlive = false;
             for (int j = _codingSm.Length - 1; j >= 0; j--)
             {
-                if (_codingSm[j].NextState(buf[start + i]) == SmState.ItsMe)
+                var sm = _codingSm[j];
+                if (sm.IsDead) continue;
+                anyAlive = true;
+                if (sm.NextState(buf[i]) == SmState.ItsMe)
                 {
                     _state = ProbingState.FoundIt;
-                    _detectedCharset = _codingSm[j].Name;
+                    _detectedCharset = sm.Name;
                     return _state;
                 }
             }
+            if (!anyAlive) break;
         }
         return _state;
     }

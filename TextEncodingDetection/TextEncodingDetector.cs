@@ -1,4 +1,3 @@
-using System.Buffers;
 using System.Text;
 using TextEncodingDetection.Uchardet;
 
@@ -55,7 +54,7 @@ public sealed record DetectionResult(
 /// <item>7-bit only → UTF-8; valid UTF-8 without NUL → UTF-8;</item>
 /// <item>otherwise the ANSI code page.</item>
 /// </list>
-/// Fully managed, single-threaded; one call allocates at most one pooled sample-sized buffer.
+/// Fully managed, single-threaded; one call rents at most one pooled sample-sized buffer.
 /// </summary>
 public static class TextEncodingDetector
 {
@@ -88,17 +87,7 @@ public static class TextEncodingDetector
         if (len > 2 && sample[0] == 0xEF && sample[1] == 0xBB && sample[2] == 0xBF) return Result(65001, true, 3, 1f, DetectionReason.ByteOrderMark, "");
 
         // FileManager::detectCodepage: uchardet on the first block.
-        byte[] buf = ArrayPool<byte>.Shared.Rent(len);
-        UchardetResult u;
-        try
-        {
-            sample.CopyTo(buf);
-            u = UniversalDetector.Detect(buf, len);
-        }
-        finally
-        {
-            ArrayPool<byte>.Shared.Return(buf);
-        }
+        UchardetResult u = UniversalDetector.Detect(sample);
         int cp = u.Charset.Equals("TIS-620", StringComparison.OrdinalIgnoreCase) ? -1 : NotepadPlusPlusCodePage(u.Charset);
         if (cp != -1)
             return Result(cp, false, 0, u.Confidence, DetectionReason.Uchardet, u.Charset);
